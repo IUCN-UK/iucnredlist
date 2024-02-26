@@ -2,7 +2,7 @@ Package: iucnredlist
 Title: R Client for the IUCN Red List API 
 Version: 0.0.0.9000
 Authors@R: c(
-    person("Simon", "Tarr", , "simon.tarr@iucn.org", role = "aut",
+    person("Simon", "Tarr", , "simon.tarr@iucn.org", role = c("aut", "cre"),
            comment = c(ORCID = "")),
     person("Ian", "Townsend", , "ian.townsend@iucn.org", role = c("aut", "cre"),
            comment = c(ORCID = "")),
