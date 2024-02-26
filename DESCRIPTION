@@ -1,9 +1,13 @@
 Package: iucnredlist
-Title: What the Package Does (One Line, Title Case)
+Title: R Client for the IUCN Red List API 
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+Authors@R: c(
+    person("Simon", "Tarr", , "simon.tarr@iucn.org", role = "aut",
+           comment = c(ORCID = "")),
+    person("Ian", "Townsend", , "ian.townsend@iucn.org", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6983-2759")),
+    person("International Union for Conservation of Nature", role = c("cph", "fnd"))
+  )
 Description: What the package does (one paragraph).
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
