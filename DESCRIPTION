@@ -5,7 +5,7 @@ Authors@R: c(
     person("Simon", "Tarr", , "simon.tarr@iucn.org", role = "aut",
            comment = c(ORCID = "")),
     person("Ian", "Townsend", , "ian.townsend@iucn.org", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0002-6983-2759")),
+           comment = c(ORCID = "")),
     person("International Union for Conservation of Nature", role = c("cph", "fnd"))
   )
 Description: What the package does (one paragraph).
