@@ -1,5 +1,9 @@
-# Creates a request object for a valid red_list_api_key
-# encryption key with secret_make_key() that is used to scramble and descramble secrets using symmetric cryptography:
+#' Creates a request object for a valid red_list_api_key
+#'
+#' @param red_list_api_key A number.
+#' @returns An httr2 request object.
+#' @examples
+#' init_red_list_api('your_red_list_api_key')
 
 init_red_list_api <- function(red_list_api_key) {
   key <- httr2::secret_make_key()
