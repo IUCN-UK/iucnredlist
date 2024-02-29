@@ -1,3 +1,4 @@
+# An example test - this will be removed
 test_that("multiplication works", {
   expect_equal(2 * 2, 4)
 })
