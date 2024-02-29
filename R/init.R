@@ -10,7 +10,7 @@ init_red_list_api <- function(red_list_api_key) {
   my_key <- httr2::secret_encrypt(red_list_api_key, key)
 
   req <- httr2::request("https://apiv4staging.iucnredlist.org/api/v4/") %>%
-    req_headers("Authorization" = secret_decrypt(my_key, key))
+    httr2::req_headers("Authorization" = httr2::secret_decrypt(my_key, key))
 
   return(req)
 }
