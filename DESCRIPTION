@@ -19,8 +19,8 @@ Config/testthat/edition: 3
 URL: https://github.com/IUCN-UK/iucnredlist
 BugReports: https://github.com/IUCN-UK/iucnredlist/issues
 Imports: 
-    dplyr,
-    httr2,
-    janitor,
-    mockthat,
-    tidyjson
+    dplyr (>= 1.1.4),
+    httr2 (>= 1.0.0),
+    janitor (>= 2.2.0),
+    mockthat (>= 0.2.8),
+    tidyjson (>= 0.3.2)
