@@ -21,6 +21,6 @@ RedListClient <- R6::R6Class("RedListClient", list(
   version = NULL,
   initialize = function(red_list_api_token) {
     self$request <- httr2::request("https://apiv4staging.iucnredlist.org/api/v4/") %>% httr2::req_headers("Authorization" = red_list_api_token)
-    self$version <- httr2::req_url_path_append(self$request, '/information/version') %>% httr2::req_body_json(list(x = 1, y = 2))
+    self$version <- httr2::req_url_path_append(self$request, '/information/version')
   }
 ))
