@@ -23,4 +23,5 @@ Imports:
     httr2 (>= 1.0.0),
     janitor (>= 2.2.0),
     mockthat (>= 0.2.8),
+    R6,
     tidyjson (>= 0.3.2)

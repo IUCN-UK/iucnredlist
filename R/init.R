@@ -5,7 +5,7 @@
 #' @return A list.
 #' @export
 #'
-init_red_list_api <- function(red_list_api_key) {
+initialise_red_list_client <- function(red_list_api_key) {
   key <- httr2::secret_make_key()
   my_key <- httr2::secret_encrypt(red_list_api_key, key)
 
@@ -14,3 +14,11 @@ init_red_list_api <- function(red_list_api_key) {
 
   return(req)
 }
+
+RedListClient <- R6Class("RedListClient", list(
+  red_list_api_token = NULL,
+  request = NULL,
+  initialize = function(red_list_api_token) {
+    self$request <- httr2::request("https://apiv4staging.iucnredlist.org/api/v4/") %>% httr2::req_headers("Authorization" = red_list_api_token)
+  }
+))
