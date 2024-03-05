@@ -15,7 +15,7 @@ initialise_red_list_client <- function(red_list_api_key) {
   return(req)
 }
 
-RedListClient <- R6Class("RedListClient", list(
+RedListClient <- R6::R6Class("RedListClient", list(
   red_list_api_token = NULL,
   request = NULL,
   initialize = function(red_list_api_token) {
