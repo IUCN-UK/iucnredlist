@@ -7,7 +7,7 @@ extract_element <- function(assessments_list, element_name) {
     assessment_id <- as.character(item$assessment_id %||% NA)
 
     # Extract the specified element (e.g., 'stresses' or 'references')
-    element_data <- item[[element_name]] %||% tibble()  # Handle missing elements
+    element_data <- item[[element_name]] %||% dplyr::tibble()  # Handle missing elements
 
     # Add 'assessment_id' and 'index' column to the extracted tibble
     element_data <- element_data %>%
