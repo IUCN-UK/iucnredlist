@@ -33,6 +33,8 @@ assessment_data_many <- function(api, assessment_ids, wait_time = 1, silent = FA
   # Short wait outside loop so users have time to read CLI output
   Sys.sleep(3)
 
+  start <- Sys.time()
+
   for (i in seq_along(assessment_ids)) {
     # Fetch and process the data for this assessment ID
     results_list[[i]] <- assessment_data(api, assessment_ids[i])
@@ -41,6 +43,9 @@ assessment_data_many <- function(api, assessment_ids, wait_time = 1, silent = FA
     }
     Sys.sleep(wait_time)
   }
+
+  end <- Sys.time()
+
 
   cli::cli_alert_success(paste0("Assessment data finished downloading in ", round(difftime(end, start, units = "secs"), 2), " seconds."))
 
