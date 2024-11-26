@@ -1,4 +1,5 @@
 #' Get full assessment data for a vector of assessment IDs
+#' @importFrom dplyr %>%
 #'
 #' @description This function wraps around `assessment_data()` and allows the return of full assessment
 #' data for an arbitrary number of assessment IDs.

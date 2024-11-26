@@ -1,4 +1,6 @@
 #' Get full assessment data for an assessment ID
+#' @importFrom dplyr %>%
+#'
 #'
 #' @description foo bar
 #'

@@ -10,7 +10,7 @@ assessments_by_group <- function(req, group, code, year_published = NULL, latest
 
   if (nrow(data) > 0) {
     janitor::clean_names(data) %>%
-      dplyr::select(sis_taxon_id, assessment_id, latest, year_published, scopes_description_en, scopes_code, url)
+      dplyr::select(sis_taxon_id, assessment_id, data$latest, data$year_published, data$scopes_description_en, data$scopes_code, data$url)
   } else {
     cli::cli_alert_warning("There are no assessments for your combination of query parameters/filters. Please check and try again.")
   }

@@ -40,7 +40,7 @@ fetch_paginated_data <- function(req, url, query_params, wait_time) {
 flatten_tibble <- function(tibble_data) {
   # Check for list columns and flatten them, converting to character explicitly
   tibble_data %>%
-    dplyr::mutate(across(where(is.list), ~ purrr::map_chr(.x, ~ {
+    dplyr::mutate(dplyr::across(tidyselect::where(is.list), ~ purrr::map_chr(.x, ~ {
       if (length(.x) == 0) {
         NA_character_
       } else {
@@ -99,7 +99,7 @@ unnest_scopes <- function(item) {
         )
     })
   } else {
-    tibble(!!!flatten_nested_list(item))
+    dplyr::tibble(!!!flatten_nested_list(item))
   }
 }
 

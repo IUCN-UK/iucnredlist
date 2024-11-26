@@ -1,4 +1,5 @@
 #' Creates a request object for a valid red_list_api_key
+#' @importFrom dplyr %>%
 #'
 #' @param red_list_api_key A v4 API token string (alphanumeric)
 #' @returns An httr2 request object.
