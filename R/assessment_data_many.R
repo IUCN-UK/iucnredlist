@@ -35,7 +35,7 @@ assessment_data_many <- function(api, assessment_ids, wait_time = 1, silent = FA
 
   for (i in seq_along(assessment_ids)) {
     # Fetch and process the data for this assessment ID
-    results_list[[i]] <- get_assessment_data(api, assessment_ids[i])
+    results_list[[i]] <- assessment_data(api, assessment_ids[i])
     if (silent == FALSE) {
       print(paste("Processed assessment ID:", assessment_ids[i]))
     }
