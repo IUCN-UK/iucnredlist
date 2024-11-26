@@ -16,5 +16,7 @@ An httr2 request object.
 Creates a request object for a valid red_list_api_key
 }
 \examples{
+\dontrun{
 api <- init_api("your_red_list_api_key")
+}
 }

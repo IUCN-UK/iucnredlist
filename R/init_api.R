@@ -2,8 +2,11 @@
 #'
 #' @param red_list_api_key A v4 API token string (alphanumeric)
 #' @returns An httr2 request object.
+#'
 #' @examples
+#' \dontrun{
 #' api <- init_api("your_red_list_api_key")
+#' }
 init_api <- function(red_list_api_key) {
   key <- httr2::secret_make_key()
   my_key <- httr2::secret_encrypt(red_list_api_key, key)

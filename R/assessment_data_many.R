@@ -12,7 +12,9 @@
 #' @returns A list of full assessment data. Each element in the list corresponds to a unique assessment_id passed
 #' to the function via the argument assessment_ids
 #' @examples
+#' \dontrun{
 #' assessment_data_many(api, assessment_ids = c(123, 456), wait_time = 0.5, silent = FALSE)
+#' }
 assessment_data_many <- function(api, assessment_ids, wait_time = 1, silent = FALSE) {
   # Initialize an empty list to store results
   results_list <- list()

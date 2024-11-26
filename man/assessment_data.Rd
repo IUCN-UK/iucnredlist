@@ -18,5 +18,7 @@ A list of length 1 containing full assessment data
 foo bar
 }
 \examples{
+\dontrun{
 assessment_data(api, assessment_id = 123)
+}
 }

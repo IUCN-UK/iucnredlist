@@ -25,5 +25,7 @@ This function wraps around \code{assessment_data()} and allows the return of ful
 data for an arbitrary number of assessment IDs.
 }
 \examples{
+\dontrun{
 assessment_data_many(api, assessment_ids = c(123, 456), wait_time = 0.5, silent = FALSE)
+}
 }
