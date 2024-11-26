@@ -4,7 +4,7 @@
 \alias{assessment_data_many}
 \title{Get full assessment data for a vector of assessment IDs}
 \usage{
-assessment_data_many(api, assessment_ids, wait_time = 1, silent = FALSE)
+assessment_data_many(api, assessment_ids, wait_time = 1)
 }
 \arguments{
 \item{api}{An httr2 response object created with init_api()}
@@ -13,8 +13,6 @@ assessment_data_many(api, assessment_ids, wait_time = 1, silent = FALSE)
 
 \item{wait_time}{Time in seconds to wait between API calls. A wait of 0.5 seconds or greater will ensure you
 won't hit the IUCN Red List API rate limit.}
-
-\item{silent}{Logical. If FALSE (default) then the status of each API call will be printed to the R console.}
 }
 \value{
 A list of full assessment data. Each element in the list corresponds to a unique assessment_id passed
@@ -26,6 +24,6 @@ data for an arbitrary number of assessment IDs.
 }
 \examples{
 \dontrun{
-assessment_data_many(api, assessment_ids = c(123, 456), wait_time = 0.5, silent = FALSE)
+assessment_data_many(api, assessment_ids = c(123, 456), wait_time = 0.5)
 }
 }
