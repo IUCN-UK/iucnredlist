@@ -1,1 +1,17 @@
-utils::globalVariables(c("sis_id", "assessment_id", "sis_taxon_id", "scopes_description_en", "scopes_code", "index", "everything", "%||%"))
+utils::globalVariables(
+  c(
+    "sis_id",
+    "assessment_id",
+    "sis_taxon_id",
+    "scopes_description_en",
+    "scopes_code",
+    "latest",
+    "year_published",
+    "scopes_description_en",
+    "scopes_code",
+    "url",
+    "index",
+    "everything",
+    "%||%"
+  )
+)
