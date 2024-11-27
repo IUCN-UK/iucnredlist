@@ -18,11 +18,13 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The International Union for Conservation of Nature’s Red List of Threatened Species has evolved to become the world’s most comprehensive information source on the global conservation status of animal, fungi and plant species. It's a critical indicator of the health of the world’s biodiversity.
+The [International Union for Conservation of Nature’s](https://www.iucn.org) [Red List of Threatened Species](https://www.iucnredlist.org) has evolved to become the world’s most comprehensive information source on the global conservation status of animal, fungi and plant species. It’s a critical indicator of the health of the world’s biodiversity.
 
-The IUCN Redlist application is a Ruby on Rails application that is designed to be a tool to help inform and catalyze action for biodiversity conservation and policy change, critical to protecting the natural resources we need to survive. Through a web-browser - and also via a machine readable API - it provides information about range, population size, habitat and ecology, use and/or trade, threats, and conservation actions that will help inform necessary conservation decisions.
+The [IUCN Red List API](https://api.iucnredlist.org) has been developed to inform and drive biodiversity conservation and policy change -— critical steps in protecting essential natural resources. It provides data on species range, population size, habitat and ecology, trade, threats, and conservation actions to support informed conservation decisions.
 
-The goal of the `iucnredlist` R package is to ...
+Our goal with the `iucnredlist` R package is to provide a client library for the R programming language for the Red List API and provide the research community and other users with an efficient, user-friendly tool to access and interact with IUCN’s critical data and services. 
+
+We have open sourced this package to promoting transparency, enable research community contributions, and drive adoption of the API.  As an official IUCN-supported library, we can intend to maintain synchronisation with any API changes and updates.  We also plan to incorporate the library into training resources over time.
 
 ## Installation
 
@@ -33,11 +35,22 @@ You can install the development version of iucnredlist from [GitHub](https://git
 devtools::install_github("IUCN-UK/iucnredlist")
 ```
 
-## Example
+## Example usage
 
-This is a basic example which shows you how to solve a common problem:
+Here's a basic example which shows you how to extract habitat data for the Felidae family.
+
+To run this example you will first need to sign-up/log-in at https://api.iucnredlist.org/ and copy your api key from your account page. 
 
 ```{r example}
-library(iucnredlist)
-## basic example code
+# Initialize the API with your API key
+api_key <- 'your_red_list_api_key'  # Replace with your actual API key
+api <- iucnredlist:::init_api("your_red_list_api_key")
+# Step 1: Get assessment IDs for the Felidae family
+# Check if assessments were found
+# Step 2: Extract unique assessment IDs
+# Step 3: Fetch assessment data for each assessment ID
+# Set a reasonable wait time to avoid rate limiting (e.g., 0.5 seconds)
+# Step 4: Extract habitats from the assessment data
+# Clean and process the habitats data as needed
+# Display the habitats data
 ```
