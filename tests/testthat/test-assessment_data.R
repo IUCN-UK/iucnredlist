@@ -16,4 +16,7 @@ test_that("the assessment data function returns an expeted response", {
 
   expect_true(is.list(result))
   expect_equal(result$assessment_date[[1,1]], "2023-04-29T00:00:00.000Z")
+  expect_equal(result$year_published[[1,1]], "2023")
+  expect_equal(result$latest[[1,1]], TRUE)
+  expect_equal(result$sis_taxon_id[[1,1]], 157079)
 })
