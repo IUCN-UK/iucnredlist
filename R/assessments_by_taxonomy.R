@@ -1,6 +1,5 @@
 # Main function to retrieve assessment data for the taxa endpoint
 assessments_by_taxonomy <- function(api, level, name, year_published = NULL, latest = TRUE, scope_code = NULL, wait_time = 0.5) {
-
   # Gather user's query params, throw away any that are NULL
   query_params <- list(latest = latest, year_published = year_published, scope_code = scope_code, page = 1, per_page = 100) %>%
     purrr::discard(is.null)
