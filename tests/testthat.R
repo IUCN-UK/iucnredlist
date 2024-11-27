@@ -7,6 +7,9 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
+library(httr2)
+library(httptest2)
+library(mockery)
 library(iucnredlist)
 
 test_check("iucnredlist")
