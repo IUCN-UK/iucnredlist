@@ -65,26 +65,95 @@
 <div class="section level1">
 <div class="page-header"><h1 id="iucnredlist">iucnredlist<a class="anchor" aria-label="anchor" href="#iucnredlist"></a>
 </h1></div>
-<!-- badges: start -->
-<!-- badges: end -->
-<p>The International Union for Conservation of Nature’s Red List of Threatened Species has evolved to become the world’s most comprehensive information source on the global conservation status of animal, fungi and plant species. It’s a critical indicator of the health of the world’s biodiversity.</p>
-<p>The IUCN Redlist application is a Ruby on Rails application that is designed to be a tool to help inform and catalyze action for biodiversity conservation and policy change, critical to protecting the natural resources we need to survive. Through a web-browser - and also via a machine readable API - it provides information about range, population size, habitat and ecology, use and/or trade, threats, and conservation actions that will help inform necessary conservation decisions.</p>
-<p>The goal of the <code>iucnredlist</code> R package is to …</p>
+<p>The <a href="https://www.iucn.org" class="external-link">International Union for Conservation of Nature’s</a> <a href="https://www.iucnredlist.org" class="external-link">Red List of Threatened Species</a> has evolved to become the world’s most comprehensive information source on the global conservation status of animal, fungi and plant species. It’s a critical indicator of the health of the world’s biodiversity.</p>
+<p>The <a href="https://api.iucnredlist.org" class="external-link">IUCN Red List API</a> has been developed to inform and drive biodiversity conservation and policy change -— critical steps in protecting essential natural resources. It provides programmatic access to data including; population size, habitat and ecology, trade, threats, and conservation actions to support informed conservation decisions.</p>
+<p>The iucnredlist R package aims to serve as a client library for the Red List API, offering the research community and other users an efficient and user-friendly tool to access and interact with the vital data and services provided by the IUCN Red List.</p>
+<p>We have open sourced this package to promote transparency, enable research community contributions, and drive adoption of the API. As an official IUCN-supported library, we shall maintain synchronisation with any API changes and updates.</p>
+<p>We are proponents of the <a href="https://www.tidyverse.org" class="external-link">tidyverse</a> and have worked to ensure that outputs from <code>iucnredlist</code> functions conform to tidy data principles where possible.</p>
+<div class="section level2">
+<h2 id="api-usage">API Usage<a class="anchor" aria-label="anchor" href="#api-usage"></a>
+</h2>
+<p>The use of the API falls under the same <a href="https://www.iucnredlist.org/terms/terms-of-use" class="external-link">Terms of Use</a> as the Red List. By requesting a token, you are agreeing to abide by the Terms of Use of the Red List. If your token usage is found to be in breach of our terms of use, it will be revoked. We kindly request your cooperation in ensuring responsible and respectful usage of our services.</p>
+<p>Please be aware that misusing your API token, such as using it for information extraction (scraping) rather than making legitimate requests for non-commercial purposes, may result in your token being rate limited and/or revoked.</p>
+<p>We are committed to maintaining a high-quality service for all users and have implemented a rate limiting system to ensure our resources are accessible equally to all. We actively monitor API usage to prevent abuse. We understand that some users may have unique requirements for making frequent calls in succession. If you find yourself in such a situation, we kindly request that you incorporate appropriate delays between your API calls to ensure smooth operation and prevent overloading our system, otherwise your token may be further rate-limited. It’s important to note that the Red List API is primarily designed to support conservation efforts, particularly in the fields of education and research. We may need to restrict access if the API is being used for purposes that do not align with our mission, such as mobile app development, inclusion in computing courses, or visualization projects unrelated to conservation.</p>
+<p><em>Use of the Red List API for commercial purposes is strictly forbidden. Users who wish to use Red List data for commercial purposes should consider subscribing to <a href="www.ibat-alliance.org">IBAT</a>.</em></p>
+<div class="section level3">
+<h3 id="responsible-usage">Responsible Usage<a class="anchor" aria-label="anchor" href="#responsible-usage"></a>
+</h3>
+<p>We are committed to ensuring fast and reliable access for all users of this API. To this end, we have implemented rate limiting to maintain service reliability for all users. Several functions within this package have an argument called <code>wait_time</code> - we recommend setting this to &gt;=0.5 seconds (default 0.5 seconds) to avoid rate limiting. If you build your own functions from this API, we recommend you implement an appropriate wait time in your code to avoid any such limits.</p>
+</div>
+</div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install the development version of iucnredlist from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<p>You can install the development version of <code>iucnredlist</code> from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
 <span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"IUCN-UK/iucnredlist"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+<h2 id="example-usage">Example Usage<a class="anchor" aria-label="anchor" href="#example-usage"></a>
 </h2>
-<p>This is a basic example which shows you how to solve a common problem:</p>
+<p>The <code>iucnredlist</code> package contains a number of functions to allow quick access to Red List data. The examples below are some quick-start scripts to get you familiar with a basic <code>iucnredlist</code> workflow. Please refer to the vignettes for detailed case studies/worked examples.</p>
+<p>Before running this code, you must first sign up to the <a href="https://api.iucnredlist.org" class="external-link">Red List API</a> to obtain and API token. You can view (and cycle) your token from your <a href="https://api.iucnredlist.org/users/edit" class="external-link">account page</a>.</p>
+<div class="section level3">
+<h3 id="fetch-a-single-assessments-data">Fetch a single assessment’s data<a class="anchor" aria-label="anchor" href="#fetch-a-single-assessments-data"></a>
+</h3>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/IUCN-UK/iucnredlist" class="external-link">iucnredlist</a></span><span class="op">)</span></span>
-<span><span class="co">## basic example code</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Initialize the API with your API key</span></span>
+<span><span class="va">api</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/init_api.html">init_api</a></span><span class="op">(</span><span class="st">"your_red_list_api_key"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Fetch assessment data for Panthera leo</span></span>
+<span><span class="co"># Returns a list containing all assessment data</span></span>
+<span><span class="va">assessment</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/assessment_data.html">assessment_data</a></span><span class="op">(</span><span class="va">api</span>, <span class="fl">266696959</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># View e.g. threats or habitats</span></span>
+<span><span class="co"># The result is a tidy 'tibble()` of data</span></span>
+<span><span class="va">assessment</span><span class="op">$</span><span class="va">threats</span></span>
+<span><span class="va">assessment</span><span class="op">$</span><span class="va">habitats</span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="fetch-all-assessments-for-a-latin-binomial-name">Fetch all assessments for a Latin binomial name<a class="anchor" aria-label="anchor" href="#fetch-all-assessments-for-a-latin-binomial-name"></a>
+</h3>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Initialize the API with your API key</span></span>
+<span><span class="va">api</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/init_api.html">init_api</a></span><span class="op">(</span><span class="st">"your_red_list_api_key"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Get all historic and latest assessments for Panthera leo (not case-sensitive)</span></span>
+<span><span class="va">lion</span> <span class="op">&lt;-</span> <span class="fu">assessments_by_name</span><span class="op">(</span><span class="va">api</span>, genus <span class="op">=</span> <span class="st">"Panthera"</span>, species <span class="op">=</span> <span class="st">"leo"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="show-threats-for-a-taxonomic-level">Show threats for a taxonomic level<a class="anchor" aria-label="anchor" href="#show-threats-for-a-taxonomic-level"></a>
+</h3>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Initialize the API with your API key</span></span>
+<span><span class="va">api</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/init_api.html">init_api</a></span><span class="op">(</span><span class="st">"your_red_list_api_key"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Step 1: Get all latest and global-scope assessment IDs for the family Felidae</span></span>
+<span><span class="va">felidae</span> <span class="op">&lt;-</span> <span class="fu">assessments_by_taxonomy</span><span class="op">(</span><span class="va">api</span>, </span>
+<span>                                   level <span class="op">=</span> <span class="st">"family"</span>, </span>
+<span>                                   name <span class="op">=</span> <span class="st">"felidae"</span>, </span>
+<span>                                   latest <span class="op">=</span> <span class="cn">TRUE</span>, </span>
+<span>                                   scope_code <span class="op">=</span> <span class="fl">1</span>, </span>
+<span>                                   wait_time <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span></span>
+<span></span>
+<span></span>
+<span><span class="co"># Step 2: Fetch assessment data for each assessment ID</span></span>
+<span><span class="co"># Pass the assessment_id column to `assessment_data_many() to grab</span></span>
+<span><span class="co"># full assessment data for each assessment_id</span></span>
+<span><span class="va">a_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/assessment_data_many.html">assessment_data_many</a></span><span class="op">(</span><span class="va">api</span>, </span>
+<span>                               <span class="va">felidae</span><span class="op">$</span><span class="va">assessment_id</span>,</span>
+<span>                               wait_time <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span></span>
+<span></span>
+<span></span>
+<span><span class="co"># Step 3: Extract habitats from the assessment data</span></span>
+<span><span class="co"># This will iterate over each assessment in the list a_data</span></span>
+<span><span class="co"># and return a tidy `tibble()` for all habitats</span></span>
+<span><span class="va">habitats</span> <span class="op">&lt;-</span> <span class="fu">extract_element</span><span class="op">(</span><span class="va">a_data</span>, <span class="st">"habitats"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Alternatively, extract threats</span></span>
+<span><span class="va">threats</span> <span class="op">&lt;-</span> <span class="fu">extract_element</span><span class="op">(</span><span class="va">a_data</span>, <span class="st">"threats"</span><span class="op">)</span></span></code></pre></div>
+</div>
 </div>
 </div>
   </div>
@@ -106,6 +175,12 @@
 </ul>
 </div>
 
+<div class="community">
+<h2 data-toc-skip>Community</h2>
+<ul class="list-unstyled">
+<li><a href="CONTRIBUTING.html">Contributing guide</a></li>
+</ul>
+</div>
 
 <div class="citation">
 <h2 data-toc-skip>Citation</h2>
