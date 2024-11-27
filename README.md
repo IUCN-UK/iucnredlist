@@ -3,29 +3,80 @@
 
 # iucnredlist
 
-<!-- badges: start -->
-<!-- badges: end -->
+The [International Union for Conservation of
+Nature’s](https://www.iucn.org) [Red List of Threatened
+Species](https://www.iucnredlist.org) has evolved to become the world’s
+most comprehensive information source on the global conservation status
+of animal, fungi and plant species. It’s a critical indicator of the
+health of the world’s biodiversity.
 
-The International Union for Conservation of Nature’s Red List of
-Threatened Species has evolved to become the world’s most comprehensive
-information source on the global conservation status of animal, fungi
-and plant species. It’s a critical indicator of the health of the
-world’s biodiversity.
+The [IUCN Red List API](https://api.iucnredlist.org) has been developed
+to inform and drive biodiversity conservation and policy change -—
+critical steps in protecting essential natural resources. It provides
+programmatic access to data including; population size, habitat and
+ecology, trade, threats, and conservation actions to support informed
+conservation decisions.
 
-The IUCN Redlist application is a Ruby on Rails application that is
-designed to be a tool to help inform and catalyze action for
-biodiversity conservation and policy change, critical to protecting the
-natural resources we need to survive. Through a web-browser - and also
-via a machine readable API - it provides information about range,
-population size, habitat and ecology, use and/or trade, threats, and
-conservation actions that will help inform necessary conservation
-decisions.
+The iucnredlist R package aims to serve as a client library for the Red
+List API, offering the research community and other users an efficient
+and user-friendly tool to access and interact with the vital data and
+services provided by the IUCN Red List.
 
-The goal of the `iucnredlist` R package is to …
+We have open sourced this package to promote transparency, enable
+research community contributions, and drive adoption of the API. As an
+official IUCN-supported library, we shall maintain synchronisation with
+any API changes and updates.
+
+We are proponents of the [tidyverse](https://www.tidyverse.org) and have
+worked to ensure that outputs from `iucnredlist` functions conform to
+tidy data principles where possible.
+
+## API Usage
+
+The use of the API falls under the same [Terms of
+Use](https://www.iucnredlist.org/terms/terms-of-use) as the Red List. By
+requesting a token, you are agreeing to abide by the Terms of Use of the
+Red List. If your token usage is found to be in breach of our terms of
+use, it will be revoked. We kindly request your cooperation in ensuring
+responsible and respectful usage of our services.
+
+Please be aware that misusing your API token, such as using it for
+information extraction (scraping) rather than making legitimate requests
+for non-commercial purposes, may result in your token being rate limited
+and/or revoked.
+
+We are committed to maintaining a high-quality service for all users and
+have implemented a rate limiting system to ensure our resources are
+accessible equally to all. We actively monitor API usage to prevent
+abuse. We understand that some users may have unique requirements for
+making frequent calls in succession. If you find yourself in such a
+situation, we kindly request that you incorporate appropriate delays
+between your API calls to ensure smooth operation and prevent
+overloading our system, otherwise your token may be further
+rate-limited. It’s important to note that the Red List API is primarily
+designed to support conservation efforts, particularly in the fields of
+education and research. We may need to restrict access if the API is
+being used for purposes that do not align with our mission, such as
+mobile app development, inclusion in computing courses, or visualization
+projects unrelated to conservation.
+
+*Use of the Red List API for commercial purposes is strictly forbidden.
+Users who wish to use Red List data for commercial purposes should
+consider subscribing to [IBAT](www.ibat-alliance.org).*
+
+### Responsible Usage
+
+We are committed to ensuring fast and reliable access for all users of
+this API. To this end, we have implemented rate limiting to maintain
+service reliability for all users. Several functions within this package
+have an argument called `wait_time` - we recommend setting this to
+\>=0.5 seconds (default 0.5 seconds) to avoid rate limiting. If you
+build your own functions from this API, we recommend you implement an
+appropriate wait time in your code to avoid any such limits.
 
 ## Installation
 
-You can install the development version of iucnredlist from
+You can install the development version of `iucnredlist` from
 [GitHub](https://github.com/) with:
 
 ``` r
@@ -33,11 +84,72 @@ You can install the development version of iucnredlist from
 devtools::install_github("IUCN-UK/iucnredlist")
 ```
 
-## Example
+## Example Usage
 
-This is a basic example which shows you how to solve a common problem:
+The `iucnredlist` package contains a number of functions to allow quick
+access to Red List data. The examples below are some quick-start scripts
+to get you familiar with a basic `iucnredlist` workflow. Please refer to
+the vignettes for detailed case studies/worked examples.
+
+Before running this code, you must first sign up to the [Red List
+API](https://api.iucnredlist.org) to obtain and API token. You can view
+(and cycle) your token from your [account
+page](https://api.iucnredlist.org/users/edit).
+
+### Fetch a single assessment’s data
 
 ``` r
-library(iucnredlist)
-## basic example code
+# Initialize the API with your API key
+api <- init_api("your_red_list_api_key")
+
+# Fetch assessment data for Panthera leo
+# Returns a list containing all assessment data
+assessment <- assessment_data(api, 266696959)
+
+# View e.g. threats or habitats
+# The result is a tidy 'tibble()` of data
+assessment$threats
+assessment$habitats
+```
+
+### Fetch all assessments for a Latin binomial name
+
+``` r
+# Initialize the API with your API key
+api <- init_api("your_red_list_api_key")
+
+# Get all historic and latest assessments for Panthera leo (not case-sensitive)
+lion <- assessments_by_name(api, genus = "Panthera", species = "leo")
+```
+
+### Show threats for a taxonomic level
+
+``` r
+# Initialize the API with your API key
+api <- init_api("your_red_list_api_key")
+
+# Step 1: Get all latest and global-scope assessment IDs for the family Felidae
+felidae <- assessments_by_taxonomy(api, 
+                                   level = "family", 
+                                   name = "felidae", 
+                                   latest = TRUE, 
+                                   scope_code = 1, 
+                                   wait_time = 0.5)
+
+
+# Step 2: Fetch assessment data for each assessment ID
+# Pass the assessment_id column to `assessment_data_many() to grab
+# full assessment data for each assessment_id
+a_data <- assessment_data_many(api, 
+                               felidae$assessment_id,
+                               wait_time = 0.5)
+
+
+# Step 3: Extract habitats from the assessment data
+# This will iterate over each assessment in the list a_data
+# and return a tidy `tibble()` for all habitats
+habitats <- extract_element(a_data, "habitats")
+
+# Alternatively, extract threats
+threats <- extract_element(a_data, "threats")
 ```

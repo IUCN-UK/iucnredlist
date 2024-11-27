@@ -7,7 +7,7 @@
 init_api(red_list_api_key)
 }
 \arguments{
-\item{red_list_api_key}{A v4 API token string (alphanumeric)}
+\item{red_list_api_key}{A Red List API token string (alphanumeric)}
 }
 \value{
 An httr2 request object.

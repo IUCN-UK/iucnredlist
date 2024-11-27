@@ -15,7 +15,7 @@
 #' \dontrun{
 #' assessment_data_many(api, assessment_ids = c(123, 456), wait_time = 0.5)
 #' }
-assessment_data_many <- function(api, assessment_ids, wait_time = 1) {
+assessment_data_many <- function(api, assessment_ids, wait_time = 0.5) {
   # Initialize an empty list to store results
   results_list <- list()
 
