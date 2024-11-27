@@ -4,7 +4,7 @@
 \alias{assessment_data_many}
 \title{Get full assessment data for a vector of assessment IDs}
 \usage{
-assessment_data_many(api, assessment_ids, wait_time = 1)
+assessment_data_many(api, assessment_ids, wait_time = 0.5)
 }
 \arguments{
 \item{api}{An httr2 response object created with init_api()}
