@@ -20,6 +20,3 @@ test_that("the assessment_data function returns a list", {
   expect_true(is.list(result))
   expect_length(result, 33)
 })
-
-
-
