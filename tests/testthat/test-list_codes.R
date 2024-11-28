@@ -15,7 +15,7 @@ test_that("the assessment_data function returns a list", {
   mocked_perform <- mockery:::mock(mocked_response)
   mockery:::stub(list_codes, "httr2::req_perform", mocked_perform)
 
-  result <- list_codes(api, 'biogeographical_realms')
+  result <- list_codes(mocked_api, 'biogeographical_realms')
 
   expect_true(is.list(result))
   expect_length(result, 2)

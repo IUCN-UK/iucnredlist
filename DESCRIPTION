@@ -24,7 +24,6 @@ Imports:
     dplyr (>= 1.1.4),
     httr2 (>= 1.0.0),
     janitor (>= 2.2.0),
-    jsonlite (>= 1.8.8),
     purrr (>= 1.0.0),
     rlang (>= 1.1.4),
     stringr (>= 1.5.0),
