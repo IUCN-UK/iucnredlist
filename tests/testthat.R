@@ -8,7 +8,6 @@
 
 library(testthat)
 library(httr2)
-library(httptest2)
 library(mockery)
 library(iucnredlist)
 
