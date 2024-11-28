@@ -15,5 +15,5 @@ test_that("the assessment data function returns an expeted response", {
   expect_length(result, 4)
 
   expect_true(is.list(result))
-  expect_equal(result$assessment_date[[1,1]], "2023-04-29T00:00:00.000Z")
+  expect_equal(result$assessment_date[[1, 1]], "2023-04-29T00:00:00.000Z")
 })

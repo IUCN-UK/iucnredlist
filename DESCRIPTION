@@ -26,5 +26,6 @@ Imports:
     janitor (>= 2.2.0),
     mockery (>= 0.4.4),
     purrr (>= 1.0.0),
+    rlang (>= 1.1.4),
     stringr (>= 1.5.0),
     tidyselect (>= 1.2.0)

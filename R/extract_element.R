@@ -7,12 +7,12 @@ extract_element <- function(assessments_list, element_name) {
     assessment_id <- as.character(item$assessment_id %||% NA)
 
     # Extract the specified element (e.g., 'stresses' or 'references')
-    element_data <- item[[element_name]] %||% dplyr::tibble()  # Handle missing elements
+    element_data <- item[[element_name]] %||% dplyr::tibble() # Handle missing elements
 
     # Add 'assessment_id' and 'index' column to the extracted tibble
     element_data <- element_data %>%
-      dplyr::mutate(assessment_id = assessment_id, index = element_name) %>%  # Use 'element_name' as the index
-      dplyr::relocate(index, assessment_id, .before = everything())  # Place 'index' at the front
+      dplyr::mutate(assessment_id = assessment_id, index = element_name) %>% # Use 'element_name' as the index
+      dplyr::relocate(index, assessment_id, .before = everything()) # Place 'index' at the front
 
     return(element_data)
   })
