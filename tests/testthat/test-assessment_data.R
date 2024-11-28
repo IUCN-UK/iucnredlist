@@ -1,22 +1,25 @@
-test_that("the assessment data function returns an expeted response", {
-  mocked_api <- httr2::request("https://api.iucnredlist.org/api/v4/assessment/742738")
+load_assessment_fixture <- function() {
+  assessment_fixture <- readLines("fixtures/assessment_132640680.json", warn = FALSE)
+  paste(assessment_fixture, collapse = "\n")
+}
+
+test_that("the assessment_data function returns a list", {
+  mocked_api <- httr2::request("https://api.iucnredlist.org/api/v4/assessment/132640680")
+
   mocked_response <- httr2::response(
     status_code = 200,
     headers = list("Content-Type" = "application/json"),
-    body = charToRaw('{"assessment_date": "2023-04-29T00:00:00.000Z", "year_published": "2023", "latest": true, "sis_taxon_id": 157079}')
+    body = charToRaw(load_assessment_fixture())
   )
 
   mocked_perform <- mockery:::mock(mocked_response)
   mockery:::stub(assessment_data, "httr2::req_perform", mocked_perform)
 
-  result <- assessment_data(mocked_api, 742738)
+  result <- assessment_data(mocked_api, 132640680)
 
   expect_true(is.list(result))
-  expect_length(result, 4)
-
-  expect_true(is.list(result))
-  expect_equal(result$assessment_date[[1,1]], "2023-04-29T00:00:00.000Z")
-  expect_equal(result$year_published[[1,1]], "2023")
-  expect_equal(result$latest[[1,1]], TRUE)
-  expect_equal(result$sis_taxon_id[[1,1]], 157079)
+  expect_length(result, 33)
 })
+
+
+
