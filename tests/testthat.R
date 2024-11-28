@@ -9,6 +9,7 @@
 library(testthat)
 library(httr2)
 library(mockery)
+library(jsonlite)
 library(iucnredlist)
 
 test_check("iucnredlist")
