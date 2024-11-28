@@ -156,7 +156,7 @@ threats <- extract_element(a_data, "threats")
 
 # How to contribute
 
-As an official IUCN-supported library, we can intend to maintain
+As an official IUCN-supported library, we intend to maintain
 synchronisation with any API changes and updates. We do, however,
 welcome contributions from our community of users, be it bug fixes or
 increased test coverage.
