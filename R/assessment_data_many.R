@@ -26,7 +26,6 @@ assessment_data_many <- function(api, assessment_ids, wait_time = 0.5) {
     cli::cli_alert_warning(paste0("Waiting for ", wait_time, " seconds between API calls."))
     cli::cli_alert_warning(paste0("This is a short wait time and could result in your API token being rate limited."))
     cli::cli_alert_warning(paste0("Please consider increasing your wait time to >=0.5 seconds between calls to maintain service reliablity for all."))
-
   } else {
     cli::cli_alert_success(paste0("Waiting for ", wait_time, " second(s) between API calls. Thanks for using the API responsibly!"))
   }
