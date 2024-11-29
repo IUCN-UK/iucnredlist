@@ -121,7 +121,6 @@ assessment <- assessment_data(api, 266696959)
 # The result is a tidy 'tibble()` of data
 assessment$threats
 assessment$habitats
-
 ```
 
 ### Fetch all assessments for a Latin binomial name
@@ -139,20 +138,22 @@ lion <- assessments_by_name(api, genus = "Panthera", species = "leo")
 api <- init_api("your_red_list_api_key")
 
 # Step 1: Get all latest and global-scope assessment IDs for the family Felidae
-felidae <- assessments_by_taxonomy(api, 
-                                   level = "family", 
-                                   name = "felidae", 
-                                   latest = TRUE, 
-                                   scope_code = 1, 
-                                   wait_time = 0.5)
+felidae <- assessments_by_taxonomy(api,
+  level = "family",
+  name = "felidae",
+  latest = TRUE,
+  scope_code = 1,
+  wait_time = 0.5
+)
 
 
 # Step 2: Fetch assessment data for each assessment ID
 # Pass the assessment_id column to `assessment_data_many() to grab
 # full assessment data for each assessment_id
-a_data <- assessment_data_many(api, 
-                               felidae$assessment_id,
-                               wait_time = 0.5)
+a_data <- assessment_data_many(api,
+  felidae$assessment_id,
+  wait_time = 0.5
+)
 
 
 # Step 3: Extract habitats from the assessment data
@@ -162,4 +163,26 @@ habitats <- extract_element(a_data, "habitats")
 
 # Alternatively, extract threats
 threats <- extract_element(a_data, "threats")
+```
+
+# How to contribute
+
+As an official IUCN-supported library, we intend to maintain synchronisation with any API changes and updates. We do, however, welcome contributions from our community of users, be it bug fixes or increased test coverage.
+
+## Testing
+
+We use [testthat](https://testthat.r-lib.org/)  for unit testing to ensure functions work as expected; see the tests/testthat/ directory for examples of test cases.
+
+## Submitting changes
+
+To get started, make sure you have the latest version of R.  Then run the following code to get the packages you’ll need for development:
+```
+install.packages(c("devtools", "roxygen2", "testthat", "knitr"))
+```
+
+Please send a GitHub Pull Request with a clear list of the changes -- please also include tests and make sure all of your commits contain only one feature per commit.
+
+It is essential that any pull request passes `R CMD` check (also a requirement for submitting to CRAN).  Our recommended way to run `R CMD` check is in the R console via devtools by running:
+```
+check()
 ```
