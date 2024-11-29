@@ -20,7 +20,7 @@ fetch_paginated_data <- function(req, url, query_params, wait_time = 0.5) {
       endpoint_data <- response_json$assessments %||% list()
 
       if (length(endpoint_data) > 0) {
-        page_data <- purrr::map_dfr(endpoint_data, possibly(unnest_scopes, otherwise = tibble()))
+        page_data <- purrr::map_dfr(endpoint_data, purrr::possibly(unnest_scopes, otherwise = dplyr::tibble()))
         all_data <- append(all_data, list(page_data))
       }
 
@@ -33,7 +33,7 @@ fetch_paginated_data <- function(req, url, query_params, wait_time = 0.5) {
     query_params$page <- query_params$page + 1
   }
 
-  bind_rows(all_data)
+  dplyr::bind_rows(all_data)
 }
 
 # Function to process and flatten nested elements within the parsed data
@@ -127,7 +127,26 @@ list_to_tibble <- function(input_list) {
         as.character(.x) # Coerce non-atomic structures to character
       }
     })
-    # Convert cleaned list to a tibble
     tibble::as_tibble(cleaned_list)
   })
 }
+
+nested_list_to_tibble <- function(input_list) {
+  # Map over the main list and process each element
+  purrr::map_dfr(input_list, function(item) {
+    # Extract the top-level name
+    top_name <- item$name
+    # Extract and expand the actions
+    actions <- purrr::map_dfr(item$actions, function(action) {
+      tibble::tibble(
+        actions_name = action$name,
+        actions_value = action$value
+      )
+    })
+
+    # Combine the top-level name with expanded actions
+    actions %>%
+      dplyr::mutate(name = top_name)
+  })
+}
+

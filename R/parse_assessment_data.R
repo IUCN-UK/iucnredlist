@@ -10,8 +10,9 @@ parse_assessment_data <- function(raw_assessment_data) {
   common_names <- list_to_tibble(raw_assessment_data$taxon$common_names)
   ssc_groups <- list_to_tibble(raw_assessment_data$taxon$ssc_groups)
   synonyms <- list_to_tibble(raw_assessment_data$taxon$synonyms)
-  conservation_actions_in_place <- list_to_tibble(a$supplementary_info$conservation_actions_in_place) %>%
-    tidyr::unnest_wider(actions, names_sep = "_")
+
+  conservation_actions_in_place <- nested_list_to_tibble(
+    raw_assessment_data$supplementary_info$conservation_actions_in_place)
 
   # Delete from raw response for subsequent parsing and flattening
   raw_assessment_data$taxon$common_names <- NULL
