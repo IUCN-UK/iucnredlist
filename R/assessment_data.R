@@ -1,12 +1,11 @@
-#' Get full assessment data for an assessment ID
+#' Get raw assessment data for a single assessment_id
 #' @importFrom dplyr %>%
 #'
-#'
-#' @description foo bar
+#' @description Returns full JSON response from the Red List API as nested lists
 #'
 #' @param api An httr2 response object created with init_api()
 #' @param assessment_id Integer. A single assessment_id
-#' @returns A list of length 1 containing full assessment data
+#' @returns A list of raw assessment data
 #' @examples
 #' \dontrun{
 #' assessment_data(api, assessment_id = 123)
@@ -19,7 +18,6 @@ assessment_data <- function(api, assessment_id) {
     httr2::req_perform()
 
   response_json <- httr2::resp_body_json(req)
-  output <- parse_assessment_data(response_json)
-
-  return(output)
+  
+  return(response_json)
 }

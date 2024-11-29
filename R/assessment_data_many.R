@@ -30,7 +30,7 @@ assessment_data_many <- function(api, assessment_ids, wait_time = 0.5) {
     cli::cli_alert_success(paste0("Waiting for ", wait_time, " second(s) between API calls. Thanks for using the API responsibly!"))
   }
 
-  cli::cli_alert_info(paste0("You are processing ", length(assessment_ids), " assessment IDs."))
+  cli::cli_alert_info(paste0("You are processing ", length(assessment_ids), " unique assessment IDs."))
 
   # Short wait outside loop so users have time to read CLI output
   Sys.sleep(3)
@@ -44,7 +44,9 @@ assessment_data_many <- function(api, assessment_ids, wait_time = 0.5) {
   )
 
   for (i in seq_along(assessment_ids)) {
-    results_list[[i]] <- assessment_data(api, assessment_ids[i])
+    a <- assessment_data(api, assessment_ids[i])
+    results_list[[i]] <- parse_assessment_data(a)
+
     cli::cli_progress_update(pb, set = i)
     Sys.sleep(wait_time)
   }

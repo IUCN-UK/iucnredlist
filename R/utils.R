@@ -3,7 +3,7 @@
 ##########################
 
 # Internal. Function to get paginated data
-fetch_paginated_data <- function(req, url, query_params, wait_time) {
+fetch_paginated_data <- function(req, url, query_params, wait_time = 0.5) {
   all_data <- list()
 
   while (!is.null(url) && !is.na(url)) {
@@ -20,7 +20,7 @@ fetch_paginated_data <- function(req, url, query_params, wait_time) {
       endpoint_data <- response_json$assessments %||% list()
 
       if (length(endpoint_data) > 0) {
-        page_data <- purrr::map_dfr(endpoint_data, possibly(unnest_scopes, otherwise = tibble()))
+        page_data <- purrr::map_dfr(endpoint_data, purrr::possibly(unnest_scopes, otherwise = dplyr::tibble()))
         all_data <- append(all_data, list(page_data))
       }
 
@@ -33,7 +33,7 @@ fetch_paginated_data <- function(req, url, query_params, wait_time) {
     query_params$page <- query_params$page + 1
   }
 
-  bind_rows(all_data)
+  dplyr::bind_rows(all_data)
 }
 
 # Function to process and flatten nested elements within the parsed data
@@ -76,12 +76,6 @@ parse_element_to_tibble <- function(element) {
   }
 }
 
-# Function to process the entire list of assessments
-parse_assessment_data <- function(response_list) {
-  processed_list <- purrr::map(response_list, parse_element_to_tibble)
-  processed_list <- purrr::map(processed_list, flatten_tibble)
-  return(processed_list)
-}
 
 # Function to unnest scopes into separate rows
 unnest_scopes <- function(item) {
@@ -120,36 +114,39 @@ flatten_nested_list <- function(x, parent_key = "") {
   return(flat_list)
 }
 
-# Internal. Function to get paginated data
-fetch_paginated_data <- function(req, url, query_params, wait_time = 0.5) {
-  all_data <- list()
-
-  while (!is.null(url) && !is.na(url)) {
-    # Make sure the URL is valid before making the request
-    if (is.character(url) && length(url) == 1 && !is.na(url)) {
-      response_page <- req %>%
-        httr2::req_url(url) %>%
-        httr2::req_url_query(!!!query_params) %>%
-        httr2::req_perform()
-
-      Sys.sleep(wait_time)
-
-      response_json <- httr2::resp_body_json(response_page)
-      endpoint_data <- response_json$assessments %||% list()
-
-      if (length(endpoint_data) > 0) {
-        page_data <- purrr::map_dfr(endpoint_data, purrr::possibly(unnest_scopes, otherwise = dplyr::tibble()))
-        all_data <- append(all_data, list(page_data))
+# Converts a list into a nice tibble
+list_to_tibble <- function(input_list) {
+  purrr::map_dfr(input_list, ~ {
+    # Replace NULL with NA and ensure all elements are vectorized
+    cleaned_list <- purrr::map(.x, ~ {
+      if (is.null(.x)) {
+        NA
+      } else if (is.atomic(.x)) {
+        .x
+      } else {
+        as.character(.x) # Coerce non-atomic structures to character
       }
-
-      headers <- httr2::resp_headers(response_page)
-      url <- stringr::str_match(headers$link, "<([^>]+)>;\\s*rel=\"next\"")[2] %||% NULL
-    } else {
-      url <- NULL
-    }
-
-    query_params$page <- query_params$page + 1
-  }
-
-  dplyr::bind_rows(all_data)
+    })
+    tibble::as_tibble(cleaned_list)
+  })
 }
+
+nested_list_to_tibble <- function(input_list) {
+  # Map over the main list and process each element
+  purrr::map_dfr(input_list, function(item) {
+    # Extract the top-level name
+    top_name <- item$name
+    # Extract and expand the actions
+    actions <- purrr::map_dfr(item$actions, function(action) {
+      tibble::tibble(
+        actions_name = action$name,
+        actions_value = action$value
+      )
+    })
+
+    # Combine the top-level name with expanded actions
+    actions %>%
+      dplyr::mutate(name = top_name)
+  })
+}
+
