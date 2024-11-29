@@ -116,6 +116,18 @@ flatten_nested_list <- function(x, parent_key = "") {
 
 # Converts a list into a nice tibble
 list_to_tibble <- function(input_list) {
-  purrr::map_dfr(input_list, ~ tibble::as_tibble(.x))
+  purrr::map_dfr(input_list, ~ {
+    # Replace NULL with NA and ensure all elements are vectorized
+    cleaned_list <- purrr::map(.x, ~ {
+      if (is.null(.x)) {
+        NA
+      } else if (is.atomic(.x)) {
+        .x
+      } else {
+        as.character(.x) # Coerce non-atomic structures to character
+      }
+    })
+    # Convert cleaned list to a tibble
+    tibble::as_tibble(cleaned_list)
+  })
 }
-
