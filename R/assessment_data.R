@@ -20,7 +20,7 @@ assessment_data <- function(api, assessment_id) {
     httr2::req_perform()
 
   response_json <- httr2::resp_body_json(req)
-  output <- parse_assessment_data(response_json)
+  output <- parse_assessment_data2(response_json)
 
   return(output)
 
