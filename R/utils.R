@@ -153,3 +153,15 @@ fetch_paginated_data <- function(req, url, query_params, wait_time = 0.5) {
 
   dplyr::bind_rows(all_data)
 }
+
+flatten_conservation_actions <- function(conservation_actions) {
+  flattened <- apply(conservation_actions, 1, function(conservation_action) {
+    conservation_action_name <- conservation_action["name"]
+    actions <- conservation_action["actions"][[1]]
+    sapply(1:nrow(actions), function(i) {
+      paste(conservation_action_name, actions$name[i], actions$value[i], sep = " | ")
+    })
+  })
+
+  unlist(flattened)
+}
