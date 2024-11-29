@@ -9,45 +9,14 @@ parse_assessment_data <- function(raw_assessment_data) {
   raw_assessment_data$taxon$infrarank_taxa <- NULL
   raw_assessment_data$taxon$authority <- NULL
 
-  # Extract Common Names into tibble
-  common_names<-raw_assessment_data$taxon$common_names %>%
-    purrr::map_dfr(., ~ tibble::tibble(
-      main = .x$main,
-      name = .x$name,
-      language = .x$language
-    ))
+  common_names<-list_to_tibble(raw_assessment_data$taxon$common_names)
+  ssc_groups<-list_to_tibble(raw_assessment_data$taxon$ssc_groups)
+  synonyms<-list_to_tibble(raw_assessment_data$taxon$synonyms)
 
-  # Extract SSC Groups into tibble
-  ssc_groups <- raw_assessment_data$taxon$ssc_groups %>%
-    purrr::map_dfr(., ~ tibble::tibble(
-      name = .x$name,
-      url = .x$url,
-      description = .x$description
-    ))
-
-  # Extract Synonyms into tibble
-  synonyms <- raw_assessment_data$taxon$synonyms %>%
-    purrr::map_dfr(., ~ tibble::tibble(
-      name = .x$name,
-      status = .x$status,
-      genus_name = .x$genus_name,
-      species_name = .x$species_name,
-      species_author = .x$species_author,
-      infrarank_author = .x$infrarank_author,
-      subpopulation_name = .x$subpopulation_name,
-      infra_type = .x$infra_type,
-      infra_name = .x$infra_name
-
-
-    ))
-
-  # Delete from raw response for parsing and flattening
+  # Delete from raw response for subsequent parsing and flattening
   raw_assessment_data$taxon$common_names <- NULL
   raw_assessment_data$taxon$ssc_groups <- NULL
   raw_assessment_data$taxon$synonyms <- NULL
-
-  # Reformat elements
-  raw_assessment_data$taxon$ssc_groups <- raw_assessment_data$taxon$ssc_groups %>% unlist()
 
   processed_list <- purrr::map(raw_assessment_data, parse_element_to_tibble)
   processed_list <- purrr::map(processed_list, flatten_tibble)

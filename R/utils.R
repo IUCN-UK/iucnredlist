@@ -113,3 +113,9 @@ flatten_nested_list <- function(x, parent_key = "") {
 
   return(flat_list)
 }
+
+# Converts a list into a nice tibble
+list_to_tibble <- function(input_list) {
+  purrr::map_dfr(input_list, ~ tibble::as_tibble(.x))
+}
+
