@@ -2,7 +2,7 @@
 % Please edit documentation in R/assessment_data.R
 \name{assessment_data}
 \alias{assessment_data}
-\title{Get full assessment data for an assessment ID}
+\title{Get raw assessment data for a single assessment_id}
 \usage{
 assessment_data(api, assessment_id)
 }
@@ -12,10 +12,10 @@ assessment_data(api, assessment_id)
 \item{assessment_id}{Integer. A single assessment_id}
 }
 \value{
-A list of length 1 containing full assessment data
+A list of raw assessment data
 }
 \description{
-foo bar
+Returns full JSON response from the Red List API as nested lists
 }
 \examples{
 \dontrun{

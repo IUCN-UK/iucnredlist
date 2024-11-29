@@ -26,7 +26,6 @@ assessment_data_many <- function(api, assessment_ids, wait_time = 0.5) {
     cli::cli_alert_warning(paste0("Waiting for ", wait_time, " seconds between API calls."))
     cli::cli_alert_warning(paste0("This is a short wait time and could result in your API token being rate limited."))
     cli::cli_alert_warning(paste0("Please consider increasing your wait time to >=0.5 seconds between calls to maintain service reliablity for all."))
-
   } else {
     cli::cli_alert_success(paste0("Waiting for ", wait_time, " second(s) between API calls. Thanks for using the API responsibly!"))
   }
@@ -45,7 +44,9 @@ assessment_data_many <- function(api, assessment_ids, wait_time = 0.5) {
   )
 
   for (i in seq_along(assessment_ids)) {
-    results_list[[i]] <- assessment_data(api, assessment_ids[i])
+    a <- assessment_data(api, assessment_ids[i])
+    results_list[[i]] <- parse_assessment_data(a)
+
     cli::cli_progress_update(pb, set = i)
     Sys.sleep(wait_time)
   }

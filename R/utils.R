@@ -3,7 +3,7 @@
 ##########################
 
 # Internal. Function to get paginated data
-fetch_paginated_data <- function(req, url, query_params, wait_time) {
+fetch_paginated_data <- function(req, url, query_params, wait_time = 0.5) {
   all_data <- list()
 
   while (!is.null(url) && !is.na(url)) {
@@ -112,38 +112,4 @@ flatten_nested_list <- function(x, parent_key = "") {
   })
 
   return(flat_list)
-}
-
-# Internal. Function to get paginated data
-fetch_paginated_data <- function(req, url, query_params, wait_time = 0.5) {
-  all_data <- list()
-
-  while (!is.null(url) && !is.na(url)) {
-    # Make sure the URL is valid before making the request
-    if (is.character(url) && length(url) == 1 && !is.na(url)) {
-      response_page <- req %>%
-        httr2::req_url(url) %>%
-        httr2::req_url_query(!!!query_params) %>%
-        httr2::req_perform()
-
-      Sys.sleep(wait_time)
-
-      response_json <- httr2::resp_body_json(response_page)
-      endpoint_data <- response_json$assessments %||% list()
-
-      if (length(endpoint_data) > 0) {
-        page_data <- purrr::map_dfr(endpoint_data, purrr::possibly(unnest_scopes, otherwise = dplyr::tibble()))
-        all_data <- append(all_data, list(page_data))
-      }
-
-      headers <- httr2::resp_headers(response_page)
-      url <- stringr::str_match(headers$link, "<([^>]+)>;\\s*rel=\"next\"")[2] %||% NULL
-    } else {
-      url <- NULL
-    }
-
-    query_params$page <- query_params$page + 1
-  }
-
-  dplyr::bind_rows(all_data)
 }
