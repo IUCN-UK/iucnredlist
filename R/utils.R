@@ -76,12 +76,6 @@ parse_element_to_tibble <- function(element) {
   }
 }
 
-# Function to process the entire list of assessments
-parse_assessment_data <- function(response_list) {
-  processed_list <- purrr::map(response_list, parse_element_to_tibble)
-  processed_list <- purrr::map(processed_list, flatten_tibble)
-  return(processed_list)
-}
 
 # Function to unnest scopes into separate rows
 unnest_scopes <- function(item) {
