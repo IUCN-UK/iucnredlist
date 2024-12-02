@@ -2,6 +2,29 @@
 ### INTERNAL FUNCTIONS ###
 ##########################
 
+perform_request <- function(api, request_path) {
+  url = paste0('https://api.iucnredlist.org/api/v4/', request_path)
+
+  tryCatch(
+    {
+      request <- api %>%
+        httr2::req_url(url) %>%
+        httr2::req_perform()
+
+      httr2::resp_body_json(request)
+    },
+    httr2_http_401 = function(error) {
+      stop("Error 401: Unauthorized. This error may occur if your Red List API token was copied incorrectly. You can retrieve your API token at https://api.iucnredlist.org/users/edit\n")
+    },
+    httr2_http_error = function(error) {
+      stop("HTTP Error:", error$message, "\n")
+    },
+    error = function(error) {
+      stop("An unexpected error occurred:", error$message, "\n")
+    }
+  )
+}
+
 # Internal. Function to get paginated data
 fetch_paginated_data <- function(req, url, query_params, wait_time = 0.5) {
   all_data <- list()

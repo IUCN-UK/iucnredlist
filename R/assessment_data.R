@@ -11,13 +11,7 @@
 #' assessment_data(api, assessment_id = 123)
 #' }
 assessment_data <- function(api, assessment_id) {
-  url <- paste0("https://api.iucnredlist.org/api/v4/assessment/", assessment_id)
+  url <- paste0("assessment/", assessment_id)
 
-  req <- api %>%
-    httr2::req_url(url) %>%
-    httr2::req_perform()
-
-  response_json <- httr2::resp_body_json(req)
-  
-  return(response_json)
+  perform_request(api, url)
 }
