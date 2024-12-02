@@ -1,3 +1,16 @@
-test_that("perform_request is successful", {
+test_that("perform_request returns a list correctly if successful (200)", {
+  mocked_api <- httr2::request("https://api.iucnredlist.org/api/v4/assessment/742738")
+  mocked_response <- httr2::response(
+    status_code = 200,
+    headers = list("Content-Type" = "application/json"),
+    body = charToRaw('{"assessment_date": "2023-04-29T00:00:00.000Z", "year_published": "2023", "latest": true, "sis_taxon_id": 157079}')
+  )
 
+  mocked_perform <- mockery:::mock(mocked_response)
+  mockery:::stub(perform_request, "httr2::req_perform", mocked_perform)
+
+  result <- perform_request(mocked_api, 742738)
+
+  expect_true(is.list(result))
+  expect_length(result, 4)
 })

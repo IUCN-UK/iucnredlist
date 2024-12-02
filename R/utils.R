@@ -6,21 +6,18 @@ perform_request <- function(api, endpoint_request) {
   url = paste0('https://api.iucnredlist.org/api/v4/', endpoint_request)
 
   tryCatch(
-    {
-      request <- api %>%
-        httr2::req_url(url) %>%
-        httr2::req_perform()
-
-      httr2::resp_body_json(request)
-    },
+    api |> httr2::req_url(url) |> httr2::req_perform() |> httr2::resp_body_json(),
     httr2_http_401 = function(error) {
-      stop("Error 401: Unauthorized. This error may occur if your Red List API token was copied incorrectly. You can retrieve your API token at https://api.iucnredlist.org/users/edit\n")
+      rlang::abort("Error 401: Unauthorized. This error may occur if your Red List API token was copied incorrectly. You can retrieve your API token at https://api.iucnredlist.org/users/edit\n")
     },
     httr2_http_error = function(error) {
-      stop("HTTP Error:", error$message, "\n")
+      error_message <- paste0("HTTP Error: ", error$message)
+      rlang::abort(error_message)
     },
     error = function(error) {
-      stop("An unexpected error occurred:", error$message, "\n")
+      print(error$message)
+
+      rlang::abort(paste("An unexpected error occurred:", error$message))
     }
   )
 }
