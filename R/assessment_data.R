@@ -13,11 +13,19 @@
 assessment_data <- function(api, assessment_id) {
   url <- paste0("https://api.iucnredlist.org/api/v4/assessment/", assessment_id)
 
-  req <- api %>%
-    httr2::req_url(url) %>%
-    httr2::req_perform()
+  tryCatch(
+    {
+      req <- api %>%
+        httr2::req_url(url) %>%
+        httr2::req_perform()
 
-  response_json <- httr2::resp_body_json(req)
-  
-  return(response_json)
+      httr2::resp_body_json(req)
+    },
+    httr2_http_401 = function(e) {
+      cat("Error 401: Unauthorized. This error may occur if your Red List API token was copied incorrectly. You can retrieve your API token at https://api.iucnredlist.org/users/edit\n")
+    },
+    error = function(error) {
+      cat("An unexpected error occurred:", error$message, "\n")
+    }
+  )
 }
