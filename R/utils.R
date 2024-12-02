@@ -2,8 +2,8 @@
 ### INTERNAL FUNCTIONS ###
 ##########################
 
-perform_request <- function(api, request_path) {
-  url = paste0('https://api.iucnredlist.org/api/v4/', request_path)
+perform_request <- function(api, endpoint_request) {
+  url = paste0('https://api.iucnredlist.org/api/v4/', endpoint_request)
 
   tryCatch(
     {

@@ -11,7 +11,7 @@
 #' assessment_data(api, assessment_id = 123)
 #' }
 assessment_data <- function(api, assessment_id) {
-  url <- paste0("assessment/", assessment_id)
+  endpoint_request <- paste0("assessment/", assessment_id)
 
-  perform_request(api, url)
+  perform_request(api, endpoint_request)
 }
