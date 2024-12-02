@@ -15,8 +15,6 @@ perform_request <- function(api, endpoint_request) {
       rlang::abort(error_message)
     },
     error = function(error) {
-      print(error$message)
-
       rlang::abort(paste("An unexpected error occurred:", error$message))
     }
   )
