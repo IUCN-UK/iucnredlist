@@ -12,6 +12,7 @@ utils::globalVariables(
     "url",
     "index",
     "everything",
-    "%||%"
+    "description",
+    "code"
   )
 )

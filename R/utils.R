@@ -94,7 +94,6 @@ parse_element_to_tibble <- function(element) {
   }
 }
 
-
 # Function to unnest scopes into separate rows
 unnest_scopes <- function(item) {
   if (!is.null(item$scopes) && length(item$scopes) > 0) {
@@ -168,3 +167,7 @@ nested_list_to_tibble <- function(input_list) {
   })
 }
 
+# Custom binary infix operator
+`%||%` <- function(lhs, rhs) {
+  if (!is.null(lhs)) lhs else rhs
+}

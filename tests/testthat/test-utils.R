@@ -1,16 +1,27 @@
-test_that("perform_request returns a list correctly if successful (200)", {
-  mocked_api <- httr2::request("https://api.iucnredlist.org/api/v4/assessment/742738")
-  mocked_response <- httr2::response(
-    status_code = 200,
-    headers = list("Content-Type" = "application/json"),
-    body = charToRaw('{"assessment_date": "2023-04-29T00:00:00.000Z", "year_published": "2023", "latest": true, "sis_taxon_id": 157079}')
-  )
+test_that("perform_request successfuly requests an assessment from the API and returns a list", {
+  httptest2::with_mock_dir("assessment_742738", {
+    red_list_api_key <- Sys.getenv("RED_LIST_API_KEY")
+    api <- init_api(red_list_api_key)
+    expect_length(perform_request(api, 'assessment/742738'), 33)
+  })
+})
 
-  mocked_perform <- mockery:::mock(mocked_response)
-  mockery:::stub(perform_request, "httr2::req_perform", mocked_perform)
+test_that("perform_request handles a 401 error for an invalid API key", {
+  httptest2::with_mock_dir("assessment_invalid_api_key", {
+    api <- init_api('an_invalid_api_key')
+    expect_error(
+      perform_request(api, 'assessment/742738'),
+      "Error 401: Unauthorized. This error may occur if your Red List API token was copied incorrectly."
+    )
+  })
+})
 
-  result <- perform_request(mocked_api, 742738)
-
-  expect_true(is.list(result))
-  expect_length(result, 4)
+test_that("perform_request handles a non 200 or 401 http status code (e.g. for an invalid endpoint)", {
+  httptest2::with_mock_dir("assessment_invalid_endpoint", {
+    api <- init_api('5HduMTxuATqMskSD7kP6bb3U7W1X3MZrBM2c')
+    expect_error(
+      perform_request(api, 'invalid_endpoint/742738'),
+      "An unexpected error occurred: HTTP 404 Not Found."
+    )
+  })
 })
