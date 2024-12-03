@@ -9,6 +9,7 @@
 library(testthat)
 library(httr2)
 library(httptest2)
+library(cli)
 library(iucnredlist)
 
 test_check("iucnredlist")

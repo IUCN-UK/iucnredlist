@@ -1,4 +1,4 @@
-test_that("assessment_by_group performs a request and returns expected response", {
+test_that("assessment_by_group performs a request and returns a tibble of assessments", {
   httptest2::with_mock_dir("assessment_by_group_scopes_100765562", {
     red_list_api_key <- Sys.getenv("RED_LIST_API_KEY")
     api <- init_api(red_list_api_key)
@@ -27,3 +27,19 @@ test_that("assessment_by_group performs a request and returns expected response"
     expect_equal(result[2,]$url, 'https://www.iucnredlist.org/species/39371/109876922')
   })
 })
+
+test_that("assessment_by_group performs a request and returns a message that there are zero assessments returned", {
+  httptest2::with_mock_dir("assessment_by_group_scopes_invalid_scope", {
+
+    red_list_api_key <- Sys.getenv("RED_LIST_API_KEY")
+    api <- init_api(red_list_api_key)
+
+    result <- assessments_by_group(api, 'scopes', 100765562, year = '1800', wait_time = 0.5, show_warnings = FALSE)
+
+    expect_true(is.list(result))
+    expect_equal(dim(result), c(0, 0))
+
+  })
+})
+
+

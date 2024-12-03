@@ -1,0 +1,15 @@
+{
+    "scope": {
+        "description": {
+            "en": "Arabian Sea"
+        },
+        "code": "100765562"
+    },
+    "assessments": [
+
+    ],
+    "filters": {
+        "latest": "TRUE",
+        "year_published": "1800"
+    }
+}
