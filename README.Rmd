@@ -18,6 +18,8 @@ knitr::opts_chunk$set(
 
 # iucnredlist
 
+[![R-CMD-check](https://github.com/IUCN-UK/iucnredlist/actions/workflows/R-CMD-check.yaml/badge.svg?branch=main)](https://github.com/IUCN-UK/iucnredlist/actions/workflows/R-CMD-check.yaml)
+
 The [International Union for Conservation of
 Nature’s](https://www.iucn.org) [Red List of Threatened
 Species](https://www.iucnredlist.org) has evolved to become the world’s
