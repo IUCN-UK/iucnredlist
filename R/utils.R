@@ -166,8 +166,3 @@ nested_list_to_tibble <- function(input_list) {
       dplyr::mutate(name = top_name)
   })
 }
-
-# Custom binary infix operator
-`%||%` <- function(lhs, rhs) {
-  if (!is.null(lhs)) lhs else rhs
-}
