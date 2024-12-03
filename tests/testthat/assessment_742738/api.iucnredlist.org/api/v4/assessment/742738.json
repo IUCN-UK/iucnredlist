@@ -1,0 +1,297 @@
+{
+    "assessment_date": "2023-04-29T00:00:00.000Z",
+    "year_published": "2023",
+    "latest": true,
+    "possibly_extinct": false,
+    "possibly_extinct_in_the_wild": false,
+    "sis_taxon_id": 157079,
+    "criteria": null,
+    "url": "https://www.iucnredlist.org/species/157079/742738",
+    "citation": "Parmakelis, A. 2023. Mastus unius. The IUCN Red List of Threatened Species 2023: e.T157079A742738. https://dx.doi.org/10.2305/IUCN.UK.2023-1.RLTS.T157079A742738.en. Accessed on 03 December 2024.",
+    "assessment_id": 742738,
+    "assessment_points": false,
+    "assessment_ranges": false,
+    "taxon": {
+        "sis_id": 157079,
+        "scientific_name": "Mastus unius",
+        "species_taxa": [
+
+        ],
+        "subpopulation_taxa": [
+
+        ],
+        "infrarank_taxa": [
+
+        ],
+        "kingdom_name": "ANIMALIA",
+        "phylum_name": "MOLLUSCA",
+        "class_name": "GASTROPODA",
+        "order_name": "STYLOMMATOPHORA",
+        "family_name": "ENIDAE",
+        "genus_name": "Mastus",
+        "species_name": "unius",
+        "subpopulation_name": null,
+        "infra_name": null,
+        "authority": "(O. Boettger, 1885)",
+        "species": true,
+        "subpopulation": false,
+        "infrarank": false,
+        "ssc_groups": [
+            {
+                "name": "IUCN SSC Mollusc Specialist Group",
+                "url": "http://www.iucn.org/about/work/programmes/species/who_we_are/ssc_specialist_groups_and_red_list_authorities_directory/invertebrates/",
+                "description": "Chair and Mollusc RLA Coordinator: Mary Seddon (email: mary.molluscsg@gmail.com)\nCephalapod RLA Coordinator: Louise Allcock (email: louise.allcock@nuigalway.ie)\nCone Snail RLA Coordinator: Under discussion\nEuropean Land Snails RLA Coordinator: Eike Neubert (email: eike.neubert@nmbe.ch)\nAustralian Land and Freshwater Molluscs: Frank Kohler (email: Frank.Koehler@austmus.gov.au)\nFreshwater Bivalves: Manuel Lopes-Lima (email: lopeslima.ciimar@gmail.com)"
+            }
+        ],
+        "common_names": [
+
+        ],
+        "synonyms": [
+            {
+                "name": "Buliminus unius O. Boettger, 1885",
+                "status": "ACCEPTED",
+                "genus_name": "Buliminus",
+                "species_name": "unius",
+                "species_author": "O. Boettger, 1885",
+                "infrarank_author": null,
+                "subpopulation_name": null,
+                "infra_type": null,
+                "infra_name": null
+            }
+        ]
+    },
+    "population_trend": {
+        "description": {
+            "en": "Unknown"
+        },
+        "code": "3"
+    },
+    "red_list_category": {
+        "version": "3.1",
+        "description": {
+            "en": "Data Deficient"
+        },
+        "code": "DD"
+    },
+    "supplementary_info": {
+        "upper_elevation_limit": null,
+        "lower_elevation_limit": null,
+        "lower_depth_limit": null,
+        "upper_depth_limit": null,
+        "population_size": null,
+        "population_severely_fragmented": "No",
+        "population_continuing_decline": null,
+        "generational_length": null,
+        "congregatory": null,
+        "movement_patterns": null,
+        "continuing_decline_in_area": null,
+        "conservation_actions_in_place": [
+
+        ],
+        "identification_information": null,
+        "extreme_fluctuations": null,
+        "no_of_subpopulations": null,
+        "continuing_decline_in_subpopulations": null,
+        "extreme_fluctuations_in_subpopulations": null,
+        "all_individuals_in_one_subpopulation": null,
+        "no_of_individuals_in_largest_subpopulation": null,
+        "estimated_area_of_occupancy": null,
+        "continuing_decline_in_area_of_occupancy": null,
+        "extreme_fluctuations_in_area_of_occupancy": null,
+        "estimated_extent_of_occurence": null,
+        "continuing_decline_in_extent_of_occurence": null,
+        "extreme_fluctuations_in_extent_of_occurence": null,
+        "continuing_decline_in_number_of_locations": null,
+        "extreme_fluctuations_in_number_of_locations": null
+    },
+    "documentation": {
+        "range": "The taxonomy of this species is under debate. As accepted currently, it may have a restricted distribution somewhere in the Aegean Sea. However, it may be a synonym of the wider spread <em>Mastus pusio<\/em> (Heller 1976, Mylonas 1982). Therefore, it is difficult to confirm the actual distribution of this species.",
+        "population": "There are no population data available for this species. Taxonomic research is needed to confirm whether it is a valid species or part of a more widespread species.",
+        "habitats": "Species within the genus <em>Mastus<\/em> generally are soil-dwelling species, usually found in xeric shrublands (maquis and phrygana) (Parmakelis 2003).",
+        "threats": "Before threats can be identified for this species, its taxonomy and distribution needs to be confirmed.",
+        "measures": "<em>Mastus unius<\/em> was listed as Least Concern in the 2009 Greek national Red List (Legakis and Maragkou 2009). Priority research for this species is on clarifying the taxonomy, distribution and threats.",
+        "use_trade": null,
+        "rationale": "This mollusc species is considered endemic to Greece. However, there is considerable confusion over its taxonomy, which makes it difficult to determine its distribution and current or potential threats. Therefore, currently it is not possible to assess it beyond Data Deficient.",
+        "trend_justification": null,
+        "taxonomic_notes": "The taxonomy of this species is currently under debate. It may be a synonym of <em>Mastus pusio<\/em> (Heller 1976, Mylonas 1982), however it is still listed as a valid species in MolluscaBase (2023)."
+    },
+    "biogeographical_realms": [
+        {
+            "description": {
+                "en": "Palearctic"
+            },
+            "code": "7"
+        }
+    ],
+    "conservation_actions": [
+
+    ],
+    "faos": [
+
+    ],
+    "habitats": [
+        {
+            "majorImportance": null,
+            "season": "Resident",
+            "suitability": "Suitable",
+            "description": {
+                "en": "Shrubland - Temperate"
+            },
+            "code": "3_4"
+        }
+    ],
+    "locations": [
+        {
+            "is_endemic": true,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Greece"
+            },
+            "code": "GR"
+        }
+    ],
+    "researches": [
+        {
+            "note": "",
+            "code": "1_1",
+            "description": {
+                "en": "Taxonomy"
+            }
+        },
+        {
+            "note": "",
+            "code": "1_2",
+            "description": {
+                "en": "Population size, distribution & trends"
+            }
+        },
+        {
+            "note": "",
+            "code": "1_5",
+            "description": {
+                "en": "Threats"
+            }
+        }
+    ],
+    "use_and_trade": [
+
+    ],
+    "threats": [
+
+    ],
+    "credits": [
+        {
+            "credit_type_name": "assessor",
+            "full": "Parmakelis, A.",
+            "value": [
+                "Aristeidis Parmakelis (University of Athens)"
+            ]
+        },
+        {
+            "credit_type_name": "evaluator",
+            "full": "Neubert, E., Seddon, M.B., Chelmis, N. & Karakasi, D.",
+            "value": [
+                "Danae Karakasi (Natural History Museum of Crete, University of Crete, Greece)",
+                "Nikolaos Chelmis (IUCN SSC Mollusc Specialist Group)",
+                "Eike Neubert (Naturhistorisches Museum der Burgergemeinde Bern)",
+                "Mary Seddon (IUCN SSC Mollusc Specialist Group)"
+            ]
+        },
+        {
+            "credit_type_name": "facilitators",
+            "full": "Pollock, C.M.",
+            "value": [
+                "Caroline Pollock (IUCN Red List Unit)"
+            ]
+        }
+    ],
+    "errata": [
+
+    ],
+    "references": [
+        {
+            "citation": "Legakis, A. and Maragkou, P. 2009. <i>The Red Data Book of the threatened species of Greece [in Greek]<\/i>. Hellenic Zoological Society, Athens.",
+            "year": "2009",
+            "title": "The Red Data Book of the threatened species of Greece [in Greek]",
+            "author": "Legakis, A. and Maragkou, P.",
+            "citation_short": ""
+        },
+        {
+            "citation": "Mylonas, M. 1982. The zoogeography and ecology of the terrestrial molluscs of Cyclades. University of Athens.",
+            "year": "1982",
+            "title": "The zoogeography and ecology of the terrestrial molluscs of Cyclades",
+            "author": "Mylonas, M",
+            "citation_short": null
+        },
+        {
+            "citation": "Parmakelis, A. 2003.. The differentiation of the genus Mastus (Gastropoda, Pulmonata, Buliminidae) in the Hellenic region: a comparative study with the use of ecological, morphometric and molecular analysis methods. University of Crete.",
+            "year": "2003.",
+            "title": "The differentiation of the genus Mastus (Gastropoda, Pulmonata, Buliminidae) in the Hellenic region: a comparative study with the use of ecological, morphometric and molecular analysis methods",
+            "author": "Parmakelis, A.",
+            "citation_short": null
+        },
+        {
+            "citation": "MolluscaBase eds. 2023. MolluscaBase. Available at: <a href=\"https://www.molluscabase.org\">https://www.molluscabase.org<\/a>. DOI:10.14284/448 (Accessed: 06 January 2023).",
+            "year": "2023",
+            "title": "MolluscaBase",
+            "author": "MolluscaBase eds.",
+            "citation_short": null
+        },
+        {
+            "citation": "IUCN. 2023. The IUCN Red List of Threatened Species. Version 2023-1. Available at: <a href=\"www.iucnredlist.org\">www.iucnredlist.org<\/a>. (Accessed: 07 December 2023).",
+            "year": "2023",
+            "title": "The IUCN Red List of Threatened Species. Version 2023-1",
+            "author": "IUCN",
+            "citation_short": "IUCN 2023-1"
+        },
+        {
+            "citation": "Heller, J. 1976. The taxonomy and distribution of the Enidae (Mollusca, Pulmonata) of the Aegean Islands. <i>Journal of Molluscan Studies<\/i> 42: 371-393.",
+            "year": "1976",
+            "title": "The taxonomy and distribution of the Enidae (Mollusca, Pulmonata) of the Aegean Islands.",
+            "author": "Heller, J.",
+            "citation_short": null
+        }
+    ],
+    "growth_forms": [
+
+    ],
+    "lmes": [
+
+    ],
+    "scopes": [
+        {
+            "description": {
+                "en": "Global"
+            },
+            "code": "1"
+        },
+        {
+            "description": {
+                "en": "Europe"
+            },
+            "code": "2"
+        },
+        {
+            "description": {
+                "en": "Mediterranean"
+            },
+            "code": "4"
+        }
+    ],
+    "stresses": [
+
+    ],
+    "systems": [
+        {
+            "description": {
+                "en": "Terrestrial"
+            },
+            "code": "0"
+        }
+    ]
+}

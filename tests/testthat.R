@@ -8,7 +8,7 @@
 
 library(testthat)
 library(httr2)
-library(mockery)
+library(httptest2)
 library(iucnredlist)
 
 test_check("iucnredlist")

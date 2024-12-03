@@ -2,6 +2,24 @@
 ### INTERNAL FUNCTIONS ###
 ##########################
 
+perform_request <- function(api, endpoint_request) {
+  url = paste0('https://api.iucnredlist.org/api/v4/', endpoint_request)
+
+  tryCatch(
+    api |> httr2::req_url(url) |> httr2::req_perform() |> httr2::resp_body_json(),
+    httr2_http_401 = function(error) {
+      rlang::abort("Error 401: Unauthorized. This error may occur if your Red List API token was copied incorrectly. You can retrieve your API token at https://api.iucnredlist.org/users/edit\n")
+    },
+    httr2_http_error = function(error) {
+      error_message <- paste0("HTTP Error: ", error$message)
+      rlang::abort(error_message)
+    },
+    error = function(error) {
+      rlang::abort(paste("An unexpected error occurred:", error$message))
+    }
+  )
+}
+
 # Internal. Function to get paginated data
 fetch_paginated_data <- function(req, url, query_params, wait_time = 0.5) {
   all_data <- list()
@@ -76,7 +94,6 @@ parse_element_to_tibble <- function(element) {
   }
 }
 
-
 # Function to unnest scopes into separate rows
 unnest_scopes <- function(item) {
   if (!is.null(item$scopes) && length(item$scopes) > 0) {
@@ -150,3 +167,7 @@ nested_list_to_tibble <- function(input_list) {
   })
 }
 
+# Custom binary infix operator
+`%||%` <- function(lhs, rhs) {
+  if (!is.null(lhs)) lhs else rhs
+}
