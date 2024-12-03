@@ -18,7 +18,8 @@ test_that("perform_request handles a 401 error for an invalid API key", {
 
 test_that("perform_request handles a non 200 or 401 http status code (e.g. for an invalid endpoint)", {
   httptest2::with_mock_dir("assessment_invalid_endpoint", {
-    api <- init_api('5HduMTxuATqMskSD7kP6bb3U7W1X3MZrBM2c')
+    red_list_api_key <- Sys.getenv("RED_LIST_API_KEY")
+    api <- init_api(red_list_api_key)
     expect_error(
       perform_request(api, 'invalid_endpoint/742738'),
       "An unexpected error occurred: HTTP 404 Not Found."
