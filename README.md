@@ -3,6 +3,8 @@
 
 # iucnredlist
 
+[![R-CMD-check](https://github.com/IUCN-UK/iucnredlist/actions/workflows/R-CMD-check.yaml/badge.svg?branch=main)](https://github.com/IUCN-UK/iucnredlist/actions/workflows/R-CMD-check.yaml)
+
 The [International Union for Conservation of
 Nature’s](https://www.iucn.org) [Red List of Threatened
 Species](https://www.iucnredlist.org) has evolved to become the world’s
@@ -129,20 +131,22 @@ lion <- assessments_by_name(api, genus = "Panthera", species = "leo")
 api <- init_api("your_red_list_api_key")
 
 # Step 1: Get all latest and global-scope assessment IDs for the family Felidae
-felidae <- assessments_by_taxonomy(api, 
-                                   level = "family", 
-                                   name = "felidae", 
-                                   latest = TRUE, 
-                                   scope_code = 1, 
-                                   wait_time = 0.5)
+felidae <- assessments_by_taxonomy(api,
+  level = "family",
+  name = "felidae",
+  latest = TRUE,
+  scope_code = 1,
+  wait_time = 0.5
+)
 
 
 # Step 2: Fetch assessment data for each assessment ID
 # Pass the assessment_id column to `assessment_data_many() to grab
 # full assessment data for each assessment_id
-a_data <- assessment_data_many(api, 
-                               felidae$assessment_id,
-                               wait_time = 0.5)
+a_data <- assessment_data_many(api,
+  felidae$assessment_id,
+  wait_time = 0.5
+)
 
 
 # Step 3: Extract habitats from the assessment data
