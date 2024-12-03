@@ -30,7 +30,6 @@ test_that("assessment_by_group performs a request and returns a tibble of assess
 
 test_that("assessment_by_group performs a request and returns a message that there are zero assessments returned", {
   httptest2::with_mock_dir("assessment_by_group_scopes_invalid_scope", {
-
     red_list_api_key <- Sys.getenv("RED_LIST_API_KEY")
     api <- init_api(red_list_api_key)
 
@@ -38,7 +37,6 @@ test_that("assessment_by_group performs a request and returns a message that the
 
     expect_true(is.list(result))
     expect_equal(dim(result), c(0, 0))
-
   })
 })
 
