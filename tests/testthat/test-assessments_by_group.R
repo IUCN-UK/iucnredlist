@@ -28,7 +28,7 @@ test_that("assessment_by_group performs a request and returns a tibble of assess
   })
 })
 
-test_that("assessment_by_group performs a request and returns a message that there are zero assessments returned", {
+test_that("assessment_by_group performs a request and returns an empty tibble when there are zero assessments returned", {
   httptest2::with_mock_dir("assessment_by_group_scopes_invalid_scope", {
     red_list_api_key <- Sys.getenv("RED_LIST_API_KEY")
     api <- init_api(red_list_api_key)
