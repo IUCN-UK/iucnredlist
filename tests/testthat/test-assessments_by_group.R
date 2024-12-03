@@ -39,5 +39,3 @@ test_that("assessment_by_group performs a request and returns a message that the
     expect_equal(dim(result), c(0, 0))
   })
 })
-
-
