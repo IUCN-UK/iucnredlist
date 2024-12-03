@@ -1,0 +1,680 @@
+{
+    "scope": {
+        "description": {
+            "en": "Arabian Sea"
+        },
+        "code": "100765562"
+    },
+    "assessments": [
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 39371,
+            "url": "https://www.iucnredlist.org/species/39371/109876922",
+            "assessment_id": 109876922,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 44227,
+            "url": "https://www.iucnredlist.org/species/44227/109895118",
+            "assessment_id": 109895118,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 60131,
+            "url": "https://www.iucnredlist.org/species/60131/109897319",
+            "assessment_id": 109897319,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 60143,
+            "url": "https://www.iucnredlist.org/species/60143/109897864",
+            "assessment_id": 109897864,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 60172,
+            "url": "https://www.iucnredlist.org/species/60172/109899000",
+            "assessment_id": 109899000,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 161340,
+            "url": "https://www.iucnredlist.org/species/161340/109901335",
+            "assessment_id": 109901335,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 161349,
+            "url": "https://www.iucnredlist.org/species/161349/109901444",
+            "assessment_id": 109901444,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 161426,
+            "url": "https://www.iucnredlist.org/species/161426/109902537",
+            "assessment_id": 109902537,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 161447,
+            "url": "https://www.iucnredlist.org/species/161447/109904426",
+            "assessment_id": 109904426,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 161470,
+            "url": "https://www.iucnredlist.org/species/161470/109904876",
+            "assessment_id": 109904876,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 161476,
+            "url": "https://www.iucnredlist.org/species/161476/109905030",
+            "assessment_id": 109905030,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 161488,
+            "url": "https://www.iucnredlist.org/species/161488/109905403",
+            "assessment_id": 109905403,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 161499,
+            "url": "https://www.iucnredlist.org/species/161499/109905559",
+            "assessment_id": 109905559,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 161625,
+            "url": "https://www.iucnredlist.org/species/161625/109913019",
+            "assessment_id": 109913019,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 161632,
+            "url": "https://www.iucnredlist.org/species/161632/109913192",
+            "assessment_id": 109913192,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 161663,
+            "url": "https://www.iucnredlist.org/species/161663/109914005",
+            "assessment_id": 109914005,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 161690,
+            "url": "https://www.iucnredlist.org/species/161690/109914729",
+            "assessment_id": 109914729,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 161720,
+            "url": "https://www.iucnredlist.org/species/161720/109916524",
+            "assessment_id": 109916524,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 161723,
+            "url": "https://www.iucnredlist.org/species/161723/109916678",
+            "assessment_id": 109916678,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 47407786,
+            "url": "https://www.iucnredlist.org/species/47407786/109921879",
+            "assessment_id": 109921879,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 70682503,
+            "url": "https://www.iucnredlist.org/species/70682503/109922153",
+            "assessment_id": 109922153,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 103055306,
+            "url": "https://www.iucnredlist.org/species/103055306/109922484",
+            "assessment_id": 109922484,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 103055459,
+            "url": "https://www.iucnredlist.org/species/103055459/109922488",
+            "assessment_id": 109922488,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 104023514,
+            "url": "https://www.iucnredlist.org/species/104023514/109922492",
+            "assessment_id": 109922492,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 107604242,
+            "url": "https://www.iucnredlist.org/species/107604242/109922500",
+            "assessment_id": 109922500,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 107604828,
+            "url": "https://www.iucnredlist.org/species/107604828/109922504",
+            "assessment_id": 109922504,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 107604987,
+            "url": "https://www.iucnredlist.org/species/107604987/109922508",
+            "assessment_id": 109922508,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2017",
+            "latest": true,
+            "sis_taxon_id": 104176764,
+            "url": "https://www.iucnredlist.org/species/104176764/111015783",
+            "assessment_id": 111015783,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        },
+        {
+            "year_published": "2024",
+            "latest": true,
+            "sis_taxon_id": 161613,
+            "url": "https://www.iucnredlist.org/species/161613/124515045",
+            "assessment_id": 124515045,
+            "code": "100765562",
+            "code_type": "scope",
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                },
+                {
+                    "description": {
+                        "en": "Arabian Sea"
+                    },
+                    "code": "100765562"
+                }
+            ]
+        }
+    ],
+    "filters": {
+        "latest": "TRUE"
+    }
+}
