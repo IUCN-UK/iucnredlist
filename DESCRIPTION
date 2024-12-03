@@ -24,7 +24,7 @@ Imports:
     dplyr (>= 1.1.4),
     httr2 (>= 1.0.0),
     janitor (>= 2.2.0),
-    magrittr,
+    magrittr (>= 2.0.3),
     purrr (>= 1.0.0),
     rlang (>= 1.1.4),
     stringr (>= 1.5.0),
