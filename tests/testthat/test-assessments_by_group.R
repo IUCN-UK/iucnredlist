@@ -3,7 +3,7 @@ test_that("assessment_by_group performs a request and returns expected response"
     red_list_api_key <- Sys.getenv("RED_LIST_API_KEY")
     api <- init_api(red_list_api_key)
 
-    result <- assessments_by_group(api, 'scopes', 100765562, wait_time = 0)
+    result <- assessments_by_group(api, 'scopes', 100765562, wait_time = 0.5)
 
     expect_true(is.list(result))
     expect_equal(dim(result), c(58, 7))
