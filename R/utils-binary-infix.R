@@ -1,6 +1,6 @@
 #' Binary infix operator
 #'
-#' @name %||%
+#' @name infix
 #' @rdname infix
 #' @keywords internal
 #' @export
