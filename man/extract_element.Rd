@@ -12,7 +12,7 @@ extract_element(assessments_list, element_name)
 \item{element_name}{String.}
 }
 \value{
-Returns a \code{tibble()} of
+Returns a tidy \code{tibble()} of data for the specified element name.
 }
 \description{
 This is a helper function to return a tidy \code{tibble()} for a

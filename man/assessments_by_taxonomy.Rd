@@ -47,6 +47,12 @@ The \code{assessments_by_taxonomy()} returns minimal assessment data for a given
 }
 \examples{
 \dontrun{
-assessments_by_taxonomy(api, level = "family", name = "felidae", year_published = 2022, latest = TRUE, scope_code = 1, wait_time = 0.5)
+assessments_by_taxonomy(api,
+  level = "family",
+  name = "felidae",
+  year_published = 2022,
+  latest = TRUE,
+  scope_code = 1,
+  wait_time = 0.5)
 }
 }

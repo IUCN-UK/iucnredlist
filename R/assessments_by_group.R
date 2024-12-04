@@ -14,6 +14,7 @@
 #' @param group String. A valid API group name. Valid names can be found by calling `list_group_names()`.
 #' @param code String. A valid group code. Valid codes for an API group can be
 #' found by calling e.g. `list_codes(api, "habitats")`
+#' @param year_published  Integer. The publication year you wish to filter.
 #' @param wait_time Time in seconds to wait between API calls. A wait of 0.5 seconds or greater will ensure you
 #' won't hit the IUCN Red List API rate limit.
 #' @param latest Boolean. Return latest or historic assessments. Defaults to `TRUE`.
@@ -28,7 +29,14 @@
 #' @export
 #' @examples
 #' \dontrun{
-#' assessments_by_group(api, group = "habitats", code = "1_1", year_published = 2012, latest = TRUE, scope_code = 1, wait_time = 0.5, show_warnings = TRUE)
+#' assessments_by_group(api,
+#'   group = "habitats",
+#'   code = "1_1",
+#'   year_published = 2012,
+#'   latest = TRUE,
+#'   scope_code = 1,
+#'   wait_time = 0.5,
+#'   show_warnings = TRUE)
 #' }
 assessments_by_group <- function(api, group, code, year_published = NULL, latest = TRUE, scope_code = NULL, wait_time = 0.5, show_warnings = TRUE) {
   # Gather user's query params, throw away any that are NULL

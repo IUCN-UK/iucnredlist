@@ -23,6 +23,8 @@ assessments_by_group(
 \item{code}{String. A valid group code. Valid codes for an API group can be
 found by calling e.g. \code{list_codes(api, "habitats")}}
 
+\item{year_published}{Integer. The publication year you wish to filter.}
+
 \item{latest}{Boolean. Return latest or historic assessments. Defaults to \code{TRUE}.}
 
 \item{scope_code}{String. A valid assessment scope. Defaults to \code{NULL} (i.e. returns assessments of all scopes).
@@ -50,6 +52,13 @@ found with \code{list_codes(api, "scopes")}.
 }
 \examples{
 \dontrun{
-assessments_by_group(api, group = "habitats", code = "1_1", year_published = 2012, latest = TRUE, scope_code = 1, wait_time = 0.5, show_warnings = TRUE)
+assessments_by_group(api,
+  group = "habitats",
+  code = "1_1",
+  year_published = 2012,
+  latest = TRUE,
+  scope_code = 1,
+  wait_time = 0.5,
+  show_warnings = TRUE)
 }
 }
