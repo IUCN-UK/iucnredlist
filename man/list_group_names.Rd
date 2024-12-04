@@ -2,12 +2,12 @@
 % Please edit documentation in R/list_group_names.R
 \name{list_group_names}
 \alias{list_group_names}
-\title{List API Endpoint Groups}
+\title{Show API endpoint groups}
 \usage{
 list_group_names()
 }
 \value{
-A character vector of API groups
+A character vector of valid API group names.
 }
 \description{
 Returns a list of API groups which have code/name parameters. These names can

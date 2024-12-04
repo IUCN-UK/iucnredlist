@@ -1,19 +1,19 @@
 #' Get full assessment data for a vector of assessment IDs
 #' @importFrom dplyr %>%
 #'
-#' @description This function wraps around `assessment_data()` and allows the return of full assessment
-#' data for an arbitrary number of assessment IDs.
+#' @description This function wraps around `parse_assessment_data()` and returns a
+#' list of full assessment data for an arbitrary number of assessment IDs.
 #'
-#'
-#' @param api An httr2 response object created with init_api()
-#' @param assessment_ids Vector. A vector of valid assessment IDs
+#' @param api An httr2 response object created with init_api().
+#' @param assessment_ids Vector. A vector of valid assessment IDs.
 #' @param wait_time Time in seconds to wait between API calls. A wait of 0.5 seconds or greater will ensure you
 #' won't hit the IUCN Red List API rate limit.
 #' @returns A list of full assessment data. Each element in the list corresponds to a unique assessment_id passed
-#' to the function via the argument assessment_ids
+#' to the function via the argument assessment_ids.
+#' @export
 #' @examples
 #' \dontrun{
-#' assessment_data_many(api, assessment_ids = c(123, 456), wait_time = 0.5)
+#' assessment_data_many(api, assessment_ids = c(266696959, 152728945), wait_time = 0.5)
 #' }
 assessment_data_many <- function(api, assessment_ids, wait_time = 0.5) {
   # Initialize an empty list to store results

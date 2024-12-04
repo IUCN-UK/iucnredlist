@@ -1,4 +1,26 @@
-# Return latest and historic assessments for a Latin binomial
+#' Get minimal assessment data for a Latin binomial
+#' @importFrom dplyr %>%
+#'
+#' @description The `assessment_by_` functions including `assessments_by_name()` return 'minimal' assessment data
+#' for your specified filters (arguments). The minimal assessment data provides assessment_ids and sis_taxon_ids
+#' (as a tibble) which can be used with `assessment_data()`, `assessment_data_many()` and `partial_assessment_data()`
+#' to get full assessment data.
+#'
+#' The `assessments_by_name()` function returns minimal assessment data for a supplied Latin binomial.
+#' The genus and species arguments are not case sensitive.
+#'
+#' @param api An httr2 response object created with init_api().
+#' @param genus String. A genus name.
+#' @param species String. A species name.
+
+#' @returns Returns a `tibble()` of minimal assessment data for the supplied genus and species name. The minimal assessment data
+#' provides assessment_ids and sis_taxon_ids which can then be used with `assessment_data()`, `assessment_data_many()` and
+#'  `partial_assessment_data()` to get full assessment data.
+#' @export
+#' @examples
+#' \dontrun{
+#' assessments_by_name(api, "panthera", "leo")
+#' }
 assessments_by_name <- function(api, genus, species) {
   all_data <- list()
 

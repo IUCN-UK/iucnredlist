@@ -1,12 +1,12 @@
-#' List Top-Level Group Name Codes
+#' List group codes
 #'
 #' @description
 #' Returns a `tibble()` of all codes (or names) for a specified API group.
 #'
-#' @param api An httr2 response object created with `init_api()`
-#' @param endpoint_group String. A valid API group name which can be determined by using `list_group_names()`
+#' @param api An httr2 response object created with `init_api()`.
+#' @param endpoint_group String. A valid API group name which can be found by calling `list_group_names()`.
 #' @returns A tibble of codes or, in the case of Comprehensive Groups, names.
-#'
+#' @export
 #' @examples
 #' \dontrun{
 #' list_codes(api, "threats")
