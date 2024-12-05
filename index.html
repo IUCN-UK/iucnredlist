@@ -65,7 +65,7 @@
   <div class="contents col-md-9">
 
 <div class="section level1">
-<div class="page-header"><h1 id="iucnredlist-">iucnredlist <img src="reference/figures/logo.png" align="right" height="139" alt=""><a class="anchor" aria-label="anchor" href="#iucnredlist-"></a>
+<div class="page-header"><h1 id="iucnredlist-">iucnredlist <img src="reference/figures/logo.png" align="right" height="139"><a class="anchor" aria-label="anchor" href="#iucnredlist-"></a>
 </h1></div>
 <p><a href="https://github.com/IUCN-UK/iucnredlist/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/IUCN-UK/iucnredlist/actions/workflows/R-CMD-check.yaml/badge.svg?branch=main" alt="R-CMD-check"></a></p>
 <p>The <a href="https://www.iucn.org" class="external-link">International Union for Conservation of Nature’s</a> <a href="https://www.iucnredlist.org" class="external-link">Red List of Threatened Species</a> has evolved to become the world’s most comprehensive information source on the global conservation status of animal, fungi and plant species. It’s a critical indicator of the health of the world’s biodiversity.</p>
@@ -83,7 +83,7 @@
 <div class="section level3">
 <h3 id="responsible-usage">Responsible Usage<a class="anchor" aria-label="anchor" href="#responsible-usage"></a>
 </h3>
-<p>We are committed to ensuring fast and reliable access for all users of this API. To this end, we have implemented rate limiting to maintain service reliability for all users. Several functions within this package have an argument called <code>wait_time</code> - we recommend setting this to &gt;=0.5 seconds (default 0.5 seconds) to avoid rate limiting. If you build your own functions from this API, we recommend you implement an appropriate wait time in your code to avoid any such limits.</p>
+<p>We are committed to ensuring fast and reliable access for all users of this API. To this end, we have implemented rate limiting to maintain service reliability for all users. Several functions within this package have an argument called <code>wait_time</code> - we recommend setting this to &gt;=0.5 seconds (default 0.5 seconds) to avoid rate limiting. If you build your own functions from this package, we recommend you implement an appropriate wait time in your code to avoid any such limits.</p>
 </div>
 </div>
 <div class="section level2">
@@ -97,18 +97,21 @@
 <div class="section level2">
 <h2 id="example-usage">Example Usage<a class="anchor" aria-label="anchor" href="#example-usage"></a>
 </h2>
-<p>The <code>iucnredlist</code> package contains a number of functions to allow quick access to Red List data. The examples below are some quick-start scripts to get you familiar with a basic <code>iucnredlist</code> workflow. Please refer to the vignettes for detailed case studies/worked examples.</p>
+<p>The <code>iucnredlist</code> package contains a number of functions to allow quick access to Red List data. The examples below are some quick-start scripts to get you familiar with a basic <code>iucnredlist</code> workflow.</p>
 <p>Before running this code, you must first sign up to the <a href="https://api.iucnredlist.org" class="external-link">Red List API</a> to obtain and API token. You can view (and cycle) your token from your <a href="https://api.iucnredlist.org/users/edit" class="external-link">account page</a>.</p>
 <div class="section level3">
-<h3 id="fetch-a-single-assessments-data">Fetch a single assessment’s data<a class="anchor" aria-label="anchor" href="#fetch-a-single-assessments-data"></a>
+<h3 id="fetch-data-for-a-single-assessment">Fetch data for a single assessment<a class="anchor" aria-label="anchor" href="#fetch-data-for-a-single-assessment"></a>
 </h3>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Initialize the API with your API key</span></span>
 <span><span class="va">api</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/init_api.html">init_api</a></span><span class="op">(</span><span class="st">"your_red_list_api_key"</span><span class="op">)</span></span>
 <span></span>
-<span><span class="co"># Fetch assessment data for Panthera leo</span></span>
+<span><span class="co"># Fetch assessment data for assessment_id = 266696959 (Panthera leo)</span></span>
 <span><span class="co"># Returns a list containing all assessment data</span></span>
-<span><span class="va">assessment</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/assessment_data.html">assessment_data</a></span><span class="op">(</span><span class="va">api</span>, <span class="fl">266696959</span><span class="op">)</span></span>
+<span><span class="va">assessment_raw</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/assessment_data.html">assessment_data</a></span><span class="op">(</span><span class="va">api</span>, <span class="fl">266696959</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Parse the 'raw' assessment data to tidy tibbles</span></span>
+<span><span class="va">assessment</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/parse_assessment_data.html">parse_assessment_data</a></span><span class="op">(</span><span class="va">assessment_raw</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># View e.g. threats or habitats</span></span>
 <span><span class="co"># The result is a tidy 'tibble()` of data</span></span>
@@ -116,19 +119,40 @@
 <span><span class="va">assessment</span><span class="op">$</span><span class="va">habitats</span></span></code></pre></div>
 </div>
 <div class="section level3">
-<h3 id="fetch-all-assessments-for-a-latin-binomial-name">Fetch all assessments for a Latin binomial name<a class="anchor" aria-label="anchor" href="#fetch-all-assessments-for-a-latin-binomial-name"></a>
+<h3 id="fetch-all-assessments-for-an-sis-taxon-id">Fetch all assessments for an SIS taxon ID<a class="anchor" aria-label="anchor" href="#fetch-all-assessments-for-an-sis-taxon-id"></a>
 </h3>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Initialize the API with your API key</span></span>
 <span><span class="va">api</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/init_api.html">init_api</a></span><span class="op">(</span><span class="st">"your_red_list_api_key"</span><span class="op">)</span></span>
 <span></span>
+<span><span class="co"># Get 'minimal' assessment data for the European Sturgeon</span></span>
+<span><span class="va">sturgeon</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/assessments_by_sis_id.html">assessments_by_sis_id</a></span><span class="op">(</span><span class="va">api</span>, <span class="fl">230</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="gather-full-assessment-data-for-many-assessment-ids">Gather full assessment data for many assessment IDs<a class="anchor" aria-label="anchor" href="#gather-full-assessment-data-for-many-assessment-ids"></a>
+</h3>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span></span>
+<span><span class="co"># Using the sturgeon assessment IDs from above example, get full assessment data</span></span>
+<span><span class="va">sturgeon_all</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/assessment_data_many.html">assessment_data_many</a></span><span class="op">(</span><span class="va">api</span>, <span class="va">sturgeon</span><span class="op">$</span><span class="va">assessment_id</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># View theats</span></span>
+<span><span class="va">sturgeon_threats</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/extract_element.html">extract_element</a></span><span class="op">(</span><span class="va">sturgeon_all</span>, <span class="st">"threats"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="fetch-all-assessments-for-a-latin-binomial-name">Fetch all assessments for a Latin binomial name<a class="anchor" aria-label="anchor" href="#fetch-all-assessments-for-a-latin-binomial-name"></a>
+</h3>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Initialize the API with your API key</span></span>
+<span><span class="va">api</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/init_api.html">init_api</a></span><span class="op">(</span><span class="st">"your_red_list_api_key"</span><span class="op">)</span></span>
+<span></span>
 <span><span class="co"># Get all historic and latest assessments for Panthera leo (not case-sensitive)</span></span>
-<span><span class="va">lion</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/assessments_by_name.html">assessments_by_name</a></span><span class="op">(</span><span class="va">api</span>, genus <span class="op">=</span> <span class="st">"Panthera"</span>, species <span class="op">=</span> <span class="st">"leo"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="va">lion</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/assessments_by_name.html">assessments_by_name</a></span><span class="op">(</span><span class="va">api</span>, genus <span class="op">=</span> <span class="st">"panthera"</span>, species <span class="op">=</span> <span class="st">"leo"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="show-threats-for-a-taxonomic-level">Show threats for a taxonomic level<a class="anchor" aria-label="anchor" href="#show-threats-for-a-taxonomic-level"></a>
 </h3>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Initialize the API with your API key</span></span>
 <span><span class="va">api</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/init_api.html">init_api</a></span><span class="op">(</span><span class="st">"your_red_list_api_key"</span><span class="op">)</span></span>
 <span></span>
@@ -141,7 +165,6 @@
 <span>  wait_time <span class="op">=</span> <span class="fl">0.5</span></span>
 <span><span class="op">)</span></span>
 <span></span>
-<span></span>
 <span><span class="co"># Step 2: Fetch assessment data for each assessment ID</span></span>
 <span><span class="co"># Pass the assessment_id column to `assessment_data_many() to grab</span></span>
 <span><span class="co"># full assessment data for each assessment_id</span></span>
@@ -150,14 +173,16 @@
 <span>  wait_time <span class="op">=</span> <span class="fl">0.5</span></span>
 <span><span class="op">)</span></span>
 <span></span>
-<span></span>
 <span><span class="co"># Step 3: Extract habitats from the assessment data</span></span>
 <span><span class="co"># This will iterate over each assessment in the list a_data</span></span>
 <span><span class="co"># and return a tidy `tibble()` for all habitats</span></span>
 <span><span class="va">habitats</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/extract_element.html">extract_element</a></span><span class="op">(</span><span class="va">a_data</span>, <span class="st">"habitats"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># Alternatively, extract threats</span></span>
-<span><span class="va">threats</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/extract_element.html">extract_element</a></span><span class="op">(</span><span class="va">a_data</span>, <span class="st">"threats"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="va">threats</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/extract_element.html">extract_element</a></span><span class="op">(</span><span class="va">a_data</span>, <span class="st">"threats"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># See all elements you can extract - use any of these with `extract_element()`</span></span>
+<span><span class="fu"><a href="reference/element_names.html">element_names</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -174,10 +199,10 @@
 <h2 id="submitting-changes">Submitting changes<a class="anchor" aria-label="anchor" href="#submitting-changes"></a>
 </h2>
 <p>To get started, make sure you have the latest version of R. Then run the following code to get the packages you’ll need for development:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"devtools"</span>, <span class="st">"roxygen2"</span>, <span class="st">"testthat"</span>, <span class="st">"knitr"</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"devtools"</span>, <span class="st">"roxygen2"</span>, <span class="st">"testthat"</span>, <span class="st">"knitr"</span>))</span></code></pre></div>
 <p>Please send a GitHub Pull Request with a clear list of the changes – please also include tests and make sure all of your commits contain only one feature per commit.</p>
 <p>It is essential that any pull request passes <code>R CMD</code> check (also a requirement for submitting to CRAN). Our recommended way to run <code>R CMD</code> check is in the R console via devtools by running:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">check</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">check</span>()</span></code></pre></div>
 </div>
 </div>
 
