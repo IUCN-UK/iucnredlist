@@ -25,7 +25,7 @@
 #' Defaults to `TRUE`.
 #' @returns Returns a `tibble()` of minimal assessment data for your specified arguments. The minimal assessment data
 #' provides assessment_ids and sis_taxon_ids which can be used with `assessment_data()`, `assessment_data_many()` and
-#'  `partial_assessment_data()` to get full assessment data.
+#'  `parse_assessment_data()` to get full assessment data.
 #' @export
 #' @examples
 #' \dontrun{

@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# iucnredlist <img src="man/figures/logo.png" align="right" height="139"/>
+# iucnredlist <a href="https://iucn-uk.github.io/iucnredlist/"><img src="man/figures/logo.png" align="right" height="139" alt="iucnredlist website" /></a>
 
 [![R-CMD-check](https://github.com/IUCN-UK/iucnredlist/actions/workflows/R-CMD-check.yaml/badge.svg?branch=main)](https://github.com/IUCN-UK/iucnredlist/actions/workflows/R-CMD-check.yaml)
 
@@ -15,8 +15,8 @@ health of the world’s biodiversity.
 The [IUCN Red List API](https://api.iucnredlist.org) has been developed
 to inform and drive biodiversity conservation and policy change -—
 critical steps in protecting essential natural resources. It provides
-programmatic access to data including; population size, habitat and
-ecology, trade, threats, and conservation actions to support informed
+programmatic access to data including (but limited to); population size,
+habitat and ecology, trade and threats to help support informed
 conservation decisions.
 
 The iucnredlist R package aims to serve as a client library for the Red
@@ -93,7 +93,7 @@ access to Red List data. The examples below are some quick-start scripts
 to get you familiar with a basic `iucnredlist` workflow.
 
 Before running this code, you must first sign up to the [Red List
-API](https://api.iucnredlist.org) to obtain and API token. You can view
+API](https://api.iucnredlist.org) to obtain an API token. You can view
 (and cycle) your token from your [account
 page](https://api.iucnredlist.org/users/edit).
 

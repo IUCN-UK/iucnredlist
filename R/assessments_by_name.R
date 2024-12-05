@@ -15,7 +15,7 @@
 
 #' @returns Returns a `tibble()` of minimal assessment data for the supplied genus and species name. The minimal assessment data
 #' provides assessment_ids and sis_taxon_ids which can then be used with `assessment_data()`, `assessment_data_many()` and
-#'  `partial_assessment_data()` to get full assessment data.
+#'  `parse_assessment_data()` to get full assessment data.
 #' @export
 #' @examples
 #' \dontrun{
