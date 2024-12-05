@@ -6,7 +6,7 @@ Authors@R: c(
            comment = c(ORCID = "0000-0001-8464-1240")),
     person("Ian", "Townsend", ,"ian.townsend@iucn.org", role = c("aut"),
            comment = c(ORCID = "0009-0003-8894-6019")),
-    person("International Union for Conservation of Nature", role = c("cph", "fnd"))
+    person("International Union for the Conservation of Nature", role = c("cph", "fnd"))
   )
 Date: 2024-12-05
 Description: A package to interact with the IUCN Red List API
@@ -18,7 +18,7 @@ Suggests:
     httptest2 (>= 1.1.0),
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
-URL: https://github.com/IUCN-UK/iucnredlist
+URL: https://github.com/IUCN-UK/iucnredlist, https://iucn-uk.github.io/iucnredlist/
 BugReports: https://github.com/IUCN-UK/iucnredlist/issues
 Imports: 
     cli (>= 3.6.2),
