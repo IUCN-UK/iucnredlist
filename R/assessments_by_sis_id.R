@@ -23,7 +23,8 @@ assessments_by_sis_id <- function(api, sis_taxon_id) {
   all_data <- list()
 
   endpoint_request <- paste0("taxa/sis/", sis_taxon_id)
-  response_json <- perform_request(api, endpoint_request)
+  request <- perform_request(api, endpoint_request)
+  response_json <- httr2::resp_body_json(request)
 
   endpoint_data <- response_json$assessments %||% list()
 

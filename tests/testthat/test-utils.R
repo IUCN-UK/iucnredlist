@@ -2,7 +2,8 @@ test_that("perform_request successfuly requests an assessment from the API and r
   httptest2::with_mock_dir("assessment_742738", {
     red_list_api_key <- Sys.getenv("RED_LIST_API_KEY")
     api <- init_api(red_list_api_key)
-    expect_length(perform_request(api, "assessment/742738"), 33)
+    request <- perform_request(api, "assessment/742738")
+    expect_equal(class(request), 'httr2_response')
   })
 })
 

@@ -37,7 +37,7 @@ assessments_by_taxonomy <- function(api, level, name, year_published = NULL, lat
   query_params <- list(latest = latest, year_published = year_published, scope_code = scope_code, page = 1, per_page = 100) %>%
     purrr::discard(is.null)
 
-  url <- paste0("https://api.iucnredlist.org/api/v4/taxa/", level, "/", name)
+  url <- paste0("taxa/", level, "/", name)
   data <- fetch_paginated_data(api, url, query_params)
 
   if (nrow(data) > 0) {

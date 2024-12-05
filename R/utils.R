@@ -4,11 +4,13 @@
 ### INTERNAL FUNCTIONS ###
 ##########################
 
-perform_request <- function(api, endpoint_request) {
-  url = paste0('https://api.iucnredlist.org/api/v4/', endpoint_request)
+perform_request <- function(api, endpoint_request, query_params = c()) {
+  url <- paste0("https://api.iucnredlist.org/api/v4/", endpoint_request)
 
   tryCatch(
-    api |> httr2::req_url(url) |> httr2::req_perform() |> httr2::resp_body_json(),
+    api |> httr2::req_url(url) |>
+      httr2::req_url_query(!!!query_params) |>
+      httr2::req_perform(),
     httr2_http_401 = function(error) {
       rlang::abort("Error 401: Unauthorized. This error may occur if your Red List API token was copied incorrectly. You can retrieve your API token at https://api.iucnredlist.org/users/edit\n")
     },
@@ -23,20 +25,24 @@ perform_request <- function(api, endpoint_request) {
 }
 
 # Internal. Function to get paginated data
-fetch_paginated_data <- function(req, url, query_params, wait_time = 0.5) {
+fetch_paginated_data <- function(req, endpoint_request, query_params, wait_time = 0.5) {
   all_data <- list()
 
-  while (!is.null(url) && !is.na(url)) {
+  while (!is.null(endpoint_request) && !is.na(endpoint_request)) {
     # Make sure the URL is valid before making the request
-    if (is.character(url) && length(url) == 1 && !is.na(url)) {
-      response_page <- req %>%
-        httr2::req_url(url) %>%
-        httr2::req_url_query(!!!query_params) %>%
-        httr2::req_perform()
+    if (is.character(endpoint_request) && length(endpoint_request) == 1 && !is.na(endpoint_request)) {
+      #response_page <- req %>%
+      #  httr2::req_url(url) %>%
+      #  httr2::req_perform()
+      #  httr2::req_url_query(!!!query_params) %>%
+      #Sys.sleep(wait_time)
+      #response_json <- httr2::resp_body_json(response_page)
+
 
       Sys.sleep(wait_time)
-
+      response_page <- perform_request(api, endpoint_request, query_params)
       response_json <- httr2::resp_body_json(response_page)
+
       endpoint_data <- response_json$assessments %||% list()
 
       if (length(endpoint_data) > 0) {
@@ -45,9 +51,13 @@ fetch_paginated_data <- function(req, url, query_params, wait_time = 0.5) {
       }
 
       headers <- httr2::resp_headers(response_page)
-      url <- stringr::str_match(headers$link, "<([^>]+)>;\\s*rel=\"next\"")[2] %||% NULL
+
+      print(headers$link)
+
+      endpoint_request <- stringr::str_match(headers$link, "<([^>]+)>;\\s*rel=\"next\"")[2] %||% NULL
+      endpoint_request <- sub("https://api.example.org/api/v4/", "", endpoint_request) %||% NULL
     } else {
-      url <- NULL
+      endpoint_request <- NULL
     }
 
     query_params$page <- query_params$page + 1

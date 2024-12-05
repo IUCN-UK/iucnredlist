@@ -17,5 +17,6 @@
 #' }
 assessment_data <- function(api, assessment_id) {
   endpoint_request <- paste0("assessment/", assessment_id)
-  perform_request(api, endpoint_request)
+  request <- perform_request(api, endpoint_request)
+  httr2::resp_body_json(request)
 }

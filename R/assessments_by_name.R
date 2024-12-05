@@ -25,7 +25,9 @@ assessments_by_name <- function(api, genus, species) {
   all_data <- list()
 
   endpoint_request <- paste0("taxa/scientific_name?genus_name=", genus, "&species_name=", species)
-  response_json <- perform_request(api, endpoint_request)
+  request <- perform_request(api, endpoint_request)
+
+  response_json <- httr2::resp_body_json(request)
 
   endpoint_data <- response_json$assessments %||% list()
 

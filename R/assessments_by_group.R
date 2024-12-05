@@ -43,7 +43,7 @@ assessments_by_group <- function(api, group, code, year_published = NULL, latest
   query_params <- list(latest = latest, year_published = year_published, scope_code = scope_code, page = 1, per_page = 100) %>%
     purrr::discard(is.null)
 
-  url <- paste0("https://api.iucnredlist.org/api/v4/", group, "/", code)
+  url <- paste0(group, "/", code)
   data <- fetch_paginated_data(api, url, query_params, wait_time = wait_time)
 
   if (nrow(data) > 0) {
