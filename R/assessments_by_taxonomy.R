@@ -30,7 +30,8 @@
 #'   year_published = 2022,
 #'   latest = TRUE,
 #'   scope_code = 1,
-#'   wait_time = 0.5)
+#'   wait_time = 0.5
+#' )
 #' }
 assessments_by_taxonomy <- function(api, level, name, year_published = NULL, latest = TRUE, scope_code = NULL, wait_time = 0.5) {
   # Gather user's query params, throw away any that are NULL
