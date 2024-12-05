@@ -31,18 +31,9 @@ fetch_paginated_data <- function(req, endpoint_request, query_params, wait_time 
   while (!is.null(endpoint_request) && !is.na(endpoint_request)) {
     # Make sure the URL is valid before making the request
     if (is.character(endpoint_request) && length(endpoint_request) == 1 && !is.na(endpoint_request)) {
-      #response_page <- req %>%
-      #  httr2::req_url(url) %>%
-      #  httr2::req_perform()
-      #  httr2::req_url_query(!!!query_params) %>%
-      #Sys.sleep(wait_time)
-      #response_json <- httr2::resp_body_json(response_page)
-
-
-      Sys.sleep(wait_time)
       response_page <- perform_request(api, endpoint_request, query_params)
+      Sys.sleep(wait_time)
       response_json <- httr2::resp_body_json(response_page)
-
       endpoint_data <- response_json$assessments %||% list()
 
       if (length(endpoint_data) > 0) {
@@ -51,9 +42,6 @@ fetch_paginated_data <- function(req, endpoint_request, query_params, wait_time 
       }
 
       headers <- httr2::resp_headers(response_page)
-
-      print(headers$link)
-
       endpoint_request <- stringr::str_match(headers$link, "<([^>]+)>;\\s*rel=\"next\"")[2] %||% NULL
       endpoint_request <- sub("https://api.example.org/api/v4/", "", endpoint_request) %||% NULL
     } else {
