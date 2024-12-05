@@ -1,9 +1,9 @@
-test_that("assessments_by_name calls perform_request and returns expected response", {
-  httptest2::with_mock_dir("assessments_panthera_leo", {
+test_that("assessments_by_sis_id calls perform_request and returns expected response", {
+  httptest2::with_mock_dir("assessments_sis_id_15951", {
     red_list_api_key <- Sys.getenv("RED_LIST_API_KEY")
     api <- init_api(red_list_api_key)
 
-    result <- assessments_by_name(api, "panthera", "leo")
+    result <- assessments_by_sis_id(api, 15951)
     expect_true(is.list(result))
     expect_length(result, 7)
 
