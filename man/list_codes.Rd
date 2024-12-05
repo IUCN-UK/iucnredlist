@@ -2,14 +2,14 @@
 % Please edit documentation in R/list_codes.R
 \name{list_codes}
 \alias{list_codes}
-\title{List Top-Level Group Name Codes}
+\title{List group codes}
 \usage{
 list_codes(api, endpoint_group)
 }
 \arguments{
-\item{api}{An httr2 response object created with \code{init_api()}}
+\item{api}{An httr2 response object created with \code{init_api()}.}
 
-\item{endpoint_group}{String. A valid API group name which can be determined by using \code{list_group_names()}}
+\item{endpoint_group}{String. A valid API group name which can be found by calling \code{list_group_names()}.}
 }
 \value{
 A tibble of codes or, in the case of Comprehensive Groups, names.

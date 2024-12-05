@@ -7,23 +7,23 @@
 assessment_data_many(api, assessment_ids, wait_time = 0.5)
 }
 \arguments{
-\item{api}{An httr2 response object created with init_api()}
+\item{api}{An httr2 response object created with init_api().}
 
-\item{assessment_ids}{Vector. A vector of valid assessment IDs}
+\item{assessment_ids}{Vector. A vector of valid assessment IDs.}
 
 \item{wait_time}{Time in seconds to wait between API calls. A wait of 0.5 seconds or greater will ensure you
 won't hit the IUCN Red List API rate limit.}
 }
 \value{
 A list of full assessment data. Each element in the list corresponds to a unique assessment_id passed
-to the function via the argument assessment_ids
+to the function via the argument assessment_ids.
 }
 \description{
-This function wraps around \code{assessment_data()} and allows the return of full assessment
-data for an arbitrary number of assessment IDs.
+This function wraps around \code{parse_assessment_data()} and returns a
+list of full assessment data for an arbitrary number of assessment IDs.
 }
 \examples{
 \dontrun{
-assessment_data_many(api, assessment_ids = c(123, 456), wait_time = 0.5)
+assessment_data_many(api, assessment_ids = c(266696959, 152728945), wait_time = 0.5)
 }
 }
