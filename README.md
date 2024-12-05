@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# iucnredlist <img src="man/figures/logo.png" align="right" height="139" alt="" />
+# iucnredlist <img src="man/figures/logo.png" align="right" height="139"/>
 
 [![R-CMD-check](https://github.com/IUCN-UK/iucnredlist/actions/workflows/R-CMD-check.yaml/badge.svg?branch=main)](https://github.com/IUCN-UK/iucnredlist/actions/workflows/R-CMD-check.yaml)
 
@@ -73,8 +73,8 @@ this API. To this end, we have implemented rate limiting to maintain
 service reliability for all users. Several functions within this package
 have an argument called `wait_time` - we recommend setting this to
 \>=0.5 seconds (default 0.5 seconds) to avoid rate limiting. If you
-build your own functions from this API, we recommend you implement an
-appropriate wait time in your code to avoid any such limits.
+build your own functions from this package, we recommend you implement
+an appropriate wait time in your code to avoid any such limits.
 
 ## Installation
 
@@ -90,28 +90,51 @@ devtools::install_github("IUCN-UK/iucnredlist")
 
 The `iucnredlist` package contains a number of functions to allow quick
 access to Red List data. The examples below are some quick-start scripts
-to get you familiar with a basic `iucnredlist` workflow. Please refer to
-the vignettes for detailed case studies/worked examples.
+to get you familiar with a basic `iucnredlist` workflow.
 
 Before running this code, you must first sign up to the [Red List
 API](https://api.iucnredlist.org) to obtain and API token. You can view
 (and cycle) your token from your [account
 page](https://api.iucnredlist.org/users/edit).
 
-### Fetch a single assessment’s data
+### Fetch data for a single assessment
 
 ``` r
 # Initialize the API with your API key
 api <- init_api("your_red_list_api_key")
 
-# Fetch assessment data for Panthera leo
+# Fetch assessment data for assessment_id = 266696959 (Panthera leo)
 # Returns a list containing all assessment data
-assessment <- assessment_data(api, 266696959)
+assessment_raw <- assessment_data(api, 266696959)
+
+# Parse the 'raw' assessment data to tidy tibbles
+assessment <- parse_assessment_data(assessment_raw)
 
 # View e.g. threats or habitats
 # The result is a tidy 'tibble()` of data
 assessment$threats
 assessment$habitats
+```
+
+### Fetch all assessments for an SIS taxon ID
+
+``` r
+# Initialize the API with your API key
+api <- init_api("your_red_list_api_key")
+
+# Get 'minimal' assessment data for the European Sturgeon
+sturgeon <- assessments_by_sis_id(api, 230)
+```
+
+### Gather full assessment data for many assessment IDs
+
+``` r
+
+# Using the sturgeon assessment IDs from above example, get full assessment data
+sturgeon_all <- assessment_data_many(api, sturgeon$assessment_id)
+
+# View theats
+sturgeon_threats <- extract_element(sturgeon_all, "threats")
 ```
 
 ### Fetch all assessments for a Latin binomial name
@@ -121,7 +144,7 @@ assessment$habitats
 api <- init_api("your_red_list_api_key")
 
 # Get all historic and latest assessments for Panthera leo (not case-sensitive)
-lion <- assessments_by_name(api, genus = "Panthera", species = "leo")
+lion <- assessments_by_name(api, genus = "panthera", species = "leo")
 ```
 
 ### Show threats for a taxonomic level
@@ -139,7 +162,6 @@ felidae <- assessments_by_taxonomy(api,
   wait_time = 0.5
 )
 
-
 # Step 2: Fetch assessment data for each assessment ID
 # Pass the assessment_id column to `assessment_data_many() to grab
 # full assessment data for each assessment_id
@@ -148,7 +170,6 @@ a_data <- assessment_data_many(api,
   wait_time = 0.5
 )
 
-
 # Step 3: Extract habitats from the assessment data
 # This will iterate over each assessment in the list a_data
 # and return a tidy `tibble()` for all habitats
@@ -156,6 +177,9 @@ habitats <- extract_element(a_data, "habitats")
 
 # Alternatively, extract threats
 threats <- extract_element(a_data, "threats")
+
+# See all elements you can extract - use any of these with `extract_element()`
+element_names()
 ```
 
 # How to contribute

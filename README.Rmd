@@ -88,8 +88,8 @@ this API. To this end, we have implemented rate limiting to maintain
 service reliability for all users. Several functions within this package
 have an argument called `wait_time` - we recommend setting this to
 \>=0.5 seconds (default 0.5 seconds) to avoid rate limiting. If you
-build your own functions from this API, we recommend you implement an
-appropriate wait time in your code to avoid any such limits.
+build your own functions from this package, we recommend you implement
+an appropriate wait time in your code to avoid any such limits.
 
 ## Installation
 
@@ -105,25 +105,24 @@ devtools::install_github("IUCN-UK/iucnredlist")
 
 The `iucnredlist` package contains a number of functions to allow quick
 access to Red List data. The examples below are some quick-start scripts
-to get you familiar with a basic `iucnredlist` workflow. Please refer to
-the vignettes for detailed case studies/worked examples.
+to get you familiar with a basic `iucnredlist` workflow.
 
 Before running this code, you must first sign up to the [Red List
 API](https://api.iucnredlist.org) to obtain and API token. You can view
 (and cycle) your token from your [account
 page](https://api.iucnredlist.org/users/edit).
 
-### Fetch a single assessment's data
+### Fetch data for a single assessment
 
 ```{r eval = FALSE}
 # Initialize the API with your API key
 api <- init_api("your_red_list_api_key")
 
-# Fetch assessment data for Panthera leo
+# Fetch assessment data for assessment_id = 266696959 (Panthera leo)
 # Returns a list containing all assessment data
 assessment_raw <- assessment_data(api, 266696959)
 
-# Parse the 'raw' assessment data to tibbles
+# Parse the 'raw' assessment data to tidy tibbles
 assessment <- parse_assessment_data(assessment_raw)
 
 # View e.g. threats or habitats
@@ -139,7 +138,18 @@ assessment$habitats
 api <- init_api("your_red_list_api_key")
 
 # Get 'minimal' assessment data for the European Sturgeon
-assessments_by_sis_id(api, 230)
+sturgeon <- assessments_by_sis_id(api, 230)
+
+```
+
+### Gather full assessment data for many assessment IDs
+```{r eval = FALSE}
+
+# Using the sturgeon assessment IDs from above example, get full assessment data
+sturgeon_all <- assessment_data_many(api, sturgeon$assessment_id)
+
+# View theats
+sturgeon_threats <- extract_element(sturgeon_all, "threats")
 
 ```
 
