@@ -13,7 +13,7 @@
 
 #' @returns Returns a `tibble()` of minimal assessment data for the supplied SIS taxon ID. The minimal assessment data
 #' shows assessment_ids for the supplied SIS taxon ID which can then be used with `assessment_data()`,
-#' `assessment_data_many()` and `partial_assessment_data()` to get full assessment data.
+#' `assessment_data_many()` and `parse_assessment_data()` to get full assessment data.
 #' @export
 #' @examples
 #' \dontrun{
