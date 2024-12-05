@@ -24,13 +24,9 @@
 assessments_by_name <- function(api, genus, species) {
   all_data <- list()
 
-  url <- paste0("https://api.iucnredlist.org/api/v4/taxa/scientific_name?genus_name=", genus, "&species_name=", species)
+  endpoint_request <- paste0("taxa/scientific_name?genus_name=", genus, "&species_name=", species)
+  response_json <- perform_request(api, endpoint_request)
 
-  resp <- api %>%
-    httr2::req_url(url) %>%
-    httr2::req_perform()
-
-  response_json <- httr2::resp_body_json(resp)
   endpoint_data <- response_json$assessments %||% list()
 
   page_data <- purrr::map_dfr(endpoint_data, purrr::possibly(unnest_scopes, otherwise = dplyr::tibble()))
