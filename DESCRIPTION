@@ -1,5 +1,5 @@
 Package: iucnredlist
-Title: R Client for the IUCN Red List API 
+Title: R package for the IUCN Red List API 
 Version: 0.1
 Authors@R: c(
     person("Simon", "Tarr", ,"simon.tarr@iucn.org", role = c("aut", "cre"),

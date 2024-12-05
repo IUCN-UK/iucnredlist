@@ -15,7 +15,7 @@ test_that("assessment_data calls perform_request and returns expected response",
     expect_equal(result$possibly_extinct_in_the_wild, FALSE)
     expect_equal(result$sis_taxon_id, 157079)
     expect_equal(result$criteria, NULL)
-    expect_equal(result$url, 'https://www.iucnredlist.org/species/157079/742738')
+    expect_equal(result$url, "https://www.iucnredlist.org/species/157079/742738")
     # Don't include the date after "Accessed on" as it changes every day
     expect_equal(sub("(Accessed on).*", "\\1", result$citation), "Parmakelis, A. 2023. Mastus unius. The IUCN Red List of Threatened Species 2023: e.T157079A742738. https://dx.doi.org/10.2305/IUCN.UK.2023-1.RLTS.T157079A742738.en. Accessed on")
     expect_equal(result$assessment_id, 742738)
