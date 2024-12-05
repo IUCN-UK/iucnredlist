@@ -53,6 +53,7 @@ assessments_by_taxonomy(api,
   year_published = 2022,
   latest = TRUE,
   scope_code = 1,
-  wait_time = 0.5)
+  wait_time = 0.5
+)
 }
 }
