@@ -122,7 +122,7 @@
 <span><span class="va">api</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/init_api.html">init_api</a></span><span class="op">(</span><span class="st">"your_red_list_api_key"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># Get all historic and latest assessments for Panthera leo (not case-sensitive)</span></span>
-<span><span class="va">lion</span> <span class="op">&lt;-</span> <span class="fu">assessments_by_name</span><span class="op">(</span><span class="va">api</span>, genus <span class="op">=</span> <span class="st">"Panthera"</span>, species <span class="op">=</span> <span class="st">"leo"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="va">lion</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/assessments_by_name.html">assessments_by_name</a></span><span class="op">(</span><span class="va">api</span>, genus <span class="op">=</span> <span class="st">"Panthera"</span>, species <span class="op">=</span> <span class="st">"leo"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="show-threats-for-a-taxonomic-level">Show threats for a taxonomic level<a class="anchor" aria-label="anchor" href="#show-threats-for-a-taxonomic-level"></a>
@@ -132,7 +132,7 @@
 <span><span class="va">api</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/init_api.html">init_api</a></span><span class="op">(</span><span class="st">"your_red_list_api_key"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># Step 1: Get all latest and global-scope assessment IDs for the family Felidae</span></span>
-<span><span class="va">felidae</span> <span class="op">&lt;-</span> <span class="fu">assessments_by_taxonomy</span><span class="op">(</span><span class="va">api</span>,</span>
+<span><span class="va">felidae</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/assessments_by_taxonomy.html">assessments_by_taxonomy</a></span><span class="op">(</span><span class="va">api</span>,</span>
 <span>  level <span class="op">=</span> <span class="st">"family"</span>,</span>
 <span>  name <span class="op">=</span> <span class="st">"felidae"</span>,</span>
 <span>  latest <span class="op">=</span> <span class="cn">TRUE</span>,</span>
@@ -153,10 +153,10 @@
 <span><span class="co"># Step 3: Extract habitats from the assessment data</span></span>
 <span><span class="co"># This will iterate over each assessment in the list a_data</span></span>
 <span><span class="co"># and return a tidy `tibble()` for all habitats</span></span>
-<span><span class="va">habitats</span> <span class="op">&lt;-</span> <span class="fu">extract_element</span><span class="op">(</span><span class="va">a_data</span>, <span class="st">"habitats"</span><span class="op">)</span></span>
+<span><span class="va">habitats</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/extract_element.html">extract_element</a></span><span class="op">(</span><span class="va">a_data</span>, <span class="st">"habitats"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># Alternatively, extract threats</span></span>
-<span><span class="va">threats</span> <span class="op">&lt;-</span> <span class="fu">extract_element</span><span class="op">(</span><span class="va">a_data</span>, <span class="st">"threats"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="va">threats</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/extract_element.html">extract_element</a></span><span class="op">(</span><span class="va">a_data</span>, <span class="st">"threats"</span><span class="op">)</span></span></code></pre></div>
 </div>
 </div>
 </div>

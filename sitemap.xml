@@ -6,10 +6,17 @@
 <url><loc>/index.html</loc></url>
 <url><loc>/reference/assessment_data.html</loc></url>
 <url><loc>/reference/assessment_data_many.html</loc></url>
+<url><loc>/reference/assessments_by_group.html</loc></url>
+<url><loc>/reference/assessments_by_name.html</loc></url>
+<url><loc>/reference/assessments_by_sis_id.html</loc></url>
+<url><loc>/reference/assessments_by_taxonomy.html</loc></url>
+<url><loc>/reference/element_names.html</loc></url>
+<url><loc>/reference/extract_element.html</loc></url>
 <url><loc>/reference/index.html</loc></url>
 <url><loc>/reference/init_api.html</loc></url>
 <url><loc>/reference/list_codes.html</loc></url>
 <url><loc>/reference/list_group_names.html</loc></url>
+<url><loc>/reference/parse_assessment_data.html</loc></url>
 <url><loc>/reference/pipe.html</loc></url>
 </urlset>
 
