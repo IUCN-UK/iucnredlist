@@ -13,8 +13,8 @@ test_that("assessment_data_many returns assessment data for a collection of asse
     expect_equal(names(result[[2]]), expected_names)
     expect_equal(names(result[[3]]), expected_names)
 
-    expect_equal(names(result[[1]]$assessment_id), tibble(value = 2911619))
-    expect_equal(names(result[[2]]$assessment_id), tibble(value = 58307800))
-    expect_equal(names(result[[3]]$assessment_id), tibble(value = 178423675))
+    expect_equal(names(result[[1]]$assessment_id), dplyr::tibble(value = 2911619))
+    expect_equal(names(result[[2]]$assessment_id), dplyr::tibble(value = 58307800))
+    expect_equal(names(result[[3]]$assessment_id), dplyr::tibble(value = 178423675))
   })
 })
