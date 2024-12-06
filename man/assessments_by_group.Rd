@@ -38,7 +38,7 @@ Defaults to \code{TRUE}.}
 \value{
 Returns a \code{tibble()} of minimal assessment data for your specified arguments. The minimal assessment data
 provides assessment_ids and sis_taxon_ids which can be used with \code{assessment_data()}, \code{assessment_data_many()} and
-\code{partial_assessment_data()} to get full assessment data.
+\code{parse_assessment_data()} to get full assessment data.
 }
 \description{
 The \code{assessment_by_} functions including \code{assessments_by_group()} return 'minimal' assessment data

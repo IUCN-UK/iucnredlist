@@ -16,7 +16,7 @@ assessments_by_name(api, genus, species)
 \value{
 Returns a \code{tibble()} of minimal assessment data for the supplied genus and species name. The minimal assessment data
 provides assessment_ids and sis_taxon_ids which can then be used with \code{assessment_data()}, \code{assessment_data_many()} and
-\code{partial_assessment_data()} to get full assessment data.
+\code{parse_assessment_data()} to get full assessment data.
 }
 \description{
 The \code{assessment_by_} functions including \code{assessments_by_name()} return 'minimal' assessment data
