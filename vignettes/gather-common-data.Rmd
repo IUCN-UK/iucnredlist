@@ -32,7 +32,168 @@ library(iucnredlist)
 api <- init_api("your_api_token")
 ```
 
+We now need to gather a list of all (latest) assessments whose species belong to the 
+family _felidae_:
 
+```{r eval = FALSE}
+felidae <- assessments_by_taxonomy(api, level = "family", name = "felidae", latest = TRUE)
 
+# A tibble: 52 × 7
+   sis_taxon_id assessment_id latest year_published scopes_description_en scopes_code url                                              
+          <int>         <int> <lgl>  <chr>          <chr>                 <chr>       <chr>                                            
+ 1        11638       3299247 TRUE   2010           Mediterranean         4           https://www.iucnredlist.org/species/11638/3299247
+ 2        12519       3350985 TRUE   2010           Mediterranean         4           https://www.iucnredlist.org/species/12519/3350985
+ 3        15951       5325996 TRUE   2010           Mediterranean         4           https://www.iucnredlist.org/species/15951/5325996
+ 4        15954       5328595 TRUE   2010           Mediterranean         4           https://www.iucnredlist.org/species/15954/5328595
+ 5        15955       5330476 TRUE   2010           Mediterranean         4           https://www.iucnredlist.org/species/15955/5330476
+ 6         3847      10121483 TRUE   2010           Mediterranean         4           https://www.iucnredlist.org/species/3847/10121483
+ 7         8540      12915840 TRUE   2010           Mediterranean         4           https://www.iucnredlist.org/species/8540/12915840
+ 8         8540      12916263 TRUE   2007           Europe                2           https://www.iucnredlist.org/species/8540/12916263
+ 9         8541      12916598 TRUE   2010           Mediterranean         4           https://www.iucnredlist.org/species/8541/12916598
+10          219      13034035 TRUE   2010           Mediterranean         4           https://www.iucnredlist.org/species/219/13034035 
+# ℹ 42 more rows
+# ℹ Use `print(n = ...)` to see more rows
 
+```
 
+As our aim is to gather all habitats and threats coded against these assessments, we
+must now iterate over each unique assessment ID in the above tibble to get that 
+data. Helpfully, there's a function available to do just that:
+
+```{r eval = FALSE}
+# Pass assessment IDs into the assessment_data_many() function
+felidae_full <- assessment_data_many(api, assessment_ids = felidae$assessment_id)
+```
+
+After this runs, we will how have full assessment data for all 50 unique assessment IDs 
+(as of time of publication). From here, we can extract the data we are interested in with:
+
+```{r eval = FALSE}
+habitats <- extract_element(felidae_full, "habitats")
+```
+
+The `extract_element()` function is super helpful. It returns a tidy dataframe of
+the element you're interested; a row for each unique element and assessment ID for 
+all of the assessments you gathered full assessment data for:
+
+```{r eval = FALSE}
+habitats
+
+# A tibble: 452 × 7
+   index    assessment_id majorImportance season suitability description                                                               code 
+   <chr>    <chr>         <chr>           <chr>  <chr>       <chr>                                                                     <chr>
+ 1 habitats 3299247       NA              NA     Suitable    Wetlands (inland) - Shrub Dominated Wetlands                              5_3  
+ 2 habitats 3299247       NA              NA     Suitable    Grassland - Subtropical/Tropical High Altitude                            4_7  
+ 3 habitats 3299247       NA              NA     Suitable    Wetlands (inland) - Permanent Rivers/Streams/Creeks (includes waterfalls) 5_1  
+ 4 habitats 3299247       NA              NA     Suitable    Forest - Subtropical/Tropical Dry                                         1_5  
+ 5 habitats 3299247       NA              NA     Suitable    Savanna - Dry                                                             2_1  
+ 6 habitats 3299247       NA              NA     Suitable    Grassland - Subtropical/Tropical Dry                                      4_5  
+ 7 habitats 3299247       NA              NA     Suitable    Grassland - Subtropical/Tropical Seasonally Wet/Flooded                   4_6  
+ 8 habitats 3350985       NA              NA     Suitable    Shrubland - Boreal                                                        3_3  
+ 9 habitats 3350985       NA              NA     Suitable    Shrubland - Subtropical/Tropical Dry                                      3_5  
+10 habitats 3350985       NA              NA     Suitable    Shrubland - Temperate                                                     3_4  
+# ℹ 442 more rows
+# ℹ Use `print(n = ...)` to see more rows
+```
+
+You can now do the same for threats:
+```{r eval = FALSE}
+threats <- extract_element(felidae_full, "threats")
+
+threats
+
+# A tibble: 653 × 13
+   index   assessment_id scope timing                   internationalTrade score         severity ancestry virus ias   text  description                                       code 
+   <chr>   <chr>         <chr> <chr>                    <chr>              <chr>         <chr>    <chr>    <chr> <chr> <chr> <chr>                                             <chr>
+ 1 threats 3299247       NA    Ongoing                  NA                 Low Impact: 3 NA       NA       NA    NA    NA    Agro-industry farming                             2_1_3
+ 2 threats 3299247       NA    Past, Unlikely to Return NA                 Past Impact   NA       NA       NA    NA    NA    Scale Unknown/Unrecorded                          2_3_4
+ 3 threats 3299247       NA    Ongoing                  NA                 Low Impact: 3 NA       NA       NA    NA    NA    Nomadic grazing                                   2_3_1
+ 4 threats 3299247       NA    Ongoing                  NA                 Low Impact: 3 NA       NA       NA    NA    NA    Intentional use (species is the target)           5_1_1
+ 5 threats 3299247       NA    Ongoing                  NA                 Low Impact: 3 NA       NA       NA    NA    NA    Agro-industry grazing, ranching or farming        2_3_3
+ 6 threats 3299247       NA    Ongoing                  NA                 Low Impact: 3 NA       NA       NA    NA    NA    Problematic native species/diseases               8_2  
+ 7 threats 3299247       NA    Ongoing                  NA                 Low Impact: 3 NA       NA       NA    NA    NA    Persecution/control                               5_1_3
+ 8 threats 3299247       NA    Ongoing                  NA                 Low Impact: 3 NA       NA       NA    NA    NA    Unintentional effects (species is not the target) 5_1_2
+ 9 threats 3299247       NA    Ongoing                  NA                 Low Impact: 3 NA       NA       NA    NA    NA    Small-holder grazing, ranching or farming         2_3_2
+10 threats 3299247       NA    Ongoing                  NA                 Low Impact: 3 NA       NA       NA    NA    NA    Trend Unknown/Unrecorded                          7_1_3
+# ℹ 643 more rows
+# ℹ Use `print(n = ...)` to see more rows
+
+```
+
+So, how do you know what elements are available for you to extract data from? 
+The short answer is you can call `element_names()` to get them:
+
+```{r eval = FALSE}
+element_names()
+
+ [1] "assessment_date"               "assessment_id"                 "assessment_points"             "assessment_ranges"             "biogeographical_realms"        "citation"                     
+ [7] "conservation_actions"          "conservation_actions_in_place" "credits"                       "criteria"                      "errata"                        "faos"                         
+[13] "growth_forms"                  "habitats"                      "latest"                        "lmes"                          "locations"                     "population_trend"             
+[19] "possibly_extinct"              "possibly_extinct_in_the_wild"  "red_list_category"             "references"                    "researches"                    "scopes"                       
+[25] "sis_taxon_id"                  "stresses"                      "supplementary_info"            "systems"                       "taxon"                         "taxon_common_names"           
+[31] "taxon_ssc_groups"              "taxon_synonyms"                "threats"                       "url"                           "use_and_trade"                 "year_published"      
+```
+
+The long answer is that the element names are simply the named elements in a _parsed_ assessment data object.
+So you could just as well run `names(felidae_full[[1]])` to get the same list of element names.
+
+Pass any of the above element names into `extract_element()` to get a tidy dataframe of those elements.
+
+## Part 2 - Gather habitats & threats for a custom list of species
+
+In Part 1, we showed how to stay completely within the API to get habitats and threats
+for the _felidae_. What if you have your own list of binomial names?
+
+For the sake of this tutorial, let's build a quick `tibble()` with some species in it:
+
+```{r eval = FALSE}
+
+my_species <- dplyr::tibble(genus = c("Panthera", "Diceros", "Cyclura"), 
+                            species = c("leo", "bicornis", "pinguis"))
+
+```
+
+We could get 'minimal' assessment data for the first species in our list, just
+to see what it looks like:
+
+```{r eval = FALSE}
+assessments_by_name(api, 
+                    genus = my_species$genus[1], 
+                    species = my_species$species[1])
+```
+
+A single species on its own probably isn't that useful, so let's write a quick
+loop to iterate over each Latin binomial and get all the latest global assessments:
+
+```{r eval = FALSE}
+assessments <-list()
+
+for(i in 1:nrow(my_species)){
+  assessments[[i]] <- assessments_by_name(api, 
+                                          genus = my_species$genus[i], 
+                                          species = my_species$species[i])
+}
+
+# Unlist into a tibble
+a <- dplyr::bind_rows(assessments)
+
+# Filter on latest global assessments
+a <- a %>% 
+  dplyr::filter(latest == TRUE & scopes_code == 1)
+
+```
+
+As before, we can now pass our list of assessment IDs like so:
+
+```{r eval = FALSE}
+full_data <- assessment_data_many(api, 
+                                  unique(a$assessment_id),
+                                  wait_time=0.5)
+```
+
+We can now extract habitats and threats with:
+
+```{r eval = FALSE}
+habitats <- extract_element(full_data, "habitats")
+threats <- extract_element(full_data, "habitats")
+```
