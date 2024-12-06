@@ -1,9 +1,11 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# iucnredlist <a href="https://iucn-uk.github.io/iucnredlist/"><img src="man/figures/logo.png" align="right" height="139" alt="iucnredlist website" /></a>
+# iucnredlist <a href="https://iucn-uk.github.io/iucnredlist/"><img src="man/figures/logo.png" align="left" height="160" alt="iucnredlist website" /></a>
 
 [![R-CMD-check](https://github.com/IUCN-UK/iucnredlist/actions/workflows/R-CMD-check.yaml/badge.svg?branch=main)](https://github.com/IUCN-UK/iucnredlist/actions/workflows/R-CMD-check.yaml)
+
+[![test-coverage](https://github.com/IUCN-UK/iucnredlist/actions/workflows/test-coverage.yaml/badge.svg?branch=main)](https://github.com/IUCN-UK/iucnredlist/actions/workflows/test-coverage.yaml)
 
 The [International Union for Conservation of
 Nature’s](https://www.iucn.org) [Red List of Threatened
