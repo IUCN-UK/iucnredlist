@@ -3,7 +3,7 @@
 #'
 #' @description The `assessment_by_` functions including `assessments_by_name()` return 'minimal' assessment data
 #' for your specified filters (arguments). The minimal assessment data provides assessment_ids and sis_taxon_ids
-#' (as a tibble) which can be used with `assessment_data()`, `assessment_data_many()` and `partial_assessment_data()`
+#' (as a tibble) which can be used with `assessment_data()`, `assessment_data_many()` and `parse_assessment_data()`
 #' to get full assessment data.
 #'
 #' The `assessments_by_name()` function returns minimal assessment data for a supplied Latin binomial.

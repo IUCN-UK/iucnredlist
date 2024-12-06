@@ -3,12 +3,13 @@
 #'
 #' @description The `assessment_by_` functions including `assessments_by_group()` return 'minimal' assessment data
 #' for your specified filters (arguments). The minimal assessment data provides assessment_ids and sis_taxon_ids
-#' (as a tibble) which can then be used with `assessment_data()`, `assessment_data_many()` and `partial_assessment_data()`
+#' (as a tibble) which can then be used with `assessment_data()`, `assessment_data_many()` and `parse_assessment_data()`
 #' to get full assessment data.
 #'
 #' The `assessments_by_group()` function acts upon the API assessment group names and codes.
 #' Valid names can be found by calling `list_group_names()` and codes can be
 #' found with `list_codes(api, "scopes")`.
+#'
 #'
 #' @param api An httr2 response object created with init_api().
 #' @param group String. A valid API group name. Valid names can be found by calling `list_group_names()`.
