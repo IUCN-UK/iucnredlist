@@ -1,0 +1,142 @@
+---
+title: "Assessment Data Responses"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{assessment-data-responses}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Types of Response
+
+We have designed the package to return two 'types' of assessment
+response from the API, which we refer to as 'minimal' and 'full'
+assessment responses.
+
+## Minimal Responses
+
+A 'minimal' response returns a `tibble()` containing just enough
+information for the user to gather full assessment data for each
+assessment they are interested in. For example, you may be interested 
+in knowing all assessments which have habitat code 1 coded against them:
+
+```{r eval=FALSE}
+a <- assessments_by_group(api, "habitats", "1")
+
+# A tibble: 114 × 7
+   sis_taxon_id assessment_id latest year_published scopes_description_en scopes_code url                                               
+          <int>         <int> <lgl>  <chr>          <chr>                 <chr>       <chr>                                             
+ 1       133958       3881104 TRUE   2008           Global                1           https://www.iucnredlist.org/species/133958/3881104
+ 2       134059       3887925 TRUE   2008           Global                1           https://www.iucnredlist.org/species/134059/3887925
+ 3       134019       3893117 TRUE   2008           Global                1           https://www.iucnredlist.org/species/134019/3893117
+ 4       134151       3910739 TRUE   2008           Global                1           https://www.iucnredlist.org/species/134151/3910739
+ 5       134199       3918266 TRUE   2008           Global                1           https://www.iucnredlist.org/species/134199/3918266
+ 6       134378       3947233 TRUE   2008           Global                1           https://www.iucnredlist.org/species/134378/3947233
+ 7       134409       3952097 TRUE   2008           Global                1           https://www.iucnredlist.org/species/134409/3952097
+ 8       134409       3952097 TRUE   2008           Eastern Africa        18          https://www.iucnredlist.org/species/134409/3952097
+ 9       134409       3952097 TRUE   2008           Pan-Africa            10          https://www.iucnredlist.org/species/134409/3952097
+10       134438       3956693 TRUE   2008           Global                1           https://www.iucnredlist.org/species/134438/3956693
+# ℹ 104 more rows
+# ℹ Use `print(n = ...)` to see more rows
+```
+
+With no query parameters (arguments) passed to `assessments_by_group()`
+you'll get the above dataframe with a row for each unique assessment ID
+in the Red List database for all scopes and years. At this point you may choose 
+to filter out just those assessments which have a scope of 'Eastern Africa' or 
+'Pan-Africa':
+
+```{r eval=FALSE}
+ea <- a %>% 
+        dplyr::filter(scopes_code == 18 | scopes_code == 10)
+```
+
+You could then use this 'minimal' dataframe and loop over each assessment ID to 
+gather 'full' assessment data for each assessment:
+
+```{r eval=FALSE}
+all_data <- assessment_data_many(api, ea$assessment_id)
+```
+
+If you know _a priori_ which assessments you need, you can supply the appropriate 
+arguments to `assessments_by_group()` directly, and save a filtering task further
+downstream (it will also likely save on calls to the API database):
+
+```{r eval=FALSE}
+# Get global assessments published in 2008 for habitat code 1
+assessments_by_group(api, "habitats", "1", year_published = 2008, scope = 1)
+
+# A tibble: 38 × 7
+   sis_taxon_id assessment_id latest year_published scopes_description_en scopes_code url                                               
+          <int>         <int> <lgl>  <chr>          <chr>                 <chr>       <chr>                                             
+ 1       133958       3881104 TRUE   2008           Global                1           https://www.iucnredlist.org/species/133958/3881104
+ 2       134059       3887925 TRUE   2008           Global                1           https://www.iucnredlist.org/species/134059/3887925
+ 3       134019       3893117 TRUE   2008           Global                1           https://www.iucnredlist.org/species/134019/3893117
+ 4       134151       3910739 TRUE   2008           Global                1           https://www.iucnredlist.org/species/134151/3910739
+ 5       134199       3918266 TRUE   2008           Global                1           https://www.iucnredlist.org/species/134199/3918266
+ 6       134378       3947233 TRUE   2008           Global                1           https://www.iucnredlist.org/species/134378/3947233
+ 7       134409       3952097 TRUE   2008           Global                1           https://www.iucnredlist.org/species/134409/3952097
+ 8       134409       3952097 TRUE   2008           Eastern Africa        18          https://www.iucnredlist.org/species/134409/3952097
+ 9       134409       3952097 TRUE   2008           Pan-Africa            10          https://www.iucnredlist.org/species/134409/3952097
+10       134438       3956693 TRUE   2008           Global                1           https://www.iucnredlist.org/species/134438/3956693
+# ℹ 28 more rows
+# ℹ Use `print(n = ...)` to see more rows
+```
+
+### Minimal assessment data functions
+
+Minimal assessment data is returned from the assessments_by_ functions:
+
+- `assessments_by_group()`
+- `assessments_by_name()`
+- `assessments_by_sis_id()`
+- `assessments_by_taxonomy()`
+
+## Full Responses
+In contrast to the 'minimal' responses, you can get 'full' assessment data by first 
+calling `assessment_data()` to get all assessment data in 'raw' format:
+
+```{r eval=FALSE}
+# Get full assessment data for the black rhino
+a <- assessment_data(api, 152728945)
+```
+
+The above function returns the full response from the API, with no transformations
+(except coercing JSON to lists). You can then call `parse_assessment_data()` to
+get a tidied named list of tibbles:
+
+```{r eval=FALSE}
+a <- parse_assessment_data(a)
+```
+
+When calling `parse_assessment_data()` you are allowing the {iucnredlist} package
+to perform a number of data tidying routines. In a nutshell this function will:
+
+1. Tidy the 'taxon' element in the raw response, moving Common Names, SSC Groups 
+and Synonyms to named elements at the top-most level in the list, prepending 
+these parts of the response with `taxon_`.
+2. Move conservation_actions_in_place from under conservation_actions 
+to the top-most level
+3. Remove the 'documentation' part of the response. as this is mostly long paragraphs 
+of text and HTML. If part of the response is important for your work, we would 
+recommend fetching this from the object created with `assessment_data()` and 
+process according to your needs.
+4. Ordering the named lists alphabetically
+
+### Full assessment data functions
+Full assessment data is returned from the functions:
+
+- `assessment_data()`
+- `assessment_data_many()`
+
+

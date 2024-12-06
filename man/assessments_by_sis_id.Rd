@@ -19,7 +19,7 @@ shows assessment_ids for the supplied SIS taxon ID which can then be used with \
 \description{
 The \code{assessment_by_} functions including \code{assessments_by_sis_id()} return 'minimal' assessment data
 for your specified filters (arguments). The minimal assessment data provides assessment_ids and sis_taxon_ids
-(as a tibble) which can be used with \code{assessment_data()}, \code{assessment_data_many()} and \code{partial_assessment_data()}
+(as a tibble) which can be used with \code{assessment_data()}, \code{assessment_data_many()} and \code{parse_assessment_data()}
 to get full assessment data.
 
 The \code{assessments_by_sis_id()} function returns minimal assessment data for a supplied SIS taxon ID.

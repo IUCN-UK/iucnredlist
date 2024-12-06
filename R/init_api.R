@@ -3,7 +3,7 @@
 #'
 #' @param red_list_api_key A Red List API token string (alphanumeric)
 #' @returns An httr2 request object.
-#'
+#' @export
 #' @examples
 #' \dontrun{
 #' api <- init_api("your_red_list_api_key")

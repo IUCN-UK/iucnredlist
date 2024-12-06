@@ -21,7 +21,7 @@ provides assessment_ids and sis_taxon_ids which can then be used with \code{asse
 \description{
 The \code{assessment_by_} functions including \code{assessments_by_name()} return 'minimal' assessment data
 for your specified filters (arguments). The minimal assessment data provides assessment_ids and sis_taxon_ids
-(as a tibble) which can be used with \code{assessment_data()}, \code{assessment_data_many()} and \code{partial_assessment_data()}
+(as a tibble) which can be used with \code{assessment_data()}, \code{assessment_data_many()} and \code{parse_assessment_data()}
 to get full assessment data.
 
 The \code{assessments_by_name()} function returns minimal assessment data for a supplied Latin binomial.
