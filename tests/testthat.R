@@ -8,6 +8,7 @@
 
 library(testthat)
 library(httr2)
+library(dplyr)
 library(httptest2)
 library(iucnredlist)
 

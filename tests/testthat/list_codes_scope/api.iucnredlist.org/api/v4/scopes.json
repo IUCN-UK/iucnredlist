@@ -1,0 +1,88 @@
+{
+    "scopes": [
+        {
+            "description": {
+                "en": "Global"
+            },
+            "code": "1"
+        },
+        {
+            "description": {
+                "en": "Europe"
+            },
+            "code": "2"
+        },
+        {
+            "description": {
+                "en": "Mediterranean"
+            },
+            "code": "4"
+        },
+        {
+            "description": {
+                "en": "Western Africa"
+            },
+            "code": "8"
+        },
+        {
+            "description": {
+                "en": "S. Africa FW"
+            },
+            "code": "9"
+        },
+        {
+            "description": {
+                "en": "Pan-Africa"
+            },
+            "code": "10"
+        },
+        {
+            "description": {
+                "en": "Central Africa"
+            },
+            "code": "16"
+        },
+        {
+            "description": {
+                "en": "Northeastern Africa"
+            },
+            "code": "17"
+        },
+        {
+            "description": {
+                "en": "Eastern Africa"
+            },
+            "code": "18"
+        },
+        {
+            "description": {
+                "en": "Northern Africa"
+            },
+            "code": "21"
+        },
+        {
+            "description": {
+                "en": "Gulf of Mexico"
+            },
+            "code": "45433062"
+        },
+        {
+            "description": {
+                "en": "Caribbean"
+            },
+            "code": "45433063"
+        },
+        {
+            "description": {
+                "en": "Persian Gulf"
+            },
+            "code": "45433064"
+        },
+        {
+            "description": {
+                "en": "Arabian Sea"
+            },
+            "code": "100765562"
+        }
+    ]
+}

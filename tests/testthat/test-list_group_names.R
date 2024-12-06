@@ -1,0 +1,22 @@
+test_that("list_group_names returns a list", {
+  expect_identical(
+    list_group_names(),
+    c(
+      "biogeographical_realms",
+      "comprehensive_groups",
+      "conservation_actions",
+      "countries",
+      "faos",
+      "growth_forms",
+      "habitats",
+      "population_trends",
+      "red_list_categories",
+      "research",
+      "scopes",
+      "stresses",
+      "systems",
+      "threats",
+      "use_and_trade"
+    )
+  )
+})
