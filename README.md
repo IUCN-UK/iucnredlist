@@ -5,6 +5,8 @@
 
 [![R-CMD-check](https://github.com/IUCN-UK/iucnredlist/actions/workflows/R-CMD-check.yaml/badge.svg?branch=main)](https://github.com/IUCN-UK/iucnredlist/actions/workflows/R-CMD-check.yaml)
 [![test-coverage](https://github.com/IUCN-UK/iucnredlist/actions/workflows/test-coverage.yaml/badge.svg?branch=main)](https://github.com/IUCN-UK/iucnredlist/actions/workflows/test-coverage.yaml)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 
 The [International Union for Conservation of
 Nature’s](https://www.iucn.org) [Red List of Threatened
