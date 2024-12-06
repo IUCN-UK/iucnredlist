@@ -1,0 +1,2920 @@
+{
+    "assessment_date": "2018-11-07T00:00:00.000Z",
+    "year_published": "2019",
+    "latest": true,
+    "possibly_extinct": false,
+    "possibly_extinct_in_the_wild": false,
+    "sis_taxon_id": 39374,
+    "criteria": "A2bd",
+    "url": "https://www.iucnredlist.org/species/39374/2911619",
+    "citation": "Rigby, C.L., Barreto, R., Carlson, J., Fernando, D., Fordham, S., Francis, M.P., Herman, K., Jabado, R.W., Liu, K.M., Marshall, A., Pacoureau, N., Romanov, E., Sherley, R.B. & Winker, H. 2019. Carcharhinus longimanus. The IUCN Red List of Threatened Species 2019: e.T39374A2911619. https://dx.doi.org/10.2305/IUCN.UK.2019-3.RLTS.T39374A2911619.en. Accessed on 06 December 2024.",
+    "assessment_id": 2911619,
+    "assessment_points": false,
+    "assessment_ranges": true,
+    "taxon": {
+        "sis_id": 39374,
+        "scientific_name": "Carcharhinus longimanus",
+        "species_taxa": [
+
+        ],
+        "subpopulation_taxa": [
+
+        ],
+        "infrarank_taxa": [
+
+        ],
+        "kingdom_name": "ANIMALIA",
+        "phylum_name": "CHORDATA",
+        "class_name": "CHONDRICHTHYES",
+        "order_name": "CARCHARHINIFORMES",
+        "family_name": "CARCHARHINIDAE",
+        "genus_name": "Carcharhinus",
+        "species_name": "longimanus",
+        "subpopulation_name": null,
+        "infra_name": null,
+        "authority": "(Poey, 1861)",
+        "species": true,
+        "subpopulation": false,
+        "infrarank": false,
+        "ssc_groups": [
+            {
+                "name": "IUCN SSC Shark Specialist Group (sharks and rays)",
+                "url": "https://www.iucnssg.org",
+                "description": "Chair: Rima Jabado (email: rimajabado@hotmail.com)\nRed List Authority Coordinator: Cassie Rigby (email: crigby@westnet.com.au)"
+            }
+        ],
+        "common_names": [
+            {
+                "main": false,
+                "name": "Whitetip Oceanic Shark",
+                "language": "eng"
+            },
+            {
+                "main": false,
+                "name": "White-tipped Shark",
+                "language": "eng"
+            },
+            {
+                "main": false,
+                "name": "Whitetip Shark",
+                "language": "eng"
+            },
+            {
+                "main": false,
+                "name": "Apoapo",
+                "language": "smo"
+            },
+            {
+                "main": false,
+                "name": "Marracho",
+                "language": "por"
+            },
+            {
+                "main": false,
+                "name": "Marracho Oceánico",
+                "language": "por"
+            },
+            {
+                "main": false,
+                "name": "Opesee-wittiphaai Requin Canal",
+                "language": "afr"
+            },
+            {
+                "main": false,
+                "name": "Requin Océanique",
+                "language": "fre"
+            },
+            {
+                "main": false,
+                "name": "Tiburón Oceanico",
+                "language": "spa"
+            },
+            {
+                "main": false,
+                "name": "Tubarâo",
+                "language": "por"
+            },
+            {
+                "main": false,
+                "name": "Tubarão galha-branca-oceanico",
+                "language": "por"
+            },
+            {
+                "main": false,
+                "name": "Yogore",
+                "language": "jpn"
+            },
+            {
+                "main": false,
+                "name": "القرش أبيض الأطراف المحيطي",
+                "language": "ara"
+            },
+            {
+                "main": false,
+                "name": "大沙",
+                "language": "chi"
+            },
+            {
+                "main": false,
+                "name": "污斑白眼鮫",
+                "language": "chi"
+            },
+            {
+                "main": false,
+                "name": "污斑白眼鲛",
+                "language": "chi"
+            },
+            {
+                "main": false,
+                "name": "長鰭真鯊",
+                "language": "chi"
+            },
+            {
+                "main": false,
+                "name": "長鰭翼真鯊",
+                "language": "chi"
+            },
+            {
+                "main": false,
+                "name": "长鳍真鲨",
+                "language": "chi"
+            },
+            {
+                "main": false,
+                "name": "长鳍翼真鲨",
+                "language": "chi"
+            },
+            {
+                "main": true,
+                "name": "Oceanic Whitetip Shark",
+                "language": "eng"
+            }
+        ],
+        "synonyms": [
+            {
+                "name": "Squalus longimanus Poey, 1861",
+                "status": "ACCEPTED",
+                "genus_name": "Squalus",
+                "species_name": "longimanus",
+                "species_author": "Poey, 1861",
+                "infrarank_author": null,
+                "subpopulation_name": null,
+                "infra_type": null,
+                "infra_name": null
+            }
+        ]
+    },
+    "population_trend": {
+        "description": {
+            "en": "Decreasing"
+        },
+        "code": "1"
+    },
+    "red_list_category": {
+        "version": "3.1",
+        "description": {
+            "en": "Critically Endangered"
+        },
+        "code": "CR"
+    },
+    "supplementary_info": {
+        "upper_elevation_limit": null,
+        "lower_elevation_limit": null,
+        "lower_depth_limit": 1082,
+        "upper_depth_limit": 0,
+        "population_size": null,
+        "population_severely_fragmented": null,
+        "population_continuing_decline": null,
+        "generational_length": "20.4",
+        "congregatory": null,
+        "movement_patterns": null,
+        "continuing_decline_in_area": null,
+        "conservation_actions_in_place": [
+            {
+                "name": "In-place research and monitoring",
+                "actions": [
+                    {
+                        "name": "Action Recovery Plan",
+                        "value": "No"
+                    },
+                    {
+                        "name": "Systematic monitoring scheme",
+                        "value": "No"
+                    }
+                ]
+            },
+            {
+                "name": "In-place land/water protection",
+                "actions": [
+                    {
+                        "name": "Conservation sites identified",
+                        "value": "No"
+                    },
+                    {
+                        "name": "Area based regional management plan",
+                        "value": "No"
+                    },
+                    {
+                        "name": "Occurs in at least one protected area",
+                        "value": "Unknown"
+                    },
+                    {
+                        "name": "Invasive species control or prevention",
+                        "value": "Not Applicable"
+                    }
+                ]
+            },
+            {
+                "name": "In-place species management",
+                "actions": [
+                    {
+                        "name": "Harvest management plan",
+                        "value": "No"
+                    },
+                    {
+                        "name": "Successfully reintroduced or introduced benignly",
+                        "value": "No"
+                    },
+                    {
+                        "name": "Subject to ex-situ conservation",
+                        "value": "No"
+                    }
+                ]
+            },
+            {
+                "name": "In-place education",
+                "actions": [
+                    {
+                        "name": "Subject to recent education and awareness programmes",
+                        "value": "No"
+                    },
+                    {
+                        "name": "Included in international legislation",
+                        "value": "Yes"
+                    },
+                    {
+                        "name": "Subject to any international management / trade controls",
+                        "value": "Yes"
+                    }
+                ]
+            }
+        ],
+        "identification_information": null,
+        "extreme_fluctuations": null,
+        "no_of_subpopulations": null,
+        "continuing_decline_in_subpopulations": null,
+        "extreme_fluctuations_in_subpopulations": null,
+        "all_individuals_in_one_subpopulation": null,
+        "no_of_individuals_in_largest_subpopulation": null,
+        "estimated_area_of_occupancy": null,
+        "continuing_decline_in_area_of_occupancy": null,
+        "extreme_fluctuations_in_area_of_occupancy": null,
+        "estimated_extent_of_occurence": null,
+        "continuing_decline_in_extent_of_occurence": null,
+        "extreme_fluctuations_in_extent_of_occurence": null,
+        "continuing_decline_in_number_of_locations": null,
+        "extreme_fluctuations_in_number_of_locations": null
+    },
+    "documentation": {
+        "range": "The Oceanic Whitetip Shark occurs worldwide in tropical and temperate waters (Last and Stevens 2009, Ebert <em>et al.<\/em> 2013).",
+        "population": "There are no data available on the global population size of the Oceanic Whitetip Shark. Genetic studies suggest there may be some genetic structure between the Western Atlantic and the Indo-Pacific, however the data are preliminary and stock structures require further investigation (Camargo <em>et al<\/em>. 2016, Ruck <em>et al<\/em>. 2016, Young <em>et al<\/em>. 2017).<br/><br/>Population trend data are available from six sources: (1) standardized catch-per-unit effort (CPUE) in the Northwest Atlantic (Young <em>et al<\/em>. 2017); (2) standardized CPUE in the Southwest Atlantic (Tolotti <em>et al<\/em>. 2013); (3) standardized CPUE in Hawaii (Brodziak and Walsh 2013); (4) stock assessment biomass in the Western Central Pacific Ocean (WCPO) (Rice and Harley 2012); (5) updated standardized CPUE in the WCPO (Rice <em>et al<\/em>. 2015); and, (6) standardized CPUE from the Spanish longline fishery in the Indian Ocean (Ramos-Cartelle <em>et al<\/em>. 2012). The trend data from each source were analysed over three generation lengths using a Bayesian state-space framework (a modification of Winker <em>et al<\/em>. 2018). This analysis yields an annual rate of change, a median change over three generation lengths, and the probability of the most likely IUCN Red List category percent change over three generations (see the Supplementary Information).<br/><br/>First, the observer CPUE time-series from the United States pelagic longline fishery for 1992–2015 indicated that the abundance in the Northwest Atlantic had declined from the 1990s to 2000s, after which it fluctuated but then remained relatively steady (Young <em>et al<\/em>. 2017). It was noted that fishing pressure had been present for decades prior to 1992 and that the species had likely experienced significant historical declines of 50 to 88% in the Northwest Atlantic and Gulf of Mexico, respectively (Young <em>et al<\/em>. 2017). The trend analysis of the same time-series for 1992–2015 (24 years) revealed annual rates of reduction of 4.3%, consistent with an estimated median reduction of 93.1% over three generation lengths (61.2 years), with the highest probability of &gt;80% reduction over three generation lengths. Although reported to have stabilized (Young <em>et al<\/em>. 2017), the annual rate of reduction in the time-series produced a high reduction when extrapolated beyond the length of the data time-series to three generation lengths.<br/><br/>Second, robust catch data from the South Atlantic are lacking (Young <em>et al<\/em>. 2017). Observer CPUE data from the Brazil longline fishery from 2004–2010 showed a slight increase in abundance, however the data are from a short time-series and were susceptible to changes in fishing strategy during those years (Tolotti <em>et al<\/em>. 2013). The trend analysis of the same time-series for 2004–2010 (7 years) revealed annual rates of increase of 13.9%, consistent with an increasing abundance over three generation lengths (61.2 years). These CPUE data are from a large area around Brazil, but they may not be representative of the entire South Atlantic region. A more comprehensive analysis of catch rates of Oceanic Whitetip Shark on longlines in the South Atlantic revealed steep declines of 85% in the average CPUE from 1980–2011 (Barreto <em>et al<\/em>. 2016), however because the data were not considered robust due to the low catch rates and large confidence intervals (R. Barreto unpubl. data), they were not analysed over three generations.<br/><br/>The third to the fifth data sources are all from the Pacific. Third, the observer standardized CPUE from the Hawaii-based pelagic longline fishery for 1995–2010 indicated a highly significant decline of 90% over the time-series (Brodziak and Walsh 2013). The trend analysis of the same data for 1995–2010 (16 years) revealed annual rates of reduction of 16.3%, consistent with an estimated median reduction of 100.0% over three generation lengths (61.2 years), with the highest probability of &gt;80% reduction over three generation lengths. Fourth, the stock assessment based on observer longline data from the WCPO for 1995–2009 indicated an 86% decline in spawning stock biomass and that the stock of Oceanic Whitetip Shark is overfished with overfishing occurring (Rice and Harley 2012). The trend analysis of the same time-series for 1995–2009 (15 years) revealed annual rates of reduction of 14.1%, consistent with an estimated median reduction of 100.0% over three generation lengths (61.2 years), with the highest probability of &gt;80% reduction over three generation lengths. Fifth, updated standardized CPUE data from the WCPO observer longline data from 1996–2014 indicate continuing declines with the stock likely maintaining an overfished status (Rice <em>et al<\/em>. 2015). The trend analysis of the same time series for 1996–2014 (19 years) revealed annual rates of reduction of 5.3%, consistent with an estimated median reduction of 98.6% over three generation lengths (61.2 years), with the highest probability of &gt;80% reduction over three generation lengths.<br/><br/>Sixth, the standardized CPUE from the Spanish longline fishery in the Indian Ocean from 1998–2011 was highly variable, influenced by the low-prevalence of the species in some years, and not considered a plausible indicator of stock abundance (Ramos-Cartelle <em>et al<\/em>. 2012). The trend analysis of the same time series for 1998–2011(14 years) revealed annual rates of reduction of 5.0%, consistent with an estimated median reduction of 92.9% over three generation lengths (61.2 years), with the highest probability of &gt;80% reduction over three generation lengths. Data from the Japanese longline fishery in the Indian Ocean was not analyzed due to unrealistic CPUE in the early years of the time-series, although in the latter years from 2003–2011, there is a generally decreasing trend (Yokawa and Semba 2012).<br/><br/>Further to the above CPUE trend analyses, in the Eastern Pacific, nominal catches of Oceanic Whitetip Shark in purse seine fisheries have declined by 80–95% from the late 1990s to 2009 (Hall and Roman 2013, Young <em>et al<\/em>. 2017). In the Arabian Seas region, the species is inferred to have declined by &gt;80% over the last three generations (Jabado <em>et al<\/em>. 2017).<br/><br/>This species was historically one of the most abundant shark species in tropical seas worldwide, and regional trends indicate it has experienced significant historical declines across its range, likely continues to experience global declines in abundance, and it is now rare in some regions (Young <em>et al<\/em>. 2017).<br/><br/>Across the regions, the Oceanic Whitetip Shark was estimated to have severely declined in all oceans, including the South Atlantic. To estimate a global population trend, the estimated three generation population trends for each region were weighted according to the relative size of each region; the two sources of WCPO data were used to generate two global trends that both gave essentially the same result. The overall estimated median reduction was 98–100%, with the highest probability of &gt;80% reduction over three generation lengths (61.2 years), and therefore the species is assessed as Critically Endangered A2bd.",
+        "habitats": "The Oceanic Whitetip is one of the most widespread sharks, ranging  across entire oceans in tropical and subtropical waters (Young <em>et al.<\/em> 2017). It is an  oceanic-epipelagic shark usually found far offshore in the open sea with a preference for surface waters, but it has been reported to depths of 1,082 m (Bonfil <em>et al. <\/em>2008, Tolotti <em>et al.<\/em> 2015, Weigmann 2016).&#160;It reaches a maximum size of 350 cm total length (TL)<em><\/em>, possibly 395 cm TL; males mature at 168–198 cm TL and females at 175–224 cm TL (Ebert <em>et al.<\/em> 2013, Weigmann 2016, D'Alberto <em>et al<\/em>. 2017). Reproduction is placental viviparous with litter sizes of 1–15 pups and litter size increases with female size; gestation period is 10–12 months with most likely a biennial reproductive cycle and size at birth of 57–77 cm TL (Seki&#160;<em>et al<\/em>. 1998,&#160;Bonfil <em>et al. <\/em>2008, Last and Stevens 2009, Clarke<em> et al.<\/em> 2015). Consequently, the rate of population increase is very low and has been estimated at 0.039–0.067 (Smith <em>et al<\/em>. 2008), or 0.110 (Dulvy <em>et al<\/em>. 2008), although these may be overestimates as they are based on younger age-at-maturity and maximum age than has since been reported. There is regional variation in age estimates: female age-at-maturity is  4.5–8.8, 6.5, and 15.8 years, and maximum age is 11, 17, and 24.9 years in Northwest  Pacific, Southwest Atlantic, and Western Central Pacific,  respectively (Seki <em>et al.<\/em> 1998, Lessa <em>et al.<\/em> 1999, Liu and Tsai 2011, Joung<em> et al. <\/em>2016, D'Alberto<em> et al.<\/em>  2017). Studies have verified annual periodicity of band formation but  none have yet validated the age estimates. Using the precautionary  approach, the older age-at-maturity of 15.8 years and maximum age of  24.9 years are used to calculate a generation length of 20.4 years across all  regions.",
+        "threats": "<p>  <\/p><p>The Oceanic Whitetip Shark is caught globally as target and bycatch in commercial and small-scale pelagic longline, purse seine, and gillnet fisheries. Most of the catch is taken as bycatch of commercial pelagic fleets in offshore and high-seas waters (Camhi <em>et al.<\/em> 2008). It is also captured in coastal longlines, gillnets, trammel nets and sometimes trawls, particularly in areas with narrow continental shelves (Camhi <em>et al.<\/em> 2008, Martinez-Ortiz <em>et al.<\/em> 2015). The species is often retained for fins, and sometimes, the meat (Clarke <em>et al.<\/em> 2006a<em>,<\/em>Clarke&#160;<em>et al.&#160;<\/em>2006b, Dent and Clarke 2015, Fields <em>et al.<\/em>  2018), unless regulations prohibit retention. Under-reporting of  catches in pelagic and domestic fisheries is likely (Dent and Clarke  2015)<em><\/em>. At vessel mortality of 34.2% was estimated on Portuguese longlines in the Atlantic (Coelho <em>et al. <\/em>2012). The species has an inquisitive nature that increases its catchability (Ebert&#160;<em>et al<\/em>. 2013).<\/p>",
+        "measures": "<p>The success of actions agreed through international wildlife and fisheries treaties depends on implementation at the domestic level; for sharks, such follow up actions have to date been seriously lacking. <\/p>  <p>The Oceanic Whitetip Shark was the first (and is still currently the only) shark species to be subject to prohibitions on retention, transhipment, storage, and landing by all four major Regional Fishery Management Organizations (RFMOs) focused on tuna fisheries: the International Commission for the Conservation of Atlantic Tunas (2010), the Inter-American Tropical Tuna Commission (2011), the Western and Central Pacific Fisheries Commission (2012), and the Indian Ocean Tuna Commission (2013). <\/p>  <p>In 2013, the Oceanic Whitetip Shark was added to Appendix II of the Convention on International Trade in Endangered Species (CITES), which requires exports from CITES Parties to be accompanied by permits based on findings that parts are sourced from legal and sustainable fisheries.<\/p>  <p>In 2018, the Oceanic Whitetip Shark was added to Annex 1 of the Convention on Migratory Species (CMS) Memorandum of Understanding (MoU) for Migratory Sharks, even though the species is not (yet) included on the CMS Appendices. The MoU is aimed at facilitating regional conservation of listed shark and ray species. <\/p>  <p>To allow recovery, it is recommended that all Oceanic Whitetip Shark retention and landings be prohibited, in line with tuna RFMO obligations, at least as long as the global population is classified as Critically Endangered or Endangered. Initiatives to prevent capture, minimize bycatch mortality, promote safe release, and improve catch (including discard) reporting are also urgently needed, as is full implementation of additional commitments agreed through international treaties.<\/p>",
+        "use_trade": "<p>The species is used for its meat, fins, liver oil, and skin (Ebert and Stehmann 2013). The Oceanic Whitetip Shark accounted for 1.8% in 1991–2001 and 0.6% in 2014, of the fin imported in Hong Kong (Clarke <em>et al.<\/em> 2006a, Fields <em>et al.<\/em> 2018). In some regions, the meat of juvenile Oceanic Whitetip Shark is sold fresh for human consumption at local markets.<\/p>",
+        "rationale": "<p>The Oceanic Whitetip Shark (<em>Carcharhinus longimanus<\/em>) is a large (to 350 cm total length) wide-ranging, oceanic species of tropical and temperate seas worldwide with a preference for surface waters, though it has been reported to depths of 1,082 m. It has litters of 1–15 pups and likely has a biennial reproductive cycle. The species is caught globally as target and bycatch in pelagic large- and small-scale longline, purse seine, and gillnet fisheries and is often retained for the meat and fins, unless regulations prohibit retention. The species has a high catchability due to its preference for surface waters and its inquisitive nature. Steep population declines have occurred in all oceans. The Oceanic Whitetip Shark was once one of the most abundant pelagic shark species in tropical seas worldwide but is now rare in some regions. The <a name=\"_Hlk526521317\">global population is estimated<\/a>  to have undergone a reduction of &gt;98%, with the highest probability of &gt;80%  reduction over three generation lengths (61.2 years). Therefore, the  Oceanic Whitetip Shark is assessed as Critically Endangered A2bd.<\/p>",
+        "trend_justification": null,
+        "taxonomic_notes": null
+    },
+    "biogeographical_realms": [
+
+    ],
+    "conservation_actions": [
+        {
+            "note": "",
+            "code": "1_1",
+            "description": {
+                "en": "Site/area protection"
+            }
+        },
+        {
+            "note": "",
+            "code": "3_1_1",
+            "description": {
+                "en": "Harvest management"
+            }
+        },
+        {
+            "note": "",
+            "code": "3_1_2",
+            "description": {
+                "en": "Trade management"
+            }
+        },
+        {
+            "note": "",
+            "code": "3_2",
+            "description": {
+                "en": "Species recovery"
+            }
+        }
+    ],
+    "faos": [
+        {
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Atlantic - western central"
+            },
+            "code": "31"
+        },
+        {
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Pacific - southeast"
+            },
+            "code": "87"
+        },
+        {
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Pacific - northwest"
+            },
+            "code": "61"
+        },
+        {
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Pacific - eastern central"
+            },
+            "code": "77"
+        },
+        {
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Indian Ocean - western"
+            },
+            "code": "51"
+        },
+        {
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Atlantic - eastern central"
+            },
+            "code": "34"
+        },
+        {
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Pacific - western central"
+            },
+            "code": "71"
+        },
+        {
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Pacific - southwest"
+            },
+            "code": "81"
+        },
+        {
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Indian Ocean - eastern"
+            },
+            "code": "57"
+        },
+        {
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Atlantic - southwest"
+            },
+            "code": "41"
+        },
+        {
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Atlantic - southeast"
+            },
+            "code": "47"
+        },
+        {
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Atlantic - northwest"
+            },
+            "code": "21"
+        },
+        {
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Atlantic - northeast"
+            },
+            "code": "27"
+        }
+    ],
+    "habitats": [
+        {
+            "majorImportance": "Yes",
+            "season": "Resident",
+            "suitability": "Suitable",
+            "description": {
+                "en": "Marine Oceanic - Epipelagic (0-200m)"
+            },
+            "code": "10_1"
+        },
+        {
+            "majorImportance": "Yes",
+            "season": "Resident",
+            "suitability": "Suitable",
+            "description": {
+                "en": "Marine Neritic - Coral Reef"
+            },
+            "code": "9_8"
+        },
+        {
+            "majorImportance": "Yes",
+            "season": "Resident",
+            "suitability": "Suitable",
+            "description": {
+                "en": "Marine Neritic - Pelagic"
+            },
+            "code": "9_1"
+        },
+        {
+            "majorImportance": "Yes",
+            "season": "Resident",
+            "suitability": "Suitable",
+            "description": {
+                "en": "Marine Oceanic - Bathypelagic (1000-4000m)"
+            },
+            "code": "10_3"
+        },
+        {
+            "majorImportance": "Yes",
+            "season": "Resident",
+            "suitability": "Suitable",
+            "description": {
+                "en": "Marine Oceanic - Mesopelagic (200-1000m)"
+            },
+            "code": "10_2"
+        }
+    ],
+    "locations": [
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Belize"
+            },
+            "code": "BZ"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Solomon Islands"
+            },
+            "code": "SB"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Saudi Arabia"
+            },
+            "code": "SA"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Cook Islands"
+            },
+            "code": "CK"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "China"
+            },
+            "code": "CN"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Cameroon"
+            },
+            "code": "CM"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Sri Lanka"
+            },
+            "code": "LK"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Colombia"
+            },
+            "code": "CO"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Costa Rica"
+            },
+            "code": "CR"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Congo, The Democratic Republic of the"
+            },
+            "code": "CD"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Cocos (Keeling) Islands"
+            },
+            "code": "CC"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Saint Lucia"
+            },
+            "code": "LC"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Côte d'Ivoire"
+            },
+            "code": "CI"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Suriname"
+            },
+            "code": "SR"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Somalia"
+            },
+            "code": "SO"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Cayman Islands"
+            },
+            "code": "KY"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Senegal"
+            },
+            "code": "SN"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Sierra Leone"
+            },
+            "code": "SL"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Saint Kitts and Nevis"
+            },
+            "code": "KN"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Slovenia"
+            },
+            "code": "SI"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Comoros"
+            },
+            "code": "KM"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Cuba"
+            },
+            "code": "CU"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Singapore"
+            },
+            "code": "SG"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Cabo Verde"
+            },
+            "code": "CV"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Saint Helena, Ascension and Tristan da Cunha"
+            },
+            "code": "SH"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Christmas Island"
+            },
+            "code": "CX"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Seychelles"
+            },
+            "code": "SC"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Sudan"
+            },
+            "code": "SD"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Bermuda"
+            },
+            "code": "BM"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Kenya"
+            },
+            "code": "KE"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Turks and Caicos Islands"
+            },
+            "code": "TC"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Benin"
+            },
+            "code": "BJ"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Cambodia"
+            },
+            "code": "KH"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Brunei Darussalam"
+            },
+            "code": "BN"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Bangladesh"
+            },
+            "code": "BD"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Barbados"
+            },
+            "code": "BB"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Sao Tome and Principe"
+            },
+            "code": "ST"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "El Salvador"
+            },
+            "code": "SV"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Madeira"
+            },
+            "code": "MDR-OO"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Tonga"
+            },
+            "code": "TO"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Thailand"
+            },
+            "code": "TH"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Johnston I."
+            },
+            "code": "HAW-JI"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Jamaica"
+            },
+            "code": "JM"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Brazil"
+            },
+            "code": "BR"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Bahamas"
+            },
+            "code": "BS"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Tokelau"
+            },
+            "code": "TK"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Japan"
+            },
+            "code": "JP"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Togo"
+            },
+            "code": "TG"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Angola"
+            },
+            "code": "AO"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Anguilla"
+            },
+            "code": "AI"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Puerto Rico"
+            },
+            "code": "PR"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Antigua and Barbuda"
+            },
+            "code": "AG"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Palau"
+            },
+            "code": "PW"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Portugal"
+            },
+            "code": "PT"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Australia"
+            },
+            "code": "AU"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "British Indian Ocean Territory"
+            },
+            "code": "IO"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "India"
+            },
+            "code": "IN"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Aruba"
+            },
+            "code": "AW"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Israel"
+            },
+            "code": "IL"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Argentina"
+            },
+            "code": "AR"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "American Samoa"
+            },
+            "code": "AS"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Hawaiian Is."
+            },
+            "code": "HAW-HI"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Tuvalu"
+            },
+            "code": "TV"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Taiwan, Province of China"
+            },
+            "code": "TW"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "New Caledonia"
+            },
+            "code": "NC"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Trinidad and Tobago"
+            },
+            "code": "TT"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Tanzania, United Republic of"
+            },
+            "code": "TZ"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Egypt"
+            },
+            "code": "EG"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Eritrea"
+            },
+            "code": "ER"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Spain"
+            },
+            "code": "ES"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Nicaragua"
+            },
+            "code": "NI"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Montserrat"
+            },
+            "code": "MS"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Martinique"
+            },
+            "code": "MQ"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Mauritania"
+            },
+            "code": "MR"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Macao"
+            },
+            "code": "MO"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Northern Mariana Islands"
+            },
+            "code": "MP"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Myanmar"
+            },
+            "code": "MM"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Malaysia"
+            },
+            "code": "MY"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "United States Minor Outlying Islands"
+            },
+            "code": "UM"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Mexico"
+            },
+            "code": "MX"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "United States"
+            },
+            "code": "US"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Madagascar"
+            },
+            "code": "MG"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Venezuela, Bolivarian Republic of"
+            },
+            "code": "VE"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Dominica"
+            },
+            "code": "DM"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Virgin Islands, British"
+            },
+            "code": "VG"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Chagos Archipelago"
+            },
+            "code": "CGS-OO"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Liberia"
+            },
+            "code": "LR"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Viet Nam"
+            },
+            "code": "VN"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Ecuador"
+            },
+            "code": "EC"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Canary Is."
+            },
+            "code": "CNY-OO"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Vanuatu"
+            },
+            "code": "VU"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Marshall Islands"
+            },
+            "code": "MH"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Azores"
+            },
+            "code": "AZO-OO"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Saint Vincent and the Grenadines"
+            },
+            "code": "VC"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Dominican Republic"
+            },
+            "code": "DO"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Uruguay"
+            },
+            "code": "UY"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Morocco"
+            },
+            "code": "MA"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Djibouti"
+            },
+            "code": "DJ"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Maldives"
+            },
+            "code": "MV"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Mauritius"
+            },
+            "code": "MU"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Grenada"
+            },
+            "code": "GD"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "French Guiana"
+            },
+            "code": "GF"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Gabon"
+            },
+            "code": "GA"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Niue"
+            },
+            "code": "NU"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Nauru"
+            },
+            "code": "NR"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Wake Is."
+            },
+            "code": "WAK-OO"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Oman"
+            },
+            "code": "OM"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "France"
+            },
+            "code": "FR"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Fiji"
+            },
+            "code": "FJ"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Samoa"
+            },
+            "code": "WS"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Guyana"
+            },
+            "code": "GY"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Guinea-Bissau"
+            },
+            "code": "GW"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Guam"
+            },
+            "code": "GU"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Pitcairn"
+            },
+            "code": "PN"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Guatemala"
+            },
+            "code": "GT"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Philippines"
+            },
+            "code": "PH"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Equatorial Guinea"
+            },
+            "code": "GQ"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Guadeloupe"
+            },
+            "code": "GP"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Pakistan"
+            },
+            "code": "PK"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Guinea"
+            },
+            "code": "GN"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Peru"
+            },
+            "code": "PE"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Gambia"
+            },
+            "code": "GM"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "French Polynesia"
+            },
+            "code": "PF"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Papua New Guinea"
+            },
+            "code": "PG"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Panama"
+            },
+            "code": "PA"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Ghana"
+            },
+            "code": "GH"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Hong Kong"
+            },
+            "code": "HK"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "South Africa"
+            },
+            "code": "ZA"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Honduras"
+            },
+            "code": "HN"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Réunion"
+            },
+            "code": "RE"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Haiti"
+            },
+            "code": "HT"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Indonesia"
+            },
+            "code": "ID"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Virgin Islands, U.S."
+            },
+            "code": "VI"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Bonaire, Sint Eustatius and Saba"
+            },
+            "code": "BQ"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Curaçao"
+            },
+            "code": "CW"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Saint Barthélemy"
+            },
+            "code": "BL"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Saint Martin (French part)"
+            },
+            "code": "MF"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Sint Maarten (Dutch part)"
+            },
+            "code": "SX"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Colombia (mainland)"
+            },
+            "code": "CLM-OO"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Colombian Caribbean Is."
+            },
+            "code": "SWC-CC"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Clipperton I."
+            },
+            "code": "CPI-CL"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Galápagos"
+            },
+            "code": "GAL-OO"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Ecuador (mainland)"
+            },
+            "code": "ECU-OO"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "France (mainland)"
+            },
+            "code": "FRA-FR"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Spanish North African Territories"
+            },
+            "code": "MOR-SP"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Spain (mainland)"
+            },
+            "code": "SPA-SP"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "New Zealand"
+            },
+            "code": "NZ"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Yemen"
+            },
+            "code": "YE"
+        }
+    ],
+    "researches": [
+        {
+            "note": "",
+            "code": "3_1",
+            "description": {
+                "en": "Population trends"
+            }
+        },
+        {
+            "note": "",
+            "code": "1_3",
+            "description": {
+                "en": "Life history & ecology"
+            }
+        },
+        {
+            "note": "",
+            "code": "3_2",
+            "description": {
+                "en": "Harvest level trends"
+            }
+        },
+        {
+            "note": "",
+            "code": "3_3",
+            "description": {
+                "en": "Trade trends"
+            }
+        },
+        {
+            "note": "",
+            "code": "1_2",
+            "description": {
+                "en": "Population size, distribution & trends"
+            }
+        },
+        {
+            "note": "",
+            "code": "1_4",
+            "description": {
+                "en": "Harvest, use & livelihoods"
+            }
+        }
+    ],
+    "use_and_trade": [
+
+    ],
+    "threats": [
+        {
+            "scope": "Majority (50-90%)",
+            "timing": "Ongoing",
+            "internationalTrade": null,
+            "score": "Medium Impact: 6",
+            "severity": "Slow, Significant Declines",
+            "ancestry": null,
+            "virus": null,
+            "ias": null,
+            "text": null,
+            "description": {
+                "en": "Unintentional effects: (large scale) [harvest]"
+            },
+            "code": "5_4_4"
+        },
+        {
+            "scope": "Majority (50-90%)",
+            "timing": "Ongoing",
+            "internationalTrade": null,
+            "score": "Medium Impact: 6",
+            "severity": "Slow, Significant Declines",
+            "ancestry": null,
+            "virus": null,
+            "ias": null,
+            "text": null,
+            "description": {
+                "en": "Unintentional effects: (subsistence/small scale) [harvest]"
+            },
+            "code": "5_4_3"
+        },
+        {
+            "scope": "Majority (50-90%)",
+            "timing": "Ongoing",
+            "internationalTrade": "Yes",
+            "score": "Medium Impact: 6",
+            "severity": "Slow, Significant Declines",
+            "ancestry": null,
+            "virus": null,
+            "ias": null,
+            "text": null,
+            "description": {
+                "en": "Intentional use: (subsistence/small scale) [harvest]"
+            },
+            "code": "5_4_1"
+        },
+        {
+            "scope": "Majority (50-90%)",
+            "timing": "Ongoing",
+            "internationalTrade": "Yes",
+            "score": "Medium Impact: 6",
+            "severity": "Slow, Significant Declines",
+            "ancestry": null,
+            "virus": null,
+            "ias": null,
+            "text": null,
+            "description": {
+                "en": "Intentional use: (large scale) [harvest]"
+            },
+            "code": "5_4_2"
+        }
+    ],
+    "credits": [
+        {
+            "credit_type_name": "evaluator",
+            "full": "Young, C., Dulvy, N.K. & Kyne, P.M.",
+            "value": [
+                "Chelsey Young",
+                "Nicholas Dulvy (Simon Fraser University, Canada / IUCN SSC Shark Specialist Group)",
+                "Peter Kyne (Charles Darwin University, Australia / IUCN SSC Shark RLA Coordinator)"
+            ]
+        },
+        {
+            "credit_type_name": "assessor",
+            "full": "Rigby, C.L., Barreto, R., Carlson, J., Fernando, D., Fordham, S., Francis, M.P., Herman, K., Jabado, R.W., Liu, K.M., Marshall, A., Pacoureau, N., Romanov, E., Sherley, R.B. & Winker, H.",
+            "value": [
+                "Nathan Pacoureau",
+                "Richard Sherley",
+                "Kwang-Ming Liu",
+                "Rodrigo Barreto (Centro de Pesquisa e Conservação da Biodiversidade Marinha do Sudeste e Sul (CEPSUL/ICMBio))",
+                "Katelyn Herman (Georgia Aquarium, Atlanta, Georgia / IUCN SSC Shark Specialist Group)",
+                "Daniel Fernando",
+                "Evgeny Romanov",
+                "Cassandra Rigby (James Cook University, Queensland, Australia)",
+                "Henning Winker (aSouth African National Biodiversity Institute, Kirstenbosch, Research Centre, Claremont, South Africa)",
+                "John Carlson (NOAA)",
+                "Andrea Marshall (IUCN SSC Shark Specialist Group)",
+                "Malcolm Francis (IUCN SSC Shark Specialist Group)",
+                "Rima Jabado (Gulf Elasmo Project)",
+                "Sonja Fordham (Shark Advocates International)"
+            ]
+        },
+        {
+            "credit_type_name": "contributor",
+            "full": "Dulvy, N.K., Sherman, C.S., Baum, J.K., Musick, J.A. & Smale, M.J.",
+            "value": [
+                "M.J. Smale",
+                "Julia Baum (Dalhousie University, Halifax, Canada)",
+                "Nicholas Dulvy (Simon Fraser University, Canada / IUCN SSC Shark Specialist Group)",
+                "Samantha Sherman (James Cook University, Queensland, Australia)",
+                "John Musick (Virginia Institute of Marine Science)"
+            ]
+        },
+        {
+            "credit_type_name": "facilitators",
+            "full": "Rigby, C.L., Kyne, P.M., Pollom, R., Herman, K. & Dulvy, N.K.",
+            "value": [
+                "Katelyn Herman (Georgia Aquarium, Atlanta, Georgia / IUCN SSC Shark Specialist Group)",
+                "Nicholas Dulvy (Simon Fraser University, Canada / IUCN SSC Shark Specialist Group)",
+                "Cassandra Rigby (James Cook University, Queensland, Australia)",
+                "Riley Pollom (Project Seahorse)",
+                "Peter Kyne (Charles Darwin University, Australia / IUCN SSC Shark RLA Coordinator)"
+            ]
+        },
+        {
+            "credit_type_name": "institutions",
+            "full": "Georgia Aquarium",
+            "value": [
+                "Georgia Aquarium"
+            ]
+        }
+    ],
+    "errata": [
+
+    ],
+    "references": [
+        {
+            "citation": "Weigmann, S. 2016. Annotated checklist of the living sharks, batoids and chimaeras (Chondrichthyes) of the world, with a focus on biogeographical diversity. <i>Journal of Fish Biology<\/i> 88(3): 837-1037.",
+            "year": "2016",
+            "title": "Annotated checklist of the living sharks, batoids and chimaeras (Chondrichthyes) of the world, with a focus on biogeographical diversity",
+            "author": "Weigmann, S.",
+            "citation_short": ""
+        },
+        {
+            "citation": "Ebert, D.A., Fowler, S. and Compagno, L. 2013. <i>Sharks of the World<\/i>. Wild Nature Press, Plymouth.",
+            "year": "2013",
+            "title": "Sharks of the World",
+            "author": "Ebert, D.A., Fowler, S. and Compagno, L.",
+            "citation_short": ""
+        },
+        {
+            "citation": "Rice, J., Tremblay-Boyer, L., Scott, R., Hare, S. and TIdd, A. 2015. Analysis of stock status and related indicators for key shark species of the Western Central Pacific Fisheries Commission.  In: Western Central Pacific Fisheries Commission (ed.), Scientific Committee Eleventh Regular Session, 5-13 August 2015, Pohnpei, Federated States of Micronesia.",
+            "year": "2015",
+            "title": "Analysis of stock status and related indicators for key shark species of the Western Central Pacific Fisheries Commission",
+            "author": "Rice, J., Tremblay-Boyer, L., Scott, R., Hare, S. and TIdd, A.",
+            "citation_short": null
+        },
+        {
+            "citation": "Dulvy, N.K., Baum, J.K., Clarke, S., Compagno, L.J.V., Cortés, E., Domingo, A., Fordham, S., Fowler, S.L., Francis, M.P., Gibson, C., Martinez, J., Musick, J.A., Soldo, A., Stevens, J.D. and Valenti, S.V. 2008. You can swim but you can't hide: the global status and conservation of oceanic pelagic sharks and rays. <i>Aquatic Conservation: Marine and Freshwater Ecosystems<\/i> 18(5): 459-482.",
+            "year": "2008",
+            "title": "You can swim but you can't hide: the global status and conservation of oceanic pelagic sharks and rays",
+            "author": "Dulvy, N.K., Baum, J.K., Clarke, S., Compagno, L.J.V., Cortés, E., Domingo, A., Fordham, S., Fowler, S.L., Francis, M.P., Gibson, C., Martinez, J., Musick, J.A., Soldo, A., Stevens, J.D. and Valenti, S.V.",
+            "citation_short": ""
+        },
+        {
+            "citation": "Clarke, S., Coelho, R., Francis, M., Kai, M., Kohin, S., Liu, K.M., Simpfendorfer, C., Tovar-Avila, J., Rigby, C., and Smart, J. 2015. Report of the Pacific Shark Life History Expert Panel Workshop, 28-30 April 2015. Western and Central Pacific Fisheries Commission.",
+            "year": "2015",
+            "title": "Report of the Pacific Shark Life History Expert Panel Workshop, 28-30 April 2015",
+            "author": "Clarke, S., Coelho, R., Francis, M., Kai, M., Kohin, S., Liu, K.M., Simpfendorfer, C., Tovar-Avila, J., Rigby, C., and Smart, J.",
+            "citation_short": null
+        },
+        {
+            "citation": "Ebert, D.A. and Stehmann, M.F.W. 2013. <i>Sharks, batoids, and chimaeras of the North Atlantic. FAO Species Catalogue for Fishery Purposes No. 7. Food and Agricultural Organization of the United Nations (FAO)<\/i>. FAO, Rome.",
+            "year": "2013",
+            "title": "Sharks, batoids, and chimaeras of the North Atlantic. FAO Species Catalogue for Fishery Purposes No. 7. Food and Agricultural Organization of the United Nations (FAO)",
+            "author": "Ebert, D.A. and Stehmann, M.F.W. ",
+            "citation_short": ""
+        },
+        {
+            "citation": "Last, P.R. and Stevens, J.D. 2009. <i>Sharks and Rays of Australia. Second Edition<\/i>. CSIRO Publishing, Collingwood.",
+            "year": "2009",
+            "title": "Sharks and Rays of Australia. Second Edition",
+            "author": "Last, P.R. and Stevens, J.D.",
+            "citation_short": "Last and Stevens 2009"
+        },
+        {
+            "citation": "Coelho, R., Fernandez-Carvalho, J., Lino, P.G. and Santos, M.N. 2012. An overview of the hooking mortality of elasmobranchs caught in a swordfish pelagic longline fishery in the Atlantic Ocean. <i>Aquatic Living Resources<\/i> 25(4): 311-319.",
+            "year": "2012",
+            "title": "An overview of the hooking mortality of elasmobranchs caught in a swordfish pelagic longline fishery in the Atlantic Ocean",
+            "author": "Coelho, R., Fernandez-Carvalho, J., Lino, P.G. and Santos, M.N. ",
+            "citation_short": ""
+        },
+        {
+            "citation": "Hall M. and Roman M. 2013. Bycatch and Non-Tuna Catch in the Tropical Tuna Purse Seine Fisheries of the World.  FAO Fisheries and Aquaculture Technical Paper.",
+            "year": "2013",
+            "title": "Bycatch and Non-Tuna Catch in the Tropical Tuna Purse Seine Fisheries of the World",
+            "author": "Hall M. and Roman M.",
+            "citation_short": null
+        },
+        {
+            "citation": "Lessa, R., Santana, F. and Paglerani, R. 1999. Age, growth and stock structure of the oceanic whitetip shark, (Carcharhinus longimanus), from the southwestern equatorial Atlantic. <i>Marine Freshwater Resources<\/i> 50: 383-388.",
+            "year": "1999",
+            "title": "Age, growth and stock structure of the oceanic whitetip shark, (Carcharhinus longimanus), from the southwestern equatorial Atlantic",
+            "author": "Lessa, R., Santana, F. and Paglerani, R.",
+            "citation_short": null
+        },
+        {
+            "citation": "Smith, S.E., Au, D.W. and Show, C. 2008.. Intrinsic rates of increase in pelagic elasmobranchs. In: In: M. Camhi, E.K. Pikitch, and E.A. Babcock (eds), (eds), <i>Sharks of the Open Ocean<\/i>, pp. Chapter 25 (pp. 288-297). Blackwell Publishing.",
+            "year": "2008.",
+            "title": "Intrinsic rates of increase in pelagic elasmobranchs.",
+            "author": "Smith, S.E., Au, D.W. and Show, C.",
+            "citation_short": null
+        },
+        {
+            "citation": "Seki, T., Taniuchi, T., Nakano, H. and Shimizu, M. 1998. Age, growth, and reproduction of the Oceanic Whitetip shark from the Pacific Ocean. <i>Fisheries Science Tokyo<\/i> 64: 14–20.",
+            "year": "1998",
+            "title": "Age, growth, and reproduction of the Oceanic Whitetip shark from the Pacific Ocean",
+            "author": "Seki, T., Taniuchi, T., Nakano, H. and Shimizu, M.",
+            "citation_short": null
+        },
+        {
+            "citation": "Clarke, S., Magnusson, J.E., Abercrombie, D.L., McAllister, M. and Shivji, M.S. 2006a. Identification of shark species composition and proportion in the Hong Kong shark fin market using molecular genetics and trade records. <i>Conservation Biology<\/i> 20: 201-211.",
+            "year": "2006a",
+            "title": "Identification of shark species composition and proportion in the Hong Kong shark fin market using molecular genetics and trade records",
+            "author": "Clarke, S., Magnusson, J.E., Abercrombie, D.L., McAllister, M. and Shivji, M.S.",
+            "citation_short": null
+        },
+        {
+            "citation": "Clarke, S.C., McAllister, M.K., Milner-Gulland, E.J., Kirkwood, G.P., Michielsens, C.G.J., Agnew, D.J., Pikitch, E.K., Nakano, H. and Shivji, M.S. 2006b. Global estimates of shark catches using trade records from commercial markets. <i>Ecology Letters<\/i> 9: 1115-1126.",
+            "year": "2006b",
+            "title": "Global estimates of shark catches using trade records from commercial markets",
+            "author": "Clarke, S.C., McAllister, M.K., Milner-Gulland, E.J., Kirkwood, G.P., Michielsens, C.G.J., Agnew, D.J., Pikitch, E.K., Nakano, H. and Shivji, M.S.",
+            "citation_short": null
+        },
+        {
+            "citation": "Camhi, M.D., Pikitch, E.K. and Babcock, E.A. 2008. <i>Sharks of the Open Ocean: Biology, Fisheries and Conservation <\/i>. John Wiley & Sons.",
+            "year": "2008",
+            "title": "Sharks of the Open Ocean: Biology, Fisheries and Conservation ",
+            "author": "Camhi, M.D., Pikitch, E.K. and Babcock, E.A.",
+            "citation_short": ""
+        },
+        {
+            "citation": "Martínez-Ortiz, J., Aires-da-Silva, A.M., Lennert-Cody, C.E. and Maunder, M.N. 2015. The Ecuadorian artisanal fishery for large pelagics: species composition and spatio-temporal dynamics. <i>PloS one<\/i> 10(8): p.e0135136.",
+            "year": "2015",
+            "title": "The Ecuadorian artisanal fishery for large pelagics: species composition and spatio-temporal dynamics",
+            "author": "Martínez-Ortiz, J., Aires-da-Silva, A.M., Lennert-Cody, C.E. and Maunder, M.N.",
+            "citation_short": null
+        },
+        {
+            "citation": "Winker, H., Carvalho, F. and Kapur, M. 2018. JABBA: Just Another Bayesian Biomass Assessment. <i>Fisheries Research <\/i> 204: 275–288.",
+            "year": "2018",
+            "title": "JABBA: Just Another Bayesian Biomass Assessment",
+            "author": "Winker, H., Carvalho, F. and Kapur, M. ",
+            "citation_short": ""
+        },
+        {
+            "citation": "Dent, F. and Clarke, S. 2015. State of the global market for shark products.  FAO Fisheries and Aquaculture Technical Paper No. 590. Food and Agriculture Organization of the United Nations (FAO), Rome, Italy. 187 pp.",
+            "year": "2015",
+            "title": "State of the global market for shark products",
+            "author": "Dent, F. and Clarke, S.",
+            "citation_short": ""
+        },
+        {
+            "citation": "Fields, A.T., Fischer, G.A., Shea, S.K.H., Zhang, H., Abercrombie, D.L., Feldheim, K.A., Babcock, E.A. and Chapman, D.D. 2017. Species composition of the international shark fin trade assessed through retail-market survey in Hong Kong. <i>Conservation Biology<\/i> 32(2): 376–389.",
+            "year": "2017",
+            "title": "Species composition of the international shark fin trade assessed through retail-market survey in Hong Kong",
+            "author": "Fields, A.T., Fischer, G.A., Shea, S.K.H., Zhang, H., Abercrombie, D.L., Feldheim, K.A., Babcock, E.A. and Chapman, D.D.",
+            "citation_short": ""
+        },
+        {
+            "citation": "Jabado, R.W., Kyne, P.M., Pollom, R.A., Ebert, D.A., Simpfendorfer, C.A., Ralph, G.M. and Dulvy, N.K. (eds.). 2017. The conservation status of sharks, rays, and chimaeras in the Arabian Sea and adjacent waters.  Environment Agency – Abu Dhabi, UAE and IUCN Species Survival Commission Shark Specialist Group, Vancouver, Canada.",
+            "year": "2017",
+            "title": "The conservation status of sharks, rays, and chimaeras in the Arabian Sea and adjacent waters",
+            "author": "Jabado, R.W., Kyne, P.M., Pollom, R.A., Ebert, D.A., Simpfendorfer, C.A., Ralph, G.M. and Dulvy, N.K. (eds.)",
+            "citation_short": ""
+        },
+        {
+            "citation": "IUCN. 2019. The IUCN Red List of Threatened Species. Version 2019-3. Available at: <a href=\"www.iucnredlist.org\">www.iucnredlist.org<\/a>. (Accessed: 10 December 2019).",
+            "year": "2019",
+            "title": "The IUCN Red List of Threatened Species. Version 2019-3",
+            "author": "IUCN",
+            "citation_short": "IUCN 2019-3"
+        },
+        {
+            "citation": "Barreto, R., Ferretti, F., Flemming, J.M., Amorim, A., Andrade, H., Worm, B. and Lessa, R. 2016. Trends in the exploitation of South Atlantic shark populations. <i>Conservation Biology <\/i> 30(4): 792-804.",
+            "year": "2016",
+            "title": "Trends in the exploitation of South Atlantic shark populations",
+            "author": "Barreto, R., Ferretti, F., Flemming, J.M., Amorim, A., Andrade, H., Worm, B. and Lessa, R.",
+            "citation_short": null
+        },
+        {
+            "citation": "Bonfil, R., Clarke, S. and Nakano, H. 2008. The biology and ecology of the oceanic whitetip shark, <i>Carcharhinus longimanus<\/i>. In: Camhi, M., Pikitch, E.K. and Babcock, E. (eds), <i>Sharks of the open ocean: biology, fisheries and conservation<\/i>, pp. 128-139. Blackwell Publishing, Oxford.",
+            "year": "2008",
+            "title": "The biology and ecology of the oceanic whitetip shark, <i>Carcharhinus longimanus<\/i>",
+            "author": "Bonfil, R., Clarke, S. and Nakano, H.",
+            "citation_short": ""
+        },
+        {
+            "citation": "Brodziak, J. and Walsh, W.A. 2013. Model selection and multimodel inference for standardizing catch rates of bycatch species: a case study of oceanic whitetip shark in the Hawaii-based longline fishery. <i>Canadian Journal of Fisheries and Aquatic Sciences<\/i> 70: 1723-1740.",
+            "year": "2013",
+            "title": "Model selection and multimodel inference for standardizing catch rates of bycatch species: a case study of oceanic whitetip shark in the Hawaii-based longline fishery",
+            "author": "Brodziak, J. and Walsh, W.A.",
+            "citation_short": ""
+        },
+        {
+            "citation": "Camargo, S.M., Coelho, R., Chapman, D., Howey-Jordan, L., Brooks, E.J., Fernando, D., Mendes, N.J., Hazin, F.H., Oliveira, C., Santos, M.N., Foresti, F. and Mendonca, F.F. 2016. Structure and genetic variability of the oceanic whitetip shark, <i>Carcharhinus longimanus<\/i>, determined using mitochondrial DNA. <i>PLOS ONE<\/i> 11(1-11).",
+            "year": "2016",
+            "title": "Structure and genetic variability of the oceanic whitetip shark, <i>Carcharhinus longimanus<\/i>, determined using mitochondrial DNA.",
+            "author": "Camargo, S.M., Coelho, R., Chapman, D., Howey-Jordan, L., Brooks, E.J., Fernando, D., Mendes, N.J., Hazin, F.H., Oliveira, C., Santos, M.N., Foresti, F. and Mendonca, F.F.",
+            "citation_short": ""
+        },
+        {
+            "citation": "D'Alberto, B.M., Chin, A., Smart, J.A., Baje, L., White, W.T. and Simpfendorfer, C.A. 2017.  Age, growth and maturity of oceanic whitetip shark (<i>Carcharhinus longimanus<\/i>) from Papua New Guinea. <i>Marine and Freshwater Research<\/i> 68(6): 1118-1129.",
+            "year": "2017",
+            "title": " Age, growth and maturity of oceanic whitetip shark (<i>Carcharhinus longimanus<\/i>) from Papua New Guinea",
+            "author": "D'Alberto, B.M., Chin, A., Smart, J.A., Baje, L., White, W.T. and Simpfendorfer, C.A.",
+            "citation_short": ""
+        },
+        {
+            "citation": "Joung, S.J., Chen, N.F., Hsu, H.H. and Liu, K.M. 2016. Estimates of life history parameters of the oceanic whitetip shark, <i>Carcharhinus longimanus<\/i>, in the Western North Pacific Ocean. <i>Marine Biology Research<\/i> 12(7): 758-768.",
+            "year": "2016",
+            "title": "Estimates of life history parameters of the oceanic whitetip shark, <i>Carcharhinus longimanus<\/i>, in the Western North Pacific Ocean",
+            "author": "Joung, S.J., Chen, N.F., Hsu, H.H. and Liu, K.M.",
+            "citation_short": ""
+        },
+        {
+            "citation": "Liu, K.M, Tsai, W. 2011. Catch and life history parameters of pelagic sharks in the Northwestern Pacific. ISC/11/SHARKWG-1/06.",
+            "year": "2011",
+            "title": "Catch and life history parameters of pelagic sharks in the Northwestern Pacific",
+            "author": "Liu, K.M, Tsai, W.",
+            "citation_short": null
+        },
+        {
+            "citation": "Ramos-Cartelle, A., García-Cortés, B., Ortíz de Urbina, J., Fernández-Costa, J., González-González, I., and Mejuto, J. 2012. Standardized catch rates of the Oceanic Whitetip Shark (<i>Carcharhinus longimanus<\/i>) from observations of the Spanish Longline Fishery targeting Swordfish in the Indian Ocean during the 1998-2011 period. Indian Ocean Tuna Commission. Accessed 28 March 2017. Available at http://www.iotc.org/sites/default/files/documents/proceedings/2012/wpeb/IOTC-2012-WPEB08-27.pdf.",
+            "year": "2012",
+            "title": "Standardized catch rates of the Oceanic Whitetip Shark (<i>Carcharhinus longimanus<\/i>) from observations of the Spanish Longline Fishery targeting Swordfish in the Indian Ocean during the 1998-2011 period",
+            "author": "Ramos-Cartelle, A., García-Cortés, B., Ortíz de Urbina, J., Fernández-Costa, J., González-González, I., and Mejuto, J.",
+            "citation_short": ""
+        },
+        {
+            "citation": "Rice, J. and Harley, S. 2012. Stock assessment of oceanic whitetip sharks in the western and central Pacific Ocean. WCPFC-SC8-2012/SA_WP-06 Rev 1. Scientific Committee Eight Regular Session 7-15 August Busan, Republic of Korea. Western and Central Pacific Fisheries Commission.",
+            "year": "2012",
+            "title": "Stock assessment of oceanic whitetip sharks in the western and central Pacific Ocean. WCPFC-SC8-2012/SA_WP-06 Rev 1",
+            "author": "Rice, J. and Harley, S.",
+            "citation_short": null
+        },
+        {
+            "citation": "Ruck, C. 2016. Global genetic connectivity and diversity in a shark of high conservation concern, the oceanic whitetip, <i>Carcharhinus longimanus<\/i>. Master of Sciences. Nova Southeastern University.",
+            "year": "2016",
+            "title": "Global genetic connectivity and diversity in a shark of high conservation concern, the oceanic whitetip, <i>Carcharhinus longimanus<\/i>. Master of Sciences",
+            "author": "Ruck, C.",
+            "citation_short": ""
+        },
+        {
+            "citation": "Tolotti, M.T., Bach, P., Hazin, F., Travassos, P. and Dagorn, L. 2015. Vulnerability of the Oceanic Whitetip Shark to pelagic longline fisheries. <i>PLOS ONE <\/i> 10(10): e0141396.",
+            "year": "2015",
+            "title": "Vulnerability of the Oceanic Whitetip Shark to pelagic longline fisheries",
+            "author": "Tolotti, M.T., Bach, P., Hazin, F., Travassos, P. and Dagorn, L.",
+            "citation_short": null
+        },
+        {
+            "citation": "Tolotti, M. T., Travassos, P., Frédou, F. L., Wor, C., Andrade, H. A., and Hazin, F. 2013. Size, distribution and catch rates of the oceanic whitetip shark caught by the Brazilian tuna longline fleet. <i>Fisheries Research<\/i> 143: 136-142.",
+            "year": "2013",
+            "title": "Size, distribution and catch rates of the oceanic whitetip shark caught by the Brazilian tuna longline fleet",
+            "author": "Tolotti, M. T., Travassos, P., Frédou, F. L., Wor, C., Andrade, H. A., and Hazin, F.",
+            "citation_short": null
+        },
+        {
+            "citation": "Yokawa, K. and Semba, Y. 2012. Update of the standardized CPUE of oceanic whitetip shark (<i>Carcharhinus longimanus<\/i>) caught by Japanese longline fishery in the Indian Ocean. Indian Ocean Tuna Commission. Accessed 28 March 2017. Available at https://www.iotc.org/sites/default/files/documents/proceedings/2012/wpeb/IOTC-2012-WPEB08-26.pdf.",
+            "year": "2012",
+            "title": "Update of the standardized CPUE of oceanic whitetip shark (<i>Carcharhinus longimanus<\/i>) caught by Japanese longline fishery in the Indian Ocean",
+            "author": "Yokawa, K. and Semba, Y.",
+            "citation_short": null
+        },
+        {
+            "citation": "Young, C.N., Carlson, J., Hutchinson, M., Hutt, C., Kobayashi, D., McCandless, C.T., Wraith, J. 2017. Status review report: oceanic whitetip shark (<i>Carcharhinius longimanus<\/i>). Final Report to the National Marine Fisheries Service, Office of Protected Resources.",
+            "year": "2017",
+            "title": "Status review report: oceanic whitetip shark (<i>Carcharhinius longimanus<\/i>). Final Report to the National Marine Fisheries Service, Office of Protected Resources.",
+            "author": "Young, C.N., Carlson, J., Hutchinson, M., Hutt, C., Kobayashi, D., McCandless, C.T., Wraith, J.",
+            "citation_short": ""
+        }
+    ],
+    "growth_forms": [
+
+    ],
+    "lmes": [
+
+    ],
+    "scopes": [
+        {
+            "description": {
+                "en": "Global"
+            },
+            "code": "1"
+        }
+    ],
+    "stresses": [
+        {
+            "description": {
+                "en": "Species mortality"
+            },
+            "code": "2_1"
+        },
+        {
+            "description": {
+                "en": "Species mortality"
+            },
+            "code": "2_1"
+        },
+        {
+            "description": {
+                "en": "Species mortality"
+            },
+            "code": "2_1"
+        },
+        {
+            "description": {
+                "en": "Species mortality"
+            },
+            "code": "2_1"
+        }
+    ],
+    "systems": [
+        {
+            "description": {
+                "en": "Marine"
+            },
+            "code": "2"
+        }
+    ]
+}
