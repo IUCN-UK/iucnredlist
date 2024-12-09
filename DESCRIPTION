@@ -9,7 +9,7 @@ Authors@R: c(
     person("International Union for Conservation of Nature", role = c("cph", "fnd"))
   )
 Date: 2024-12-05
-Description: An R package for interacting with the IUCN Red List API
+Description: An R package for interacting with the IUCN Red List API.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
