@@ -8,7 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-An R package for interacting with the IUCN Red List API
+An R package for interacting with the IUCN Red List API.
 }
 \seealso{
 Useful links:

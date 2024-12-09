@@ -7,10 +7,10 @@
 rl_version(api)
 }
 \arguments{
-\item{api}{A Red List API token string (alphanumeric)}
+\item{api}{A httr2 response object created with init_api().}
 }
 \value{
-A list containing the API version and Red List version
+A list containing the API version and Red List version.
 }
 \description{
 Display API and Red List versions
