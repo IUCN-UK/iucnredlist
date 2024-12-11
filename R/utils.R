@@ -5,7 +5,7 @@
 ##########################
 
 perform_request <- function(api, endpoint_request) {
-  url = paste0('http://localhost:3000/api/v4/', endpoint_request)
+  url = paste0('https://api.iucnredlist.org/api/v4/', endpoint_request)
   user_agent <- paste0('iucnredlist/', packageVersion("iucnredlist"))
 
   tryCatch(
