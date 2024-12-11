@@ -5,8 +5,8 @@
 ##########################
 
 perform_request <- function(api, endpoint_request) {
-  url = paste0('https://api.iucnredlist.org/api/v4/', endpoint_request)
-  user_agent <- paste0('iucnredlistV', packageVersion("iucnredlist"))
+  url = paste0('http://localhost:3000/api/v4/', endpoint_request)
+  user_agent <- paste0('iucnredlist/', packageVersion("iucnredlist"))
 
   tryCatch(
     api |> httr2::req_url(url) |> httr2::req_user_agent(user_agent) |> httr2::req_perform() |> httr2::resp_body_json(),
@@ -26,7 +26,7 @@ perform_request <- function(api, endpoint_request) {
 # Internal. Function to get paginated data
 fetch_paginated_data <- function(req, url, query_params, wait_time = 0.5) {
   all_data <- list()
-  user_agent <- paste0('iucnredlistV', packageVersion("iucnredlist"))
+  user_agent <- paste0('iucnredlist/', packageVersion("iucnredlist"))
 
   while (!is.null(url) && !is.na(url)) {
     # Make sure the URL is valid before making the request
