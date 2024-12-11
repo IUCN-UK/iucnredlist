@@ -6,9 +6,10 @@
 
 perform_request <- function(api, endpoint_request) {
   url = paste0('https://api.iucnredlist.org/api/v4/', endpoint_request)
+  user_agent <- paste0('iucnredlistV', packageVersion("iucnredlist"))
 
   tryCatch(
-    api |> httr2::req_url(url) |> httr2::req_perform() |> httr2::resp_body_json(),
+    api |> httr2::req_url(url) |> httr2::req_user_agent(user_agent) |> httr2::req_perform() |> httr2::resp_body_json(),
     httr2_http_401 = function(error) {
       rlang::abort("Error 401: Unauthorized. This error may occur if your Red List API token was copied incorrectly. You can retrieve your API token at https://api.iucnredlist.org/users/edit\n")
     },
@@ -25,12 +26,14 @@ perform_request <- function(api, endpoint_request) {
 # Internal. Function to get paginated data
 fetch_paginated_data <- function(req, url, query_params, wait_time = 0.5) {
   all_data <- list()
+  user_agent <- paste0('iucnredlistV', packageVersion("iucnredlist"))
 
   while (!is.null(url) && !is.na(url)) {
     # Make sure the URL is valid before making the request
     if (is.character(url) && length(url) == 1 && !is.na(url)) {
       response_page <- req %>%
         httr2::req_url(url) %>%
+        httr2::req_user_agent(user_agent) %>%
         httr2::req_url_query(!!!query_params) %>%
         httr2::req_perform()
 
