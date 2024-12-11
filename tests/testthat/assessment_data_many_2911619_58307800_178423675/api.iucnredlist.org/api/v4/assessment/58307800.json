@@ -1,0 +1,455 @@
+{
+    "assessment_date": "2016-06-26T00:00:00.000Z",
+    "year_published": "2016",
+    "latest": true,
+    "possibly_extinct": false,
+    "possibly_extinct_in_the_wild": false,
+    "sis_taxon_id": 44492,
+    "criteria": "B1ab(iii)+2ab(iii)",
+    "url": "https://www.iucnredlist.org/species/44492/58307800",
+    "citation": "Ravelomanana, T. 2016. Paretroplus menarambo. The IUCN Red List of Threatened Species 2016: e.T44492A58307800. https://dx.doi.org/10.2305/IUCN.UK.2016-3.RLTS.T44492A58307800.en. Accessed on 11 December 2024.",
+    "assessment_id": 58307800,
+    "assessment_points": false,
+    "assessment_ranges": true,
+    "taxon": {
+        "sis_id": 44492,
+        "scientific_name": "Paretroplus menarambo",
+        "species_taxa": [
+
+        ],
+        "subpopulation_taxa": [
+
+        ],
+        "infrarank_taxa": [
+
+        ],
+        "kingdom_name": "ANIMALIA",
+        "phylum_name": "CHORDATA",
+        "class_name": "ACTINOPTERYGII",
+        "order_name": "CICHLIFORMES",
+        "family_name": "CICHLIDAE",
+        "genus_name": "Paretroplus",
+        "species_name": "menarambo",
+        "subpopulation_name": null,
+        "infra_name": null,
+        "authority": "Allgayer, 1996",
+        "species": true,
+        "subpopulation": false,
+        "infrarank": false,
+        "ssc_groups": [
+
+        ],
+        "common_names": [
+            {
+                "main": false,
+                "name": "Damba Menarambo",
+                "language": "mlg"
+            },
+            {
+                "main": true,
+                "name": "Pinstripe Damba",
+                "language": "eng"
+            }
+        ],
+        "synonyms": [
+
+        ]
+    },
+    "population_trend": {
+        "description": {
+            "en": "Unknown"
+        },
+        "code": "3"
+    },
+    "red_list_category": {
+        "version": "3.1",
+        "description": {
+            "en": "Critically Endangered"
+        },
+        "code": "CR"
+    },
+    "supplementary_info": {
+        "upper_elevation_limit": null,
+        "lower_elevation_limit": null,
+        "lower_depth_limit": null,
+        "upper_depth_limit": null,
+        "population_size": null,
+        "population_severely_fragmented": null,
+        "population_continuing_decline": null,
+        "generational_length": null,
+        "congregatory": null,
+        "movement_patterns": "Not a Migrant",
+        "continuing_decline_in_area": "Yes",
+        "conservation_actions_in_place": [
+
+        ],
+        "identification_information": null,
+        "extreme_fluctuations": null,
+        "no_of_subpopulations": null,
+        "continuing_decline_in_subpopulations": null,
+        "extreme_fluctuations_in_subpopulations": null,
+        "all_individuals_in_one_subpopulation": null,
+        "no_of_individuals_in_largest_subpopulation": null,
+        "estimated_area_of_occupancy": "7.6",
+        "continuing_decline_in_area_of_occupancy": null,
+        "extreme_fluctuations_in_area_of_occupancy": null,
+        "estimated_extent_of_occurence": "10",
+        "continuing_decline_in_extent_of_occurence": null,
+        "extreme_fluctuations_in_extent_of_occurence": null,
+        "continuing_decline_in_number_of_locations": null,
+        "extreme_fluctuations_in_number_of_locations": null
+    },
+    "documentation": {
+        "range": "Endemic to Madagascar. Previously p<span =\"\"=\"\" roman=\"\" new=\"\" times=\"\">resent in the flood plain lakes of the Bemarivo River, the major northwards-flowing tributary of the Sofia River in northwestern Madagascar. The species is now only known to occur in a single lake of that system: Lac Tseny.",
+        "population": "<p>No data are available on the wild population; previously it was thought to have disappeared from its native range, but more recent surveys rediscovered the species in   Lac Tseny. Captive breeding populations exist in Europe and North America.<\/p>",
+        "habitats": "A malacophagous (mollusc eating) biparentally custodial substratum-spawning cichlid with a protracted period of brood care and a highly seasonal reproductive pattern.",
+        "threats": "Historically this species has been threatened by over-fishing. Presently, the threats facing this species are habitat loss due to environmental degradation, and competition from and/or predation by exotic species.",
+        "measures": "Madagasikara Voakajy (Local NGO) is working on the Lake Tseny on an <em>in situ<\/em> captive breeding program.",
+        "use_trade": "Formerly this species was an important food fish is Madagascar. There has never been any international trade in this species.",
+        "rationale": "<p>      <\/p><p>This species is endemic to Madagascar and up until recently it was presumed Extinct in the Wild; the last reports of the species had been from Lac Sarodrano, its type, and previously only known locality, dating from the late 1990s (de Rham and Nourissat 2002). Despite targeted surveys, no specimens had been collected from this area since. However, recent survey work in this region has resulted in the discovery of a remnant population of this fish in Lac Tseny (Andriafidison <em>et al.<\/em> 2011). Habitat degradation, the presence of invasive exotic species and overfishing and its highly restricted remaining distribution (EOO and AOO) account for its Critically Endangered status. Breeding populations of this species are maintained in captivity.<\/p><p><\/p>",
+        "trend_justification": null,
+        "taxonomic_notes": null
+    },
+    "biogeographical_realms": [
+        {
+            "description": {
+                "en": "Afrotropical"
+            },
+            "code": "0"
+        }
+    ],
+    "conservation_actions": [
+        {
+            "note": "",
+            "code": "3_4_1",
+            "description": {
+                "en": "Captive breeding/artificial propagation"
+            }
+        },
+        {
+            "note": "",
+            "code": "1_1",
+            "description": {
+                "en": "Site/area protection"
+            }
+        },
+        {
+            "note": "",
+            "code": "4_3",
+            "description": {
+                "en": "Awareness & communications"
+            }
+        },
+        {
+            "note": "",
+            "code": "2_1",
+            "description": {
+                "en": "Site/area management"
+            }
+        }
+    ],
+    "faos": [
+
+    ],
+    "habitats": [
+        {
+            "majorImportance": "Yes",
+            "season": null,
+            "suitability": "Suitable",
+            "description": {
+                "en": "Wetlands (inland) - Permanent Rivers/Streams/Creeks (includes waterfalls)"
+            },
+            "code": "5_1"
+        },
+        {
+            "majorImportance": "Yes",
+            "season": null,
+            "suitability": "Suitable",
+            "description": {
+                "en": "Wetlands (inland) - Permanent Freshwater Lakes (over 8ha)"
+            },
+            "code": "5_5"
+        }
+    ],
+    "locations": [
+        {
+            "is_endemic": true,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": null,
+            "description": {
+                "en": "Madagascar"
+            },
+            "code": "MG"
+        }
+    ],
+    "researches": [
+        {
+            "note": null,
+            "code": "3_4",
+            "description": {
+                "en": "Habitat trends"
+            }
+        },
+        {
+            "note": null,
+            "code": "3_1",
+            "description": {
+                "en": "Population trends"
+            }
+        },
+        {
+            "note": null,
+            "code": "1_2",
+            "description": {
+                "en": "Population size, distribution & trends"
+            }
+        },
+        {
+            "note": null,
+            "code": "1_5",
+            "description": {
+                "en": "Threats"
+            }
+        },
+        {
+            "note": null,
+            "code": "2_1",
+            "description": {
+                "en": "Species Action/Recovery Plan"
+            }
+        }
+    ],
+    "use_and_trade": [
+        {
+            "international": null,
+            "national": null,
+            "other": null,
+            "subsistence": true,
+            "description": {
+                "en": "Food - human"
+            },
+            "code": "1"
+        }
+    ],
+    "threats": [
+        {
+            "scope": "Unknown",
+            "timing": "Ongoing",
+            "internationalTrade": null,
+            "score": "Unknown",
+            "severity": "Unknown",
+            "ancestry": null,
+            "virus": null,
+            "ias": null,
+            "text": null,
+            "description": {
+                "en": "Motivation Unknown/Unrecorded"
+            },
+            "code": "5_3_5"
+        },
+        {
+            "scope": "Unknown",
+            "timing": "Ongoing",
+            "internationalTrade": null,
+            "score": "Unknown",
+            "severity": "Unknown",
+            "ancestry": null,
+            "virus": null,
+            "ias": null,
+            "text": null,
+            "description": {
+                "en": "Unspecified species"
+            },
+            "code": "8_1_1"
+        },
+        {
+            "scope": "Unknown",
+            "timing": "Past, Likely to Return",
+            "internationalTrade": null,
+            "score": "No/Negligible Impact: 0",
+            "severity": "Unknown",
+            "ancestry": null,
+            "virus": null,
+            "ias": null,
+            "text": null,
+            "description": {
+                "en": "Intentional use: (subsistence/small scale) [harvest]"
+            },
+            "code": "5_4_1"
+        },
+        {
+            "scope": null,
+            "timing": "Ongoing",
+            "internationalTrade": null,
+            "score": "Low Impact: 3",
+            "severity": null,
+            "ancestry": null,
+            "virus": null,
+            "ias": null,
+            "text": null,
+            "description": {
+                "en": "Other ecosystem modifications"
+            },
+            "code": "7_3"
+        }
+    ],
+    "credits": [
+        {
+            "credit_type_name": "assessor",
+            "full": "Ravelomanana, T.",
+            "value": [
+                "Tsilavina Ravelomanana (Université d'Antananarivo)"
+            ]
+        },
+        {
+            "credit_type_name": "evaluator",
+            "full": "Raminosoa, N., Randrianizahaisa, H., Rasoloariniaina, R & Velosoa, J.",
+            "value": [
+                "Jean  Rasoloariniaina (University of Antananarivo)",
+                "Juliette Velosoa (Durrell Wildlife Conservation Trust)",
+                "Noromalala Raminosoa (University of Antananarivo)",
+                "Hiarinirina Randrianizahaisa (Ministry Forestry and Environment, Madagascar)"
+            ]
+        },
+        {
+            "credit_type_name": "contributor",
+            "full": "Loiselle, P.V. & Participants of the CBSG/ANGAP CAMP \"Faune de Madagascar\" workshop, Mantasoa, Madagascar 2001",
+            "value": [
+                "Paul Victor Loiselle (IUCN SSC Conservation Breeding Specialist Group)",
+                "falseemail@cbsg.workshop.com"
+            ]
+        },
+        {
+            "credit_type_name": "facilitators",
+            "full": "Darwall, W.R.T.",
+            "value": [
+                "William Darwall (IUCN)"
+            ]
+        }
+    ],
+    "errata": [
+
+    ],
+    "references": [
+        {
+            "citation": "IUCN. 2004. 2004 IUCN Red List of Threatened Species. Available at: <a href=\"www.iucnredlist.org\">www.iucnredlist.org<\/a>. (Accessed: 23 November 2004).",
+            "year": "2004",
+            "title": "2004 IUCN Red List of Threatened Species",
+            "author": "IUCN",
+            "citation_short": "IUCN 2004"
+        },
+        {
+            "citation": "Andriafidison, D., Jenkins, R.K.B., Loiselle, P.V., McCaskie, T., Rakotoarivelo, A.A., Rahalambomanana, J., Ravelomanana, T., Raminosoa, N. and Saunder, A. 2011. Preliminary fish survey of Lac Tseny in north-western Madagascar. <i>Madagascar Conservation & Development<\/i> 6(2): 83-87.",
+            "year": "2011",
+            "title": "Preliminary fish survey of Lac Tseny in north-western Madagascar",
+            "author": "Andriafidison, D., Jenkins, R.K.B., Loiselle, P.V., McCaskie, T., Rakotoarivelo, A.A., Rahalambomanana, J., Ravelomanana, T., Raminosoa, N. and Saunder, A.",
+            "citation_short": ""
+        },
+        {
+            "citation": "de Rham, P. and Nourissat, J.-C. 2002. <i>Les cichlidés endémiques de Madagascar<\/i>.  Association France Cichlid. Sagrafic, Barcelona, Spain.",
+            "year": "2002",
+            "title": "Les cichlidés endémiques de Madagascar.",
+            "author": "de Rham, P. and Nourissat, J.-C.",
+            "citation_short": null
+        },
+        {
+            "citation": "Loiselle, P.V. 1996a. The Cichlids of jurassic Park III. <i>Cichlids News<\/i> 5(1):21-25.",
+            "year": "1996",
+            "title": "The cichlids of jurassic Park III.",
+            "author": "Loiselle, P.V.",
+            "citation_short": null
+        },
+        {
+            "citation": "Nourissat, J.-C. 1993. Madagascar 1992. <i>Revue Francaise des Cichlidophiles<\/i> 129:8-36.",
+            "year": "1993",
+            "title": "Madagascar 1992.",
+            "author": "Nourissat, J.-C.",
+            "citation_short": null
+        },
+        {
+            "citation": "Nourissat, J.-C. 1992. Madagascar 1991. <i>Revue Francaise des Cichlidophiles<\/i> 118:9-29.",
+            "year": "1992",
+            "title": "Madagascar 1991.",
+            "author": "Nourissat, J.-C.",
+            "citation_short": null
+        },
+        {
+            "citation": "Nourissat, J.-C. 1997. Madagascar 1996. <i>Revue Francaise des Cichlidophiles<\/i> 174:19-34.",
+            "year": "1997",
+            "title": "Madagascar 1996",
+            "author": "Nourissat, J.-C.",
+            "citation_short": null
+        },
+        {
+            "citation": "Loiselle, P.V. 1996b. The cichlids of Jurassic Park. IV. <i>Cichlid News<\/i> 5(2):8-2.",
+            "year": "1996",
+            "title": "The cichlids of Jurassic Park. IV.",
+            "author": "Loiselle, P.V.",
+            "citation_short": null
+        },
+        {
+            "citation": "Allegayer, R. 1996. Description d'une espèce nouvelle du genre Paretroplus Bleeker (Teleostei: Cichlidae) de Madagascar. <i>Revue Francaise des Cichlidophiles<\/i> 159:6-20.",
+            "year": "1996",
+            "title": "Description d'une espèce nouvelle du genre <i>Paretroplus<\/i> Bleeker (Teleostei: Cichlidae) de Madagascar.",
+            "author": "Allegayer, R.",
+            "citation_short": null
+        },
+        {
+            "citation": "IUCN. 2016. The IUCN Red List of Threatened Species. Version 2016-3. Available at: <a href=\"www.iucnredlist.org\">www.iucnredlist.org<\/a>. (Accessed: 07 December 2016).",
+            "year": "2016",
+            "title": "The IUCN Red List of Threatened Species. Version 2016-3",
+            "author": "IUCN",
+            "citation_short": "IUCN 2016-3"
+        }
+    ],
+    "growth_forms": [
+
+    ],
+    "lmes": [
+
+    ],
+    "scopes": [
+        {
+            "description": {
+                "en": "Global"
+            },
+            "code": "1"
+        }
+    ],
+    "stresses": [
+        {
+            "description": {
+                "en": "Ecosystem degradation"
+            },
+            "code": "1_2"
+        },
+        {
+            "description": {
+                "en": "Ecosystem degradation"
+            },
+            "code": "1_2"
+        },
+        {
+            "description": {
+                "en": "Species mortality"
+            },
+            "code": "2_1"
+        },
+        {
+            "description": {
+                "en": "Competition"
+            },
+            "code": "2_3_2"
+        }
+    ],
+    "systems": [
+        {
+            "description": {
+                "en": "Freshwater (=Inland waters)"
+            },
+            "code": "1"
+        }
+    ]
+}

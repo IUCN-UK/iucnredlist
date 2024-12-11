@@ -1,0 +1,359 @@
+{
+    "assessment_date": "2024-02-14T00:00:00.000Z",
+    "year_published": "2024",
+    "latest": true,
+    "possibly_extinct": false,
+    "possibly_extinct_in_the_wild": false,
+    "sis_taxon_id": 64385,
+    "criteria": null,
+    "url": "https://www.iucnredlist.org/species/64385/178423675",
+    "citation": "Daniels, S. & Van Der Colff, D. 2024. Potamonautes lividus. The IUCN Red List of Threatened Species 2024: e.T64385A178423675. Accessed on 11 December 2024.",
+    "assessment_id": 178423675,
+    "assessment_points": true,
+    "assessment_ranges": true,
+    "taxon": {
+        "sis_id": 64385,
+        "scientific_name": "Potamonautes lividus",
+        "species_taxa": [
+
+        ],
+        "subpopulation_taxa": [
+
+        ],
+        "infrarank_taxa": [
+
+        ],
+        "kingdom_name": "ANIMALIA",
+        "phylum_name": "ARTHROPODA",
+        "class_name": "MALACOSTRACA",
+        "order_name": "DECAPODA",
+        "family_name": "POTAMONAUTIDAE",
+        "genus_name": "Potamonautes",
+        "species_name": "lividus",
+        "subpopulation_name": null,
+        "infra_name": null,
+        "authority": "Gouws, Stewart &amp; Reavell, 2001",
+        "species": true,
+        "subpopulation": false,
+        "infrarank": false,
+        "ssc_groups": [
+
+        ],
+        "common_names": [
+            {
+                "main": true,
+                "name": "Blue Swamp Forest Crab",
+                "language": "eng"
+            }
+        ],
+        "synonyms": [
+
+        ]
+    },
+    "population_trend": {
+        "description": {
+            "en": "Stable"
+        },
+        "code": "2"
+    },
+    "red_list_category": {
+        "version": "3.1",
+        "description": {
+            "en": "Least Concern"
+        },
+        "code": "LC"
+    },
+    "supplementary_info": {
+        "upper_elevation_limit": 99,
+        "lower_elevation_limit": 10,
+        "lower_depth_limit": null,
+        "upper_depth_limit": null,
+        "population_size": null,
+        "population_severely_fragmented": null,
+        "population_continuing_decline": null,
+        "generational_length": null,
+        "congregatory": null,
+        "movement_patterns": null,
+        "continuing_decline_in_area": null,
+        "conservation_actions_in_place": [
+            {
+                "name": "In-place land/water protection",
+                "actions": [
+                    {
+                        "name": "Occurs in at least one protected area",
+                        "value": "Yes"
+                    }
+                ]
+            }
+        ],
+        "identification_information": null,
+        "extreme_fluctuations": null,
+        "no_of_subpopulations": null,
+        "continuing_decline_in_subpopulations": null,
+        "extreme_fluctuations_in_subpopulations": null,
+        "all_individuals_in_one_subpopulation": null,
+        "no_of_individuals_in_largest_subpopulation": null,
+        "estimated_area_of_occupancy": "64",
+        "continuing_decline_in_area_of_occupancy": null,
+        "extreme_fluctuations_in_area_of_occupancy": null,
+        "estimated_extent_of_occurence": "11552",
+        "continuing_decline_in_extent_of_occurence": null,
+        "extreme_fluctuations_in_extent_of_occurence": null,
+        "continuing_decline_in_number_of_locations": null,
+        "extreme_fluctuations_in_number_of_locations": null
+    },
+    "documentation": {
+        "range": "This medium-sized species is known from swamp forests in northeastern Kwa-Zulu Natal and Eastern Cape provinces of South Africa. In Kwa-Zulu Natal Province it is known from Maplanela Nature Reserve along the northern coast of&#160;the province. It is also found in iSimangaliso Wetland Park at St Lucia, Mtubatuba, the Mdibi swamp forest near Richards Bay, the University of Zululand near Empangani, Ntambanana, Amatikulu Nature Reserve, and the Tugela River mouth. In the Eastern Cape Province it is known from Dwesa-Cwebe Nature Reserve, Mazeppa Bay, and the Manubi forest which represents the southernmost limit of the species. P<em>otamonautes lividus<\/em> is most likely also present in the swamp forests between Dwesa-Cwebe and the Tugela River mouth, but further sampling is required to determine whether this species actually occupies these habitats (Daniels <em>et al.<\/em> 2020).",
+        "population": "The species is abundant where it has been encountered, except at the type locality, where there has been some habitat loss. Since its initial assessment it has been collected from numerous forests along the eastern coast of South Africa, and its populations seem to be stable, but no population counts have been conducted.",
+        "habitats": "This species occurs only in swamp forests that are part of the Indian Ocean Coastal Belt biome. These forests are dominated by <em>Barringtonia racemosa<\/em>, <em>Ficus trichopoda<\/em> and <em>Syzygium cordatum&#160;<\/em>(Gouws <em>et al.<\/em> 2001). Individuals inhabit U-shaped burrows dug into spongy hydromorphic peat soil. Burrows are sited among vegetation away from seepage channels and this species is semi-terrestrial in habit. The species leaves its burrows when it rains and is most active on overcast days, migrating to higher elevations when the water table rises. In life, the carapace is an orange or red color with a blue sheen.",
+        "threats": "The major threat to this species is coastal development that might disrupt its habitat, especially along the KwaZulu-Natal coast. However, this is not a threat to the subpopulations found in the three protected areas.",
+        "measures": "No conservation measures are known to be in place for this species. The species is present in at least three protected areas along the coast, including, iSimangaliso Wetland Park, Mapelane Nature Reserve, and Dwesa-Cwebe Nature Reserve.",
+        "use_trade": null,
+        "rationale": "<em>Potamonautes lividus&#160;<\/em>is downlisted from Vulnerable to Least Concern. This species&#160;was historically only known from a few localities in the KwaZulu-Natal Province, of South Africa. Recent collections in the Eastern Cape Province, however, found the species to be much more widespread than initially thought. It has an extent of occurrence of 11,552 km<sup>2<\/sup>&#160;and an area of occupancy of 64 km<sup>2<\/sup>, and is known from at least 12 locations, three of which are in protected areas, but it is likely to be more with further sampling.",
+        "trend_justification": null,
+        "taxonomic_notes": "The genus&#160;<em>Potamonautes&#160;<\/em><em>s.l.<\/em> was revised by Cumberlidge and Daniels (2022) who reduced the number of species assissigned to this genus (which is now treated as<em>&#160;Potamonautes&#160;<\/em><em>s.s.<\/em>). In that work, this revised genus was assigned to the tribe Potamonautini in the subfamily Potamonautinae in the revised family Potamonautidae."
+    },
+    "biogeographical_realms": [
+        {
+            "description": {
+                "en": "Afrotropical"
+            },
+            "code": "0"
+        }
+    ],
+    "conservation_actions": [
+
+    ],
+    "faos": [
+
+    ],
+    "habitats": [
+        {
+            "majorImportance": null,
+            "season": null,
+            "suitability": "Suitable",
+            "description": {
+                "en": "Wetlands (inland) - Permanent Freshwater Marshes/Pools (under 8ha)"
+            },
+            "code": "5_7"
+        },
+        {
+            "majorImportance": null,
+            "season": null,
+            "suitability": "Suitable",
+            "description": {
+                "en": "Forest - Subtropical/Tropical Swamp"
+            },
+            "code": "1_8"
+        }
+    ],
+    "locations": [
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "Eastern Cape Province"
+            },
+            "code": "CPP-EC"
+        },
+        {
+            "is_endemic": false,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "KwaZulu-Natal"
+            },
+            "code": "NAT-OO"
+        },
+        {
+            "is_endemic": true,
+            "formerlyBred": null,
+            "origin": "Native",
+            "presence": "Extant",
+            "seasonality": [
+                "Resident"
+            ],
+            "description": {
+                "en": "South Africa"
+            },
+            "code": "ZA"
+        }
+    ],
+    "researches": [
+        {
+            "note": "None",
+            "code": "1_3",
+            "description": {
+                "en": "Life history & ecology"
+            }
+        },
+        {
+            "note": "None",
+            "code": "3_1",
+            "description": {
+                "en": "Population trends"
+            }
+        },
+        {
+            "note": "None",
+            "code": "1_5",
+            "description": {
+                "en": "Threats"
+            }
+        },
+        {
+            "note": "None",
+            "code": "1_2",
+            "description": {
+                "en": "Population size, distribution & trends"
+            }
+        }
+    ],
+    "use_and_trade": [
+
+    ],
+    "threats": [
+        {
+            "scope": null,
+            "timing": "Ongoing",
+            "internationalTrade": null,
+            "score": "Low Impact: 3",
+            "severity": null,
+            "ancestry": null,
+            "virus": null,
+            "ias": null,
+            "text": null,
+            "description": {
+                "en": "Housing & urban areas"
+            },
+            "code": "1_1"
+        }
+    ],
+    "credits": [
+        {
+            "credit_type_name": "assessor",
+            "full": "Daniels, S. & Van Der Colff, D.",
+            "value": [
+                "Dewidine Van Der Colff (SANBI, South Africa)",
+                "Savel Daniels (Stellenbosch University)"
+            ]
+        },
+        {
+            "credit_type_name": "evaluator",
+            "full": "Cumberlidge, N.",
+            "value": [
+                "Neil Cumberlidge (Northern Michigan University, USA)"
+            ]
+        },
+        {
+            "credit_type_name": "contributor",
+            "full": "Cumberlidge, N.",
+            "value": [
+                "Neil Cumberlidge (Northern Michigan University, USA)"
+            ]
+        },
+        {
+            "credit_type_name": "facilitators",
+            "full": "Van Der Colff, D.",
+            "value": [
+                "Dewidine Van Der Colff (SANBI, South Africa)"
+            ]
+        }
+    ],
+    "errata": [
+
+    ],
+    "references": [
+        {
+            "citation": "Gouws, G., Stewart, B.A. and Reavell, P.E. 2001. A new species of freshwater crab (Decapoda, Potamonautidae) from the swamp forests of KwaZulu-Natal, South Africa: Biochemical and morphological evidence. <i>Crustaceana<\/i>. 74(2): 137-160.",
+            "year": "2001",
+            "title": "A new species of freshwater crab (Decapoda, Potamonautidae) from the swamp forests of KwaZulu-Natal, South Africa: Biochemical and morphological evidence",
+            "author": "Gouws, G., Stewart, B.A. and Reavell, P.E.",
+            "citation_short": null
+        },
+        {
+            "citation": "Cumberlidge, N. and Daniels, S.R. 2022. A new multilocus phylogeny reveals overlooked diversity in African freshwater crabs (Brachyura: Potamoidea): a major revision with new higher taxa and genera. <i>Zoological Journal of the Linnean Society<\/i> 194: 1268–1311.",
+            "year": "2022",
+            "title": "A new multilocus phylogeny reveals overlooked diversity in African freshwater crabs (Brachyura: Potamoidea): a major revision with new higher taxa and genera",
+            "author": "Cumberlidge, N. and Daniels, S.R. ",
+            "citation_short": ""
+        },
+        {
+            "citation": "IUCN. 2024. The IUCN Red List of Threatened Species. Version 2024-1. Available at: <a href=\"www.iucnredlist.org\">www.iucnredlist.org<\/a>. (Accessed: 27 June 2024).",
+            "year": "2024",
+            "title": "The IUCN Red List of Threatened Species. Version 2024-1",
+            "author": "IUCN",
+            "citation_short": "IUCN 2024-1"
+        },
+        {
+            "citation": "Daniels, S.R., James, N.C. and Gouws, G. 2020. Phylogeographic structure and continued surveys of a Vulnerable South African freshwater crab (Potamonautidae, Potamonautes lividus):Implications for the IUCN Red Listing of the Afrotropical fauna. <i>Aquatic Conservation: Marine and Freshwater Ecosystems<\/i> 30: 2221-2239.",
+            "year": "2020",
+            "title": "Phylogeographic structure and continued surveys of a Vulnerable South African freshwater crab (Potamonautidae, Potamonautes lividus):Implications for the IUCN Red Listing of the Afrotropical fauna",
+            "author": "Daniels, S.R., James, N.C. and Gouws, G",
+            "citation_short": ""
+        }
+    ],
+    "growth_forms": [
+
+    ],
+    "lmes": [
+
+    ],
+    "scopes": [
+        {
+            "description": {
+                "en": "Global"
+            },
+            "code": "1"
+        },
+        {
+            "description": {
+                "en": "Pan-Africa"
+            },
+            "code": "10"
+        },
+        {
+            "description": {
+                "en": "S. Africa FW"
+            },
+            "code": "9"
+        }
+    ],
+    "stresses": [
+        {
+            "description": {
+                "en": "Ecosystem conversion"
+            },
+            "code": "1_1"
+        },
+        {
+            "description": {
+                "en": "Ecosystem degradation"
+            },
+            "code": "1_2"
+        }
+    ],
+    "systems": [
+        {
+            "description": {
+                "en": "Terrestrial"
+            },
+            "code": "0"
+        },
+        {
+            "description": {
+                "en": "Freshwater (=Inland waters)"
+            },
+            "code": "1"
+        }
+    ]
+}

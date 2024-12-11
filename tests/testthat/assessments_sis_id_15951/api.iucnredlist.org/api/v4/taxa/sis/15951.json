@@ -1,0 +1,460 @@
+{
+    "sis_id": 15951,
+    "taxon": {
+        "sis_id": 15951,
+        "scientific_name": "Panthera leo",
+        "species_taxa": [
+
+        ],
+        "subpopulation_taxa": [
+            {
+                "sis_id": 247279613,
+                "scientific_name": "Panthera leo Asiatic subpopulation",
+                "kingdom_name": "ANIMALIA",
+                "phylum_name": "CHORDATA",
+                "class_name": "MAMMALIA",
+                "order_name": "CARNIVORA",
+                "family_name": "FELIDAE",
+                "genus_name": "Panthera",
+                "species_name": "leo",
+                "subpopulation_name": "Asiatic subpopulation",
+                "infra_name": null,
+                "authority": "(Linnaeus, 1758)",
+                "ssc_groups": [
+                    {
+                        "name": "IUCN SSC Cat Specialist Group (wild cats)",
+                        "url": "http://www.catsg.org/",
+                        "description": "Chair: Christine Breitenmoser (email: ch.breitenmoser@kora.ch) and Urs Max Breitenmoser (email: urs.breitenmoser@vetsuisse.unibe.ch)\nRed List Authority Coordinator: Tabea Lanz (email: t.lanz@kora.ch)\nNewsletter: http://www.catsg.org/index.php?id=7"
+                    }
+                ],
+                "common_names": [
+                    {
+                        "main": false,
+                        "name": "Indian Lion",
+                        "language": "eng"
+                    },
+                    {
+                        "main": false,
+                        "name": "León Indostánico",
+                        "language": "spa"
+                    },
+                    {
+                        "main": false,
+                        "name": "Lion d'Asie",
+                        "language": "fre"
+                    },
+                    {
+                        "main": false,
+                        "name": "Sinh",
+                        "language": "hin"
+                    },
+                    {
+                        "main": true,
+                        "name": "Asiatic Lion",
+                        "language": "eng"
+                    }
+                ],
+                "synonyms": [
+                    {
+                        "name": "Panthera leo ssp. persica (Meyer, 1826)",
+                        "status": "ACCEPTED",
+                        "genus_name": "Panthera",
+                        "species_name": "leo",
+                        "species_author": null,
+                        "infrarank_author": "(Meyer, 1826)",
+                        "subpopulation_name": null,
+                        "infra_type": "subspecies",
+                        "infra_name": "persica"
+                    },
+                    {
+                        "name": "Felis leo Linnaeus, 1758",
+                        "status": "ACCEPTED",
+                        "genus_name": "Felis",
+                        "species_name": "leo",
+                        "species_author": "Linnaeus, 1758",
+                        "infrarank_author": null,
+                        "subpopulation_name": null,
+                        "infra_type": null,
+                        "infra_name": null
+                    }
+                ]
+            },
+            {
+                "sis_id": 68933833,
+                "scientific_name": "Panthera leo West Africa subpopulation",
+                "kingdom_name": "ANIMALIA",
+                "phylum_name": "CHORDATA",
+                "class_name": "MAMMALIA",
+                "order_name": "CARNIVORA",
+                "family_name": "FELIDAE",
+                "genus_name": "Panthera",
+                "species_name": "leo",
+                "subpopulation_name": "West Africa subpopulation",
+                "infra_name": null,
+                "authority": "(Linnaeus, 1758)",
+                "ssc_groups": [
+                    {
+                        "name": "IUCN SSC Cat Specialist Group (wild cats)",
+                        "url": "http://www.catsg.org/",
+                        "description": "Chair: Christine Breitenmoser (email: ch.breitenmoser@kora.ch) and Urs Max Breitenmoser (email: urs.breitenmoser@vetsuisse.unibe.ch)\nRed List Authority Coordinator: Tabea Lanz (email: t.lanz@kora.ch)\nNewsletter: http://www.catsg.org/index.php?id=7"
+                    }
+                ],
+                "common_names": [
+                    {
+                        "main": false,
+                        "name": "African Lion",
+                        "language": "eng"
+                    },
+                    {
+                        "main": false,
+                        "name": "León",
+                        "language": "spa"
+                    },
+                    {
+                        "main": false,
+                        "name": "Lion d'Afrique",
+                        "language": "fre"
+                    },
+                    {
+                        "main": true,
+                        "name": "Lion",
+                        "language": "eng"
+                    }
+                ],
+                "synonyms": [
+                    {
+                        "name": "Felis leo Linnaeus, 1758",
+                        "status": "ACCEPTED",
+                        "genus_name": "Felis",
+                        "species_name": "leo",
+                        "species_author": "Linnaeus, 1758",
+                        "infrarank_author": null,
+                        "subpopulation_name": null,
+                        "infra_type": null,
+                        "infra_name": null
+                    }
+                ]
+            }
+        ],
+        "infrarank_taxa": [
+
+        ],
+        "kingdom_name": "ANIMALIA",
+        "phylum_name": "CHORDATA",
+        "class_name": "MAMMALIA",
+        "order_name": "CARNIVORA",
+        "family_name": "FELIDAE",
+        "genus_name": "Panthera",
+        "species_name": "leo",
+        "subpopulation_name": null,
+        "infra_name": null,
+        "authority": "(Linnaeus, 1758)",
+        "species": true,
+        "subpopulation": false,
+        "infrarank": false,
+        "ssc_groups": [
+            {
+                "name": "IUCN SSC Cat Specialist Group (wild cats)",
+                "url": "http://www.catsg.org/",
+                "description": "Chair: Christine Breitenmoser (email: ch.breitenmoser@kora.ch) and Urs Max Breitenmoser (email: urs.breitenmoser@vetsuisse.unibe.ch)\nRed List Authority Coordinator: Tabea Lanz (email: t.lanz@kora.ch)\nNewsletter: http://www.catsg.org/index.php?id=7"
+            }
+        ],
+        "common_names": [
+            {
+                "main": false,
+                "name": "African Lion",
+                "language": "eng"
+            },
+            {
+                "main": false,
+                "name": "Ambessa",
+                "language": "amh"
+            },
+            {
+                "main": false,
+                "name": "iNgwenyama",
+                "language": "xho"
+            },
+            {
+                "main": false,
+                "name": "Leao",
+                "language": "por"
+            },
+            {
+                "main": false,
+                "name": "Leeu",
+                "language": "afr"
+            },
+            {
+                "main": false,
+                "name": "León",
+                "language": "spa"
+            },
+            {
+                "main": false,
+                "name": "Lion",
+                "language": "fre"
+            },
+            {
+                "main": false,
+                "name": "Mkango",
+                "language": "nya"
+            },
+            {
+                "main": false,
+                "name": "Ndau",
+                "language": "ven"
+            },
+            {
+                "main": false,
+                "name": "Shumba",
+                "language": "sna"
+            },
+            {
+                "main": false,
+                "name": "Simba",
+                "language": "swa"
+            },
+            {
+                "main": false,
+                "name": "Tau",
+                "language": "sot"
+            },
+            {
+                "main": false,
+                "name": "Tau",
+                "language": "tsn"
+            },
+            {
+                "main": true,
+                "name": "Lion",
+                "language": "eng"
+            }
+        ],
+        "synonyms": [
+            {
+                "name": "Felis leo Linnaeus, 1758",
+                "status": "ACCEPTED",
+                "genus_name": "Felis",
+                "species_name": "leo",
+                "species_author": "Linnaeus, 1758",
+                "infrarank_author": null,
+                "subpopulation_name": null,
+                "infra_type": null,
+                "infra_name": null
+            }
+        ]
+    },
+    "assessments": [
+        {
+            "year_published": "2024",
+            "latest": false,
+            "sis_taxon_id": 15951,
+            "url": "https://www.iucnredlist.org/species/15951/259030422",
+            "assessment_id": 259030422,
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                }
+            ]
+        },
+        {
+            "year_published": "2023",
+            "latest": false,
+            "sis_taxon_id": 15951,
+            "url": "https://www.iucnredlist.org/species/15951/231696234",
+            "assessment_id": 231696234,
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                }
+            ]
+        },
+        {
+            "year_published": "2024",
+            "latest": true,
+            "sis_taxon_id": 15951,
+            "url": "https://www.iucnredlist.org/species/15951/266696959",
+            "assessment_id": 266696959,
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                }
+            ]
+        },
+        {
+            "year_published": "2016",
+            "latest": false,
+            "sis_taxon_id": 15951,
+            "url": "https://www.iucnredlist.org/species/15951/115130419",
+            "assessment_id": 115130419,
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                }
+            ]
+        },
+        {
+            "year_published": "2016",
+            "latest": false,
+            "sis_taxon_id": 15951,
+            "url": "https://www.iucnredlist.org/species/15951/107265605",
+            "assessment_id": 107265605,
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                }
+            ]
+        },
+        {
+            "year_published": "2016",
+            "latest": false,
+            "sis_taxon_id": 15951,
+            "url": "https://www.iucnredlist.org/species/15951/97162455",
+            "assessment_id": 97162455,
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                }
+            ]
+        },
+        {
+            "year_published": "2015",
+            "latest": false,
+            "sis_taxon_id": 15951,
+            "url": "https://www.iucnredlist.org/species/15951/79929984",
+            "assessment_id": 79929984,
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                }
+            ]
+        },
+        {
+            "year_published": "2015",
+            "latest": false,
+            "sis_taxon_id": 15951,
+            "url": "https://www.iucnredlist.org/species/15951/50658092",
+            "assessment_id": 50658092,
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                }
+            ]
+        },
+        {
+            "year_published": "2012",
+            "latest": false,
+            "sis_taxon_id": 15951,
+            "url": "https://www.iucnredlist.org/species/15951/20356899",
+            "assessment_id": 20356899,
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                }
+            ]
+        },
+        {
+            "year_published": "2008",
+            "latest": false,
+            "sis_taxon_id": 15951,
+            "url": "https://www.iucnredlist.org/species/15951/5326576",
+            "assessment_id": 5326576,
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                }
+            ]
+        },
+        {
+            "year_published": "2010",
+            "latest": true,
+            "sis_taxon_id": 15951,
+            "url": "https://www.iucnredlist.org/species/15951/5325996",
+            "assessment_id": 5325996,
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Mediterranean"
+                    },
+                    "code": "4"
+                }
+            ]
+        },
+        {
+            "year_published": "2004",
+            "latest": false,
+            "sis_taxon_id": 15951,
+            "url": "https://www.iucnredlist.org/species/15951/5325584",
+            "assessment_id": 5325584,
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                }
+            ]
+        },
+        {
+            "year_published": "2002",
+            "latest": false,
+            "sis_taxon_id": 15951,
+            "url": "https://www.iucnredlist.org/species/15951/5325967",
+            "assessment_id": 5325967,
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                }
+            ]
+        },
+        {
+            "year_published": "1996",
+            "latest": false,
+            "sis_taxon_id": 15951,
+            "url": "https://www.iucnredlist.org/species/15951/5327163",
+            "assessment_id": 5327163,
+            "scopes": [
+                {
+                    "description": {
+                        "en": "Global"
+                    },
+                    "code": "1"
+                }
+            ]
+        }
+    ]
+}
