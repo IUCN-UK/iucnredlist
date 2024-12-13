@@ -8,7 +8,7 @@
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![Star on
-GitHub](https://img.shields.io/github/stars/IUCN-UK/iucnredlist)](https://img.shields.io/github/stars/IUCN-UK/iucnredlist)
+GitHub](https://github.com/IUCN-UK/iucnredlist/)](https://img.shields.io/github/stars/IUCN-UK/iucnredlist)
 
 The [International Union for Conservation of
 Nature’s](https://www.iucn.org) [Red List of Threatened
