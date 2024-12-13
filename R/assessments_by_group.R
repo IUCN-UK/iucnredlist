@@ -21,6 +21,10 @@
 #' @param latest Boolean. Return latest or historic assessments. Defaults to `TRUE`.
 #' @param scope_code String. A valid assessment scope. Defaults to `NULL` (i.e. returns assessments of all scopes).
 #' Valid scope codes can be found by calling `list_codes(api, "scopes")`.
+#' @param possibly_extinct Boolean. Return species marked as 'possibly extinct'. Leave as `NULL` to not filter
+#' on this field. Defaults to `NULL`.
+#' @param possibly_extinct_in_the_wild Boolean. Return species marked as 'possibly extinct in the wild'. Leave
+#' as `NULL` to not filter on this field. Defaults to `NULL`.
 #' @param wait_time Float. Time in seconds to wait between API calls. A wait time of >=0.5s will avoid API rate limiting.
 #' @param show_warnings Boolean. Whether to show a warning to the console if no assessments are found for your specified arguments.
 #' Defaults to `TRUE`.
@@ -37,11 +41,29 @@
 #'   latest = TRUE,
 #'   scope_code = 1,
 #'   wait_time = 0.5,
-#'   show_warnings = TRUE)
+#'   show_warnings = TRUE
+#' )
 #' }
-assessments_by_group <- function(api, group, code, year_published = NULL, latest = TRUE, scope_code = NULL, wait_time = 0.5, show_warnings = TRUE) {
+assessments_by_group <- function(api,
+                                 group,
+                                 code,
+                                 latest = TRUE,
+                                 year_published = NULL,
+                                 scope_code = NULL,
+                                 possibly_extinct = NULL,
+                                 possibly_extinct_in_the_wild = NULL,
+                                 wait_time = 0.5,
+                                 show_warnings = TRUE) {
+
   # Gather user's query params, throw away any that are NULL
-  query_params <- list(latest = latest, year_published = year_published, scope_code = scope_code, page = 1, per_page = 100) %>%
+  query_params <- list(
+    latest = latest,
+    year_published = year_published,
+    scope_code = scope_code,
+    possibly_extinct = possibly_extinct,
+    possibly_extinct_in_the_wild = possibly_extinct_in_the_wild,
+    page = 1,
+    per_page = 100) %>%
     purrr::discard(is.null)
 
   url <- paste0("https://api.iucnredlist.org/api/v4/", group, "/", code)
@@ -49,7 +71,9 @@ assessments_by_group <- function(api, group, code, year_published = NULL, latest
 
   if (nrow(data) > 0) {
     janitor::clean_names(data) %>%
-      dplyr::select(sis_taxon_id, assessment_id, latest, year_published, scopes_description_en, scopes_code, url)
+      dplyr::select(sis_taxon_id, assessment_id, latest,
+                    year_published, scopes_description_en, scopes_code, url,
+                    possibly_extinct, possibly_extinct_in_the_wild)
   } else {
     if (show_warnings == TRUE) {
       cli::cli_alert_warning("There are no assessments for your combination of query parameters/filters. Please check and try again.")

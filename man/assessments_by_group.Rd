@@ -8,9 +8,11 @@ assessments_by_group(
   api,
   group,
   code,
-  year_published = NULL,
   latest = TRUE,
+  year_published = NULL,
   scope_code = NULL,
+  possibly_extinct = NULL,
+  possibly_extinct_in_the_wild = NULL,
   wait_time = 0.5,
   show_warnings = TRUE
 )
@@ -23,12 +25,18 @@ assessments_by_group(
 \item{code}{String. A valid group code. Valid codes for an API group can be
 found by calling e.g. \code{list_codes(api, "habitats")}}
 
-\item{year_published}{Integer. The publication year you wish to filter.}
-
 \item{latest}{Boolean. Return latest or historic assessments. Defaults to \code{TRUE}.}
+
+\item{year_published}{Integer. The publication year you wish to filter.}
 
 \item{scope_code}{String. A valid assessment scope. Defaults to \code{NULL} (i.e. returns assessments of all scopes).
 Valid scope codes can be found by calling \code{list_codes(api, "scopes")}.}
+
+\item{possibly_extinct}{Boolean. Return species marked as 'possibly extinct'. Leave as \code{NULL} to not filter
+on this field. Defaults to \code{NULL}.}
+
+\item{possibly_extinct_in_the_wild}{Boolean. Return species marked as 'possibly extinct in the wild'. Leave
+as \code{NULL} to not filter on this field. Defaults to \code{NULL}.}
 
 \item{wait_time}{Float. Time in seconds to wait between API calls. A wait time of >=0.5s will avoid API rate limiting.}
 
@@ -59,6 +67,7 @@ assessments_by_group(api,
   latest = TRUE,
   scope_code = 1,
   wait_time = 0.5,
-  show_warnings = TRUE)
+  show_warnings = TRUE
+)
 }
 }
