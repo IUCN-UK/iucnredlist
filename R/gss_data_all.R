@@ -1,4 +1,5 @@
 #' Fetch all green status of species (gss) assessment data
+#' @importFrom utils packageVersion
 #'
 #' @description Returns full assessment data for all green status of species assessments.
 #'
