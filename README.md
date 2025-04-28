@@ -201,7 +201,7 @@ following code to get the packages you’ll need for development:
 
     install.packages(c("devtools", "roxygen2", "testthat", "knitr"))
 
-After cloning the repo you will need to set up an .Renviron file to
+After cloning the repo you will need to set up an `.Renviron` file to
 contain your key for the IUCN Red List API
 (<https://api.iucnredlist.org/>)
 
